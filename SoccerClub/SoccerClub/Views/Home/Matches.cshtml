@@ -1,0 +1,628 @@
+﻿
+@{
+    ViewData["Title"] = "Matches";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- breadcrumb -->
+<div class="breadcrumb-main">
+    <div class="container">
+        <div class="breadcrumb-container">
+            <h2 class="page-title">Matches</h2>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Matches</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- main -->
+<main>
+    <div class="common-home">
+        <div id="content" class="col">
+            <!-- fixures -->
+            <div class="category-featured mt-50  wow fadeInUp">
+                <div class="box-content">
+                    <div class="container">
+                        <div class="page-title toggled">
+                            <span class="page-title-left"></span>
+                            <h3>
+                                Fixures
+                            </h3>
+                            <span class="page-title-right"></span>
+                        </div>
+                        <div class="themability-tabs section">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-featured-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-featured" type="button" role="tab" aria-controls="pills-featured"
+                                            aria-selected="true">
+                                        First Team
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-bestseller-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-bestseller" type="button" role="tab" aria-controls="pills-bestseller"
+                                            aria-selected="false">
+                                        Under 21s
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class=" tab-pane fade show active" id="pills-featured" role="tabpanel"
+                                 aria-labelledby="pills-featured-tab">
+                                <div class="next-matches">
+                                    Next-Matches
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">22</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    France Fc
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/clubber-langs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">23</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/cougars.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Fuzzy FZ
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 17:30</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">24</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/fumble-this.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/Junior-Mints.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Royal RL
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 14:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="next-matches">
+                                    Jan-April 2023
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">25</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/cougars.png" alt="">
+                                                <div class="matches-team-name">
+                                                    France Fc
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/Junior-Mints.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Lyrical LC
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 14:40</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">27</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Royal RL
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/king-pins.png" alt="">
+                                                <div class="matches-team-name">
+                                                    France Fc
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 20:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">26</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/king-pins.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Fuzzy FZ
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/Junior-Mints.png" alt="">
+                                                <div class="matches-team-name">
+                                                    France Fc
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 17:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="next-matches">
+                                    Oct-May 2023
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">27</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Royal RL
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/fumble-this.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">28</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/fumble-this.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/clubber-langs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    France Fc
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">28</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Royal RL
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/clubber-langs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Fuzzy FZ
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-bestseller" role="tabpanel" aria-labelledby="pills-bestseller-tab">
+                                <div class="next-matches">
+                                    Oct-May 2023
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">28</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    France Fc
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/cougars.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">28</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/Junior-Mints.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Fuzzy Fz
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">28</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/king-pins.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    France Fc
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="next-matches">
+                                    Next-Matches
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">28</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/fumble-this.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    France Fc
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">26</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/Junior-Mints.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Royal RL
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Kings KG
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">24</div>
+                                            <div class="blog-month">May</div>
+                                        </div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/cougars.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Lyrical LC
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="vs">vs</div>
+                                        <div class="matches-team">
+                                            <a>
+                                                <img src="~/assets_web/images/team_logo/Junior-Mints.png" alt="">
+                                                <div class="matches-team-name">
+                                                    Fuzzy Fz
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <div>SGF Stadium, London / 19:20</div>
+                                            <a href="match-details.html" class="btn-default">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news mt-50 wow fadeInUp">
+                            <div class="news-inner">
+                                <div class="themabilitynewsletterblock">
+                                    <div class="themability-newsletter-form block-content box-content">
+                                        <div class="page-title toggled d-none">
+                                            <h3>Newsletter</h3>
+                                        </div>
+                                        <div class="block_box">
+                                            <div class="news-info">
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <div class="newsletter_description_outer d-flex align-items-center">
+                                                            <div class="icon-emails">
+                                                                <i class="fa-solid fa-envelope"></i>
+                                                            </div>
+                                                            <div class="news-desc">
+                                                                <div class="title-text">
+                                                                    <h3>Newsletter</h3>
+                                                                    <h3 class="d-none">Get Discount 30% Off</h3>
+                                                                </div>
+                                                                <div class="news-description">
+                                                                    Get free 20% discount for all product on your first
+                                                                    order.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6 d-flex align-items-center news-right">
+                                                        <div class="newsletter_form">
+                                                            <form action="#" method="post" id="form_themability_newsletter" data-oc-toggle="ajax">
+                                                                <div class="subscribe-form">
+                                                                    <input type="email" name="themability_newsletter_usr_email"
+                                                                           id="themability_newsletter_usr_email" placeholder="Enter Your E-mail.."
+                                                                           class="form-control input-lg inputNew txtemail">
+                                                                    <button type="submit" data-bs-toggle="tooltip" title=""
+                                                                            class="subscribe-btn btn-default">
+                                                                        Subscribe
+                                                                    </button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
