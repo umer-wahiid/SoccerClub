@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 09 Aug 2023 09:47:27 at https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html -O1 "C:\Users\sfcexam\Desktop\admin panel" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:48:12	Error: 	"Forbidden" (403) at link https://s3.amazonaws.com/creativetim_bucket/products/450/original/opt_sd_free_thumbnail.png (from https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html)
+09:48:13	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html)
+09:50:37	Warning: 	Retry after error -4 (No data (connection closed)) at link https://demos.creative-tim.com/soft-ui-dashboard/assets/img/vr-bg.jpg (from https://demos.creative-tim.com/soft-ui-dashboard/pages/virtual-reality.html)
+09:50:37	Warning: 	Retry after error -4 (Connect Error) at link https://demos.creative-tim.com/soft-ui-dashboard/assets/img/small-logos/icon-sun-cloud.png (from https://demos.creative-tim.com/soft-ui-dashboard/pages/virtual-reality.html)
+09:50:37	Warning: 	Retry after error -4 (Connect Error) at link https://demos.creative-tim.com/soft-ui-dashboard/assets/img/curved-images/curved1.jpg (from https://demos.creative-tim.com/soft-ui-dashboard/pages/virtual-reality.html)
+09:50:41	Warning: 	Retry after error -4 (Connect Error) at link https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/fullcalendar.min.js (from https://demos.creative-tim.com/soft-ui-dashboard/pages/rtl.html)
+09:50:42	Warning: 	Retry after error -4 (Connect Error) at link https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/choices.min.js (from https://demos.creative-tim.com/soft-ui-dashboard/pages/rtl.html)
+09:50:42	Warning: 	Retry after error -4 (Connect Error) at link https://demos.creative-tim.com/soft-ui-dashboard/assets/img/curved-images/curved0.jpg (from https://demos.creative-tim.com/soft-ui-dashboard/pages/profile.html)
+09:50:50	Error: 	"Not Found" (404) at link https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/fullcalendar.min.js (from https://demos.creative-tim.com/soft-ui-dashboard/pages/rtl.html)
+09:50:50	Error: 	"Not Found" (404) at link https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/choices.min.js (from https://demos.creative-tim.com/soft-ui-dashboard/pages/rtl.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 23 seconds : 58 links scanned, 47 files written (6540744 bytes overall) [5758996 bytes received at 28369 bytes/sec], 1139298 bytes transferred using HTTP compression in 24 files, ratio 24%, 3.1 requests per connection
+(4 errors, 6 warnings, 0 messages)
