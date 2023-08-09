@@ -11183,11 +11183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Downloads\\New folder\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+      "projectUniqueName": "D:\\console\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
       "projectName": "SoccerClub",
-      "projectPath": "D:\\Downloads\\New folder\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+      "projectPath": "D:\\console\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Downloads\\New folder\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\",
+      "outputPath": "D:\\console\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

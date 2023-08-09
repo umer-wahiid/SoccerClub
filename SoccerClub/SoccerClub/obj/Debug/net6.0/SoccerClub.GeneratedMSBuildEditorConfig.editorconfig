@@ -8,97 +8,97 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SoccerClub
 build_property.RootNamespace = SoccerClub
-build_property.ProjectDir = D:\Downloads\New folder\New folder\SoccerClub\SoccerClub\SoccerClub\
+build_property.ProjectDir = D:\console\SoccerClub\SoccerClub\SoccerClub\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Downloads\New folder\New folder\SoccerClub\SoccerClub\SoccerClub
+build_property.MSBuildProjectDirectory = D:\console\SoccerClub\SoccerClub\SoccerClub
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/Blog.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/Blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/Cart.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/Contact.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/Index.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/Login.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/Matches.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/Matches.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYXRjaGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/MatchesDetail.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/MatchesDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYXRjaGVzRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/Players.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/Players.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGF5ZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/PlayersDetail.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/PlayersDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGF5ZXJzRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/Schedule.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/Schedule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTY2hlZHVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Home/Shop.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Home/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Shared/Error.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Users/Create.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Users/Delete.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Users/Details.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Users/Edit.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Users/Index.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Users/Login.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Users/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/_ViewImports.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/_ViewStart.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Downloads/New folder/New folder/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_Layout.cshtml]
+[D:/console/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2djzolt9ww
