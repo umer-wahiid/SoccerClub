@@ -956,7 +956,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
     float: left;
     padding-right: .5rem;
     color:var(--primary-color);
-    content: var(--bs-breadcrumb-divider, "https://html.themability.com/");
+    content: var(--bs-breadcrumb-divider, "/");
     font-weight: 500;
 }
 .breadcrumb a {
