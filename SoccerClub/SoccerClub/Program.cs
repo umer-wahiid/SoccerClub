@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using SoccerClub.Data;
 namespace SoccerClub
 {
     public class Program
@@ -5,6 +8,8 @@ namespace SoccerClub
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<SoccerClubContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("SoccerClubContext") ?? throw new InvalidOperationException("Connection string 'SoccerClubContext' not found.")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

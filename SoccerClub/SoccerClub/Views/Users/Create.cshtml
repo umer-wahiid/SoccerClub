@@ -1,0 +1,159 @@
+﻿@model SoccerClub.Models.User
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Login 10</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="~/assets_login/css/style.css">
+
+</head>
+<body class="img js-fullheight" style="background-image: url(../assets_login/images/bg.jpg);">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Soccer Club</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12 col-lg-8">
+					<div class="login-wrap p-0">
+						<h3 class="mb-4 text-center">Don't have an account?</h3>
+						<form action="#" class="signin-form">
+						<div class="row">
+
+								<div class="form-group col-md-6">
+								<input type="text" class="form-control" placeholder="FullName" required>
+							</div>
+								<div class="form-group col-md-6">
+								<input type="email" class="form-control" placeholder="Email" required>
+							</div>
+							</div>
+							<div class="row">
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" placeholder="Username" required>
+						</div>
+								<div class="form-group col-md-6">
+								<input type="text" class="form-control" placeholder="PhoneNumber" required>
+							</div>
+
+							
+							<div class="form-group col-md-6">
+								<input id="password-field" type="password" class="form-control" placeholder="Password" required>
+								<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							</div>
+								<div class="form-group col-md-6">
+								<input id="cpassword-field" type="password" class="form-control" placeholder="Confirm Password" required>
+								<span toggle="#cpassword-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							</div>
+							</div>
+
+							<div class="form-group">
+								<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+							</div>
+							<div class="form-group d-md-flex">
+								<div class="w-50">
+									<label class="checkbox-wrap checkbox-primary">
+										Remember Me
+										<input type="checkbox" checked>
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="w-50 text-md-right">
+									<a href="#" style="color: #fff">Forgot Password</a>
+								</div>
+							</div>
+						</form>
+						<p class="w-100 text-center">Already have an Account ?</p>
+						<div class="social d-flex text-center">
+							@*<a href="#" class="px-2 py-2 mr-md-1 rounded d-none"><span class="ion-logo-facebook mr-2"></span> Facebook</a>*@
+							<a asp-action="Login" asp-controller="Users"  class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span>Login</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="~/assets_login/js/jquery.min.js"></script>
+	<script src="~/assets_login/js/popper.js"></script>
+	<script src="~/assets_login/js/bootstrap.min.js"></script>
+	<script src="~/assets_login/js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+@*<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNo" class="control-label"></label>
+                <input asp-for="PhoneNo" class="form-control" />
+                <span asp-validation-for="PhoneNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+</body>
+</html>*@

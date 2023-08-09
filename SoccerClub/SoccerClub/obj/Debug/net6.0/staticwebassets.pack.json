@@ -1,1003 +1,1031 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SoccerClub.bundle.scp.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SoccerClub.bundle.scp.css",
       "PackagePath": "staticwebassets\\SoccerClub.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\.DS_Store",
-      "PackagePath": "staticwebassets\\assets_login\\css\\.DS_Store"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\._.DS_Store",
+      "PackagePath": "staticwebassets\\assets_login\\css\\._.DS_Store"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap.min.css"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\._bootstrap",
+      "PackagePath": "staticwebassets\\assets_login\\css\\._bootstrap"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\.DS_Store",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\.DS_Store"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\._bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets_login\\css\\._bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\_media.css",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\_media.css"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\assets_login\\css\\StyleSheet.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\.DS_Store",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\.DS_Store"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\._.DS_Store",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\._.DS_Store"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\_border-radius.css",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\_border-radius.css"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\.__media.css",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\.__media.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\_reset-text.css",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\_reset-text.css"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\._mixins",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\._mixins"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\_screen-reader.css",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\_screen-reader.css"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\._utilities",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\._utilities"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\_text-hide.css",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\_text-hide.css"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\._.DS_Store",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\._.DS_Store"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\_visibility.css",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\_visibility.css"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\.__border-radius.css",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\.__border-radius.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\utilities\\_stretched-link.css",
-      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\utilities\\_stretched-link.css"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\.__reset-text.css",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\.__reset-text.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\style.css",
-      "PackagePath": "staticwebassets\\assets_login\\css\\style.css"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\.__screen-reader.css",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\.__screen-reader.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\fonts\\.DS_Store",
-      "PackagePath": "staticwebassets\\assets_login\\fonts\\.DS_Store"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\.__text-hide.css",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\.__text-hide.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\.DS_Store",
-      "PackagePath": "staticwebassets\\assets_login\\images\\.DS_Store"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\mixins\\.__visibility.css",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\mixins\\.__visibility.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\bg.jpg",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\css\\bootstrap\\utilities\\.__stretched-link.css",
+      "PackagePath": "staticwebassets\\assets_login\\css\\bootstrap\\utilities\\.__stretched-link.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\fonts\\._.DS_Store",
+      "PackagePath": "staticwebassets\\assets_login\\fonts\\._.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\._.DS_Store",
+      "PackagePath": "staticwebassets\\assets_login\\images\\._.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\bg.jpg",
       "PackagePath": "staticwebassets\\assets_login\\images\\bg.jpg"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\.DS_Store",
-      "PackagePath": "staticwebassets\\assets_login\\js\\.DS_Store"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\._.DS_Store",
+      "PackagePath": "staticwebassets\\assets_login\\js\\._.DS_Store"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\assets_login\\js\\bootstrap.min.js"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\._bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets_login\\js\\._bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\jquery.min.js",
-      "PackagePath": "staticwebassets\\assets_login\\js\\jquery.min.js"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\._jquery.min.js",
+      "PackagePath": "staticwebassets\\assets_login\\js\\._jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\main.js",
-      "PackagePath": "staticwebassets\\assets_login\\js\\main.js"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\._main.js",
+      "PackagePath": "staticwebassets\\assets_login\\js\\._main.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\popper.js",
-      "PackagePath": "staticwebassets\\assets_login\\js\\popper.js"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\._popper.js",
+      "PackagePath": "staticwebassets\\assets_login\\js\\._popper.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\.DS_Store",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\.DS_Store"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\._.DS_Store",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\._.DS_Store"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.DS_Store",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.DS_Store"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\._bootstrap",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\._bootstrap"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_alert.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_alert.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\._style.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\._style.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_badge.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_badge.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\._.DS_Store",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\._.DS_Store"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_breadcrumb.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_breadcrumb.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__alert.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__alert.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_button-group.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_button-group.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__badge.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__badge.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_buttons.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_buttons.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__breadcrumb.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__breadcrumb.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_card.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_card.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__button-group.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__button-group.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_carousel.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_carousel.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__buttons.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__buttons.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_close.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_close.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__card.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__card.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_code.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_code.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__carousel.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__carousel.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_custom-forms.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_custom-forms.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__close.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__close.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_dropdown.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_dropdown.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__code.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__code.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_forms.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_forms.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__custom-forms.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__custom-forms.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_functions.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_functions.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__dropdown.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__dropdown.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_grid.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_grid.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__forms.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__forms.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_images.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_images.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__functions.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__functions.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_input-group.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_input-group.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__grid.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__grid.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_jumbotron.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_jumbotron.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__images.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__images.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_list-group.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_list-group.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__input-group.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__input-group.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_media.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_media.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__jumbotron.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__jumbotron.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_mixins.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_mixins.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__list-group.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__list-group.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_modal.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_modal.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__media.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__media.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_nav.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_nav.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__mixins.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__mixins.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_navbar.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_navbar.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__modal.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__modal.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_pagination.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_pagination.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__nav.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__nav.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_popover.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_popover.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__navbar.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__navbar.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_print.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_print.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__pagination.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__pagination.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_progress.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_progress.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__popover.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__popover.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_reboot.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_reboot.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__print.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__print.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_root.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_root.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__progress.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__progress.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_spinners.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_spinners.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__reboot.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__reboot.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_tables.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_tables.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__root.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__root.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_toasts.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_toasts.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__spinners.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__spinners.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_tooltip.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_tooltip.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__tables.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__tables.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_transitions.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_transitions.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__toasts.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__toasts.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_type.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_type.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__tooltip.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__tooltip.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_utilities.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_utilities.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__transitions.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__transitions.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\_variables.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\_variables.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__type.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__type.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\bootstrap-grid.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\bootstrap-grid.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__utilities.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__utilities.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\bootstrap-reboot.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\bootstrap-reboot.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\.__variables.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\.__variables.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\bootstrap.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\bootstrap.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\._bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\._bootstrap-grid.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_alert.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_alert.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\._bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\._bootstrap-reboot.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_background-variant.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_background-variant.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\._bootstrap.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\._bootstrap.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_badge.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_badge.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\._mixins",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\._mixins"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_border-radius.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_border-radius.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\._utilities",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\._utilities"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_box-shadow.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_box-shadow.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\._vendor",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\._vendor"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_breakpoints.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_breakpoints.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__alert.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__alert.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_buttons.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_buttons.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__background-variant.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__background-variant.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_caret.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_caret.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__badge.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__badge.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_clearfix.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_clearfix.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__border-radius.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__border-radius.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_deprecate.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_deprecate.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__box-shadow.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__box-shadow.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_float.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_float.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__breakpoints.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__breakpoints.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_forms.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_forms.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__buttons.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__buttons.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_gradients.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_gradients.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__caret.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__caret.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_grid-framework.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_grid-framework.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__clearfix.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__clearfix.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_grid.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_grid.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__deprecate.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__deprecate.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_hover.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_hover.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__float.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__float.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_image.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_image.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__forms.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__forms.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_list-group.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_list-group.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__gradients.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__gradients.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_lists.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_lists.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__grid-framework.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__grid-framework.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_nav-divider.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_nav-divider.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__grid.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__grid.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_pagination.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_pagination.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__hover.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__hover.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_reset-text.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_reset-text.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__image.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__image.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_resize.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_resize.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__list-group.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__list-group.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_screen-reader.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_screen-reader.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__lists.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__lists.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_size.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_size.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__nav-divider.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__nav-divider.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_table-row.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_table-row.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__pagination.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__pagination.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__reset-text.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__reset-text.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_text-hide.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_text-hide.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__resize.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__resize.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_text-truncate.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_text-truncate.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__screen-reader.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__screen-reader.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_transition.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_transition.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__size.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__size.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\_visibility.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\_visibility.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__table-row.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__table-row.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_align.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_align.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__text-emphasis.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__text-emphasis.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_background.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_background.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__text-hide.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__text-hide.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_borders.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_borders.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__text-truncate.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__text-truncate.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_clearfix.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_clearfix.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__transition.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__transition.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_display.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_display.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\mixins\\.__visibility.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\mixins\\.__visibility.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_embed.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_embed.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__align.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__align.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_flex.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_flex.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__background.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__background.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_float.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_float.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__borders.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__borders.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_overflow.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_overflow.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__clearfix.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__clearfix.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_position.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_position.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__display.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__display.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_screenreaders.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_screenreaders.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__embed.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__embed.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_shadows.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_shadows.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__flex.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__flex.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_sizing.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_sizing.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__float.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__float.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_spacing.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_spacing.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__overflow.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__overflow.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_stretched-link.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_stretched-link.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__position.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__position.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_text.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_text.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__screenreaders.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__screenreaders.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\_visibility.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\_visibility.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__shadows.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__shadows.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\vendor\\_rfs.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\vendor\\_rfs.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__sizing.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__sizing.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\style.scss",
-      "PackagePath": "staticwebassets\\assets_login\\scss\\style.scss"
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__spacing.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__spacing.scss"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\ajax\\libs\\animate.css\\3.3.0\\animate.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__stretched-link.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__text.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__text.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\utilities\\.__visibility.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\utilities\\.__visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\scss\\bootstrap\\vendor\\.__rfs.scss",
+      "PackagePath": "staticwebassets\\assets_login\\scss\\bootstrap\\vendor\\.__rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\ajax\\libs\\animate.css\\3.3.0\\animate.min.css",
       "PackagePath": "staticwebassets\\assets_web\\ajax\\libs\\animate.css\\3.3.0\\animate.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\ajax\\libs\\font-awesome\\6.1.1\\css\\all.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\ajax\\libs\\font-awesome\\6.1.1\\css\\all.min.css",
       "PackagePath": "staticwebassets\\assets_web\\ajax\\libs\\font-awesome\\6.1.1\\css\\all.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\ajax\\libs\\wow\\1.1.2\\wow.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\ajax\\libs\\wow\\1.1.2\\wow.min.js",
       "PackagePath": "staticwebassets\\assets_web\\ajax\\libs\\wow\\1.1.2\\wow.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\assets_web\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\css\\owl.carousel.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\css\\owl.carousel.css",
       "PackagePath": "staticwebassets\\assets_web\\css\\owl.carousel.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\css\\owl.video.play.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\css\\owl.video.play.png",
       "PackagePath": "staticwebassets\\assets_web\\css\\owl.video.play.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font.css",
       "PackagePath": "staticwebassets\\assets_web\\fonts\\themability-font.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font\\themability2f2d.eot",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font\\themability2f2d.eot",
       "PackagePath": "staticwebassets\\assets_web\\fonts\\themability-font\\themability2f2d.eot"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font\\themability2f2d.svg",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font\\themability2f2d.svg",
       "PackagePath": "staticwebassets\\assets_web\\fonts\\themability-font\\themability2f2d.svg"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font\\themability2f2d.ttf",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font\\themability2f2d.ttf",
       "PackagePath": "staticwebassets\\assets_web\\fonts\\themability-font\\themability2f2d.ttf"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font\\themability2f2d.woff",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\fonts\\themability-font\\themability2f2d.woff",
       "PackagePath": "staticwebassets\\assets_web\\fonts\\themability-font\\themability2f2d.woff"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\banner\\ban-1.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\banner\\ban-1.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\banner\\ban-1.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\banner\\ban-2.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\banner\\ban-2.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\banner\\ban-2.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\banner\\ban-3.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\banner\\ban-3.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\banner\\ban-3.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog1.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog1.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog\\blog1.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog2.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog2.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog\\blog2.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog3.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog3.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog\\blog3.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog4.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog4.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog\\blog4.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog5.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog5.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog\\blog5.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog6.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog\\blog6.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog\\blog6.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\1.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\1.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog_details\\1.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\2.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\2.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog_details\\2.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\3.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\3.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog_details\\3.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\4.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\4.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog_details\\4.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\5.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\5.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog_details\\5.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\6.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\blog_details\\6.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\blog_details\\6.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\breadcrumb\\breadcrumb.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\breadcrumb\\breadcrumb.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\breadcrumb\\breadcrumb.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\contact\\contact.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\contact\\contact.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\contact\\contact.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\favicon.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\favicon.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\ChildrenBall.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\ChildrenBall.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\gaming\\ChildrenBall.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\Goalkeeper.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\Goalkeeper.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\gaming\\Goalkeeper.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\gift.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\gift.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\gaming\\gift.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\group.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\group.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\gaming\\group.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\medal.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\medal.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\gaming\\medal.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\trophy.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\gaming\\trophy.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\gaming\\trophy.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\loader.gif",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\loader.gif",
       "PackagePath": "staticwebassets\\assets_web\\images\\loader.gif"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\logo.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\logo.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player1.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player1.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\playes\\player1.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player2.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player2.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\playes\\player2.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player3.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player3.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\playes\\player3.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player4.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player4.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\playes\\player4.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player5.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player5.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\playes\\player5.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player6.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player6.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\playes\\player6.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player7.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player7.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\playes\\player7.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player8.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\playes\\player8.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\playes\\player8.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\slider\\slider-1.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\slider\\slider-1.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\slider\\slider-1.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\slider\\slider-2.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\slider\\slider-2.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\slider\\slider-2.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\star.svg",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\star.svg",
       "PackagePath": "staticwebassets\\assets_web\\images\\star.svg"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\star2.svg",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\star2.svg",
       "PackagePath": "staticwebassets\\assets_web\\images\\star2.svg"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\Junior-Mints.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\Junior-Mints.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_logo\\Junior-Mints.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\brash-thugs.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\brash-thugs.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_logo\\brash-thugs.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\clubber-langs.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\clubber-langs.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_logo\\clubber-langs.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\cougars.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\cougars.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_logo\\cougars.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\fumble-this.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\fumble-this.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_logo\\fumble-this.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\king-pins.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_logo\\king-pins.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_logo\\king-pins.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product1.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product1.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product1.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product10.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product10.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product10.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product11.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product11.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product11.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product12.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product12.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product12.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product2.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product2.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product2.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product3.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product3.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product3.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product4.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product4.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product4.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product5.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product5.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product5.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product6.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product6.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product6.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product7.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product7.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product7.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product8.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product8.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product8.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product9.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\team_store\\product9.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\team_store\\product9.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\1.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\1.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\testimonial\\1.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\2.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\2.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\testimonial\\2.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\3.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\3.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\testimonial\\3.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\img1.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\img1.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\testimonial\\img1.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\img3.png",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\images\\testimonial\\img3.png",
       "PackagePath": "staticwebassets\\assets_web\\images\\testimonial\\img3.png"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\assets_web\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\js\\owl.carousel.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\js\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\assets_web\\js\\owl.carousel.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\js\\theme.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\js\\theme.js",
       "PackagePath": "staticwebassets\\assets_web\\js\\theme.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\js\\vendor\\jquery-3.2.1.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\js\\vendor\\jquery-3.2.1.min.js",
       "PackagePath": "staticwebassets\\assets_web\\js\\vendor\\jquery-3.2.1.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\style.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_web\\style.css",
       "PackagePath": "staticwebassets\\assets_web\\style.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\std.LAB\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\User\\Desktop\\New folder\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
