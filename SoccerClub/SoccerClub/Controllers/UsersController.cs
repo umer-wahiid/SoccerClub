@@ -46,14 +46,49 @@ namespace SoccerClub.Controllers
         }
 
         // GET: Users/Create
-        public IActionResult Create()
+        public IActionResult Register()
         {
             return View();
         }
-        
-        public IActionResult Login() 
+
+        public IActionResult Login()
         {
             return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Login(User user)
+        {
+            var userByPassword = _context.User.Where(x => x.Username.Equals(user.Username) && x.Password.Equals(user.Password)).FirstOrDefault();
+            if (userByPassword != null)
+            {
+                HttpContext.Session.SetInt32("UserId", userByPassword.UserId);
+
+                if (userByPassword.IsAdmin)
+                {
+                    HttpContext.Session.SetString("IsAdmin", "Yes");
+                    Session.UserId = HttpContext.Session.GetInt32("UserId") ?? 0;
+                    Session.IsAdmin = HttpContext.Session.GetString("IsAdmin") ?? "NO";
+                    return RedirectToAction("Index", "Home");
+
+                }
+                Session.UserId = HttpContext.Session.GetInt32("UserId") ?? 0;
+                return RedirectToAction("Index", "Home");
+
+
+            }
+
+            ViewBag.err = "Incorrect Password or Email";
+            return View(user);
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            Session.UserId = 0;
+            Session.IsAdmin = "No";
+            return RedirectToAction("Index", "Home");
         }
 
         // POST: Users/Create
@@ -61,7 +96,7 @@ namespace SoccerClub.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Username,Email,Password,ConfirmPassword,PhoneNo,FullName")] User user)
+        public async Task<IActionResult> Register(User user)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +106,6 @@ namespace SoccerClub.Controllers
             }
             return View(user);
         }
-
         // GET: Users/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {

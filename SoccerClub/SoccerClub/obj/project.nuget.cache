@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o5h8cQgyfNqn0oHU/hMrsX5EuBmtfdwyg8ZqbQemRTPN4fm9IwXQt/gX25Cg2TOPG1rgp5/xcnS4MxUF7mhdBg==",
+  "dgSpecHash": "SjS/+lPByjuk6t/DU0aJXNc2WnmUN0wLKx3uQjk3HoL0R7g5738NAVOWxXM4XD95zcXsZDfsHLobzYUyKojPPA==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\burger_prj\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+  "projectFilePath": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdul123\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\abdul123\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

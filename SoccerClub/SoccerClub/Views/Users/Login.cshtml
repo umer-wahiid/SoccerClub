@@ -2,7 +2,7 @@
 @{
     Layout = null;
 }
-
+@model SoccerClub.Models.User
 <!doctype html>
 <html lang="en">
 <head>
@@ -30,13 +30,17 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 						<h3 class="mb-4 text-center">Have an account?</h3>
-						<form action="#" class="signin-form">
+						<form asp-action="Login" class="signin-form">
+							
+							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Username" required>
+								<input asp-for="Username" type="text" class="form-control" placeholder="Username">
+								<span id="UsernameErr" class="text-danger"></span>
 							</div>
 							<div class="form-group">
-								<input id="password-field" type="password" class="form-control" placeholder="Password" required>
+								<input asp-for="Password" id="password-field" type="password" class="form-control" placeholder="Password" required>
 								<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+								<span id="passwordErr" class="text-danger">abc</span>
 							</div>
 							<div class="form-group">
 								<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
@@ -57,7 +61,7 @@
 						<p class="w-100 text-center"> Don't have an account?</p>
 						<div class="social d-flex text-center">
 							@*<a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Facebook</a>*@
-							<a asp-action="Create" asp-controller="Users" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span> Register </a>
+							<a asp-action="Register" asp-controller="Users" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span> Register </a>
 						</div>
 					</div>
 				</div>

@@ -11183,11 +11183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\burger_prj\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+      "projectUniqueName": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
       "projectName": "SoccerClub",
-      "projectPath": "C:\\xampp\\htdocs\\burger_prj\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+      "projectPath": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
       "packagesPath": "C:\\Users\\abdul123\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\burger_prj\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\",
+      "outputPath": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\abdul123\\AppData\\Roaming\\NuGet\\NuGet.Config",

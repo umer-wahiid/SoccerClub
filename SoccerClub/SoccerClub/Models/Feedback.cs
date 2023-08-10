@@ -6,7 +6,7 @@
 
         public User User { get; set; }
 
-        public int ID { get; set; }
+        public int UserId { get; set; }
 
         public string Feedbacks { get; set; }
     }

@@ -12,6 +12,6 @@ namespace SoccerClub.Models
         public string Password { get; set; }
         [Compare("Password")]
         public string ConfirmPassword{ get; set; }
-       
+        public bool IsAdmin { get;set; }
     }
 }

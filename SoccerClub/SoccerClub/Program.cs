@@ -10,7 +10,11 @@ namespace SoccerClub
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddDbContext<SoccerClubContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("SoccerClubContext") ?? throw new InvalidOperationException("Connection string 'SoccerClubContext' not found.")));
-
+            builder.Services.AddSession(x =>
+            {
+                x.IdleTimeout = TimeSpan.FromMinutes(5);
+                x.Cookie.IsEssential = true;
+            });
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
@@ -24,6 +28,8 @@ namespace SoccerClub
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseSession();
+            app.UseCookiePolicy();
 
             app.UseAuthorization();
 
