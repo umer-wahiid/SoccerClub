@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\console\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj": {}
+    "C:\\Users\\std.LAB\\Downloads\\SoccerClub-main\\SoccerClub-main\\SoccerClub\\SoccerClub\\SoccerClub.csproj": {}
   },
   "projects": {
-    "D:\\console\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj": {
+    "C:\\Users\\std.LAB\\Downloads\\SoccerClub-main\\SoccerClub-main\\SoccerClub\\SoccerClub\\SoccerClub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\console\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+        "projectUniqueName": "C:\\Users\\std.LAB\\Downloads\\SoccerClub-main\\SoccerClub-main\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
         "projectName": "SoccerClub",
-        "projectPath": "D:\\console\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\console\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\",
+        "projectPath": "C:\\Users\\std.LAB\\Downloads\\SoccerClub-main\\SoccerClub-main\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+        "packagesPath": "C:\\Users\\std.LAB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\std.LAB\\Downloads\\SoccerClub-main\\SoccerClub-main\\SoccerClub\\SoccerClub\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\std.LAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

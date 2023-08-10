@@ -10,10 +10,11 @@ namespace SoccerClub.Data
     public class SoccerClubContext : DbContext
     {
         public SoccerClubContext (DbContextOptions<SoccerClubContext> options)
-            : base(options)
-        {
-        }
+            : base(options){}
 
-        public DbSet<SoccerClub.Models.User> User { get; set; } = default!;
+        public DbSet<User> User { get; set; }
+        public DbSet<Team> Teams { get; set; }
+        public DbSet<Match> Matches { get; set; }
+        public DbSet<Player> Players { get; set; }
     }
 }
