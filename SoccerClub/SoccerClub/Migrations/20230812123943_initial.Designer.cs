@@ -12,8 +12,8 @@ using SoccerClub.Data;
 namespace SoccerClub.Migrations
 {
     [DbContext(typeof(SoccerClubContext))]
-    [Migration("20230811224459_Initial")]
-    partial class Initial
+    [Migration("20230812123943_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -156,8 +156,8 @@ namespace SoccerClub.Migrations
 
                     b.Property<string>("PlayerImage")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Position")
                         .IsRequired()
@@ -189,8 +189,8 @@ namespace SoccerClub.Migrations
 
                     b.Property<string>("LogoUrl")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Name")
                         .IsRequired()

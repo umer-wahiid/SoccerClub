@@ -59,17 +59,15 @@ namespace SoccerClub.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MatchId,Date,Time,HomeTeamId,AwayTeamId,Venue,Season,League")] Match match)
+        public async Task<IActionResult> Create(Match match)
         {
-            if (ModelState.IsValid)
-            {
                 _context.Add(match);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+
             ViewData["AwayTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.AwayTeamId);
             ViewData["HomeTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.HomeTeamId);
-            return View(match);
+
         }
 
         // GET: Matches/Edit/5

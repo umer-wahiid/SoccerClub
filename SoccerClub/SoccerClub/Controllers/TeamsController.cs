@@ -25,9 +25,9 @@ namespace SoccerClub.Controllers
         // GET: Teams
         public async Task<IActionResult> Index()
         {
-              return _context.Teams != null ? 
-                          View(await _context.Teams.ToListAsync()) :
-                          Problem("Entity set 'SoccerClubContext.Teams'  is null.");
+            return _context.Teams != null ?
+                        View(await _context.Teams.ToListAsync()) :
+                        Problem("Entity set 'SoccerClubContext.Teams'  is null.");
         }
 
         // GET: Teams/Details/5
@@ -74,14 +74,11 @@ namespace SoccerClub.Controllers
                         await ImageUrl.CopyToAsync(fs);
                     }
                     team.LogoUrl = $"/Images/{fname}";
-                    if (ModelState.IsValid)
-                    {
-                        
+                    
                         _context.Add(team);
                         await _context.SaveChangesAsync();
-                    }
-                    
-                    return RedirectToAction(nameof(Index));
+                        return RedirectToAction("Teams","admin");
+
                 }
                 else
                 {
@@ -174,14 +171,14 @@ namespace SoccerClub.Controllers
             {
                 _context.Teams.Remove(team);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool TeamExists(int id)
         {
-          return (_context.Teams?.Any(e => e.TeamId == id)).GetValueOrDefault();
+            return (_context.Teams?.Any(e => e.TeamId == id)).GetValueOrDefault();
         }
     }
 }

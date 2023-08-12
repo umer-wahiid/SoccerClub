@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y2hnWDth0vzKwXLcrKOdaBlCX44GQlU5ePirs21IbcY=",
+  "Hash": "898ySVZfnmiimUT9lap/VhtpY+pefOjiI/0Mn4WbUcU=",
   "Source": "SoccerClub",
   "BasePath": "_content/SoccerClub",
   "Mode": "Default",
@@ -7478,6 +7478,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\Images\\3.png",
+      "SourceId": "SoccerClub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\",
+      "BasePath": "_content/SoccerClub",
+      "RelativePath": "Images/3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\3.png"
+    },
+    {
+      "Identity": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\Images\\p.jpg",
+      "SourceId": "SoccerClub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\",
+      "BasePath": "_content/SoccerClub",
+      "RelativePath": "Images/p.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\p.jpg"
     },
     {
       "Identity": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\Images\\Picture1.jpg",

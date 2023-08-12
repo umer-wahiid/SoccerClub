@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SoccerClub.Data;
 
 namespace SoccerClub.Controllers
@@ -9,7 +10,7 @@ namespace SoccerClub.Controllers
 
         public adminController(SoccerClubContext soccerClub)
         {
-            this.context = soccerClub;
+            context = soccerClub;
         }
         public IActionResult Index()
         {
@@ -35,9 +36,10 @@ namespace SoccerClub.Controllers
         {
             return View(context.Players.ToList());
         }
-        public IActionResult Matches()
+        public async Task<IActionResult> Matches()
         {
-            return View(context.Matches.ToList());
+            var soccerClubContext = context.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam);
+            return View(await soccerClubContext.ToListAsync());
         }
     }
 }

@@ -13,10 +13,12 @@ namespace SoccerClub.Controllers
     public class PlayersController : Controller
     {
         private readonly SoccerClubContext _context;
+        private readonly IWebHostEnvironment _environment;
 
-        public PlayersController(SoccerClubContext context)
+        public PlayersController(SoccerClubContext context, IWebHostEnvironment environment)
         {
             _context = context;
+            _environment = environment;
         }
 
         // GET: Players
@@ -56,14 +58,31 @@ namespace SoccerClub.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PlayerID,Name,Nationality,Position,PlayerImage,Age,TeamId,DOB")] Player player)
+        //[ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Player player,IFormFile ImageUrl)
         {
-            if (ModelState.IsValid)
+            if (ImageUrl != null)
             {
-                _context.Add(player);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                string ext = Path.GetExtension(ImageUrl.FileName);
+                if (ext == ".jpg" || ext == "gif" || ext == ".png")
+                {
+                    string d = Path.Combine(_environment.WebRootPath, "Images");
+                    var fname = Path.GetFileName(ImageUrl.FileName);
+                    string filePath = Path.Combine(d, fname);
+                    using (var fs = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageUrl.CopyToAsync(fs);
+                    }
+                    player.PlayerImage = $"/Images/{fname}";
+                        _context.Add(player);
+                        await _context.SaveChangesAsync();
+
+                    return RedirectToAction("Players","admin");
+                }
+                else
+                {
+                    ViewBag.m = "Wrong Picture Format";
+                }
             }
             ViewData["TeamId"] = new SelectList(_context.Teams, "TeamId", "Country", player.TeamId);
             return View(player);

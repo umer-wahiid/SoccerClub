@@ -15,8 +15,8 @@ namespace SoccerClub.Models
         [Required(ErrorMessage = "Enter Player's Position(*GoalKepper)")]
         [MaxLength(20, ErrorMessage = "Only 20 Characters are Allowed")]
         public string Position { get; set; }
-        [Required(ErrorMessage = "Select Player's Image")]
-        [MaxLength(15, ErrorMessage = "Only 15 Characters are Allowed")]
+        //[Required(ErrorMessage = "Select Player's Image")]
+        //[MaxLength(100, ErrorMessage = "Only 100 Characters are Allowed")]
         public string PlayerImage { get; set; }
         [Required]
         public int Age { get; set; }

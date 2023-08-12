@@ -29179,7 +29179,8 @@ table.dataTable.no-footer {
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_processing,
 .dataTables_wrapper .dataTables_paginate {
-  color: #89879f; }
+    color: #F22361 !important;
+}
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   color: #89879f !important; }

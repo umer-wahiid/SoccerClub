@@ -12,8 +12,8 @@ namespace SoccerClub.Models
         [MaxLength(15, ErrorMessage = "Only 15 Characters are Allowed")]
         public string Country { get; set; }
 
-        [Required(ErrorMessage = "Enter Teams Logo")]
-        [MaxLength(100, ErrorMessage = "Only 100 Characters are Allowed")]
+        //[Required(ErrorMessage = "Enter Teams Logo")]
+        //[MaxLength(100, ErrorMessage = "Only 100 Characters are Allowed")]
         public string LogoUrl { get; set; }
     }
 }

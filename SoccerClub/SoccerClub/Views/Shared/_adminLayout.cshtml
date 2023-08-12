@@ -1,7 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@{
+	//if (Session.IsAdmin != "No")
+	//{
+	//	RedirectToRoute(new { controller = "Admin", action = "Index" });
+	
+	//}
+}
+
+<!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from motaadmin.dexignlab.com/xhtml/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Aug 2023 09:11:20 GMT -->
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -659,7 +666,7 @@
 						<ul class="metismenu tab-nav-menu">
 							<li class="nav-label">Players</li>
 							<li>
-								<a href="#" aria-expanded="false">
+								<a asp-controller="Players" asp-action="Create" aria-expanded="false">
 									<span class="nav-text">Create New Player</span>
 
 								</a>
