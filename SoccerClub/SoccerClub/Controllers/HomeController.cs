@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SoccerClub.Data;
 using SoccerClub.Models;
 using System.Diagnostics;
 
@@ -7,10 +8,12 @@ namespace SoccerClub.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly SoccerClubContext db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, SoccerClubContext db)
         {
             _logger = logger;
+            this.db = db;
         }
 
         public IActionResult Index()
@@ -57,8 +60,20 @@ namespace SoccerClub.Controllers
         {
             return View();
         }
+        [HttpPost]
+		public IActionResult Contact(ContactUs contactUs)
+		{
+            if(ModelState.IsValid)
+            {
+                db.contactUs.Add(contactUs);
+                db.SaveChanges();
+                ViewBag.Contact = "Your Message Sent Successfully";
+                return RedirectToAction("Contact");
+            }
+			return View(contactUs);
+		}
 
-        public IActionResult Cart()
+		public IActionResult Cart()
         {
             return View();
         }

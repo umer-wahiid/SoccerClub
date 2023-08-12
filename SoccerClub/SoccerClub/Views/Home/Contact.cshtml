@@ -1,4 +1,4 @@
-﻿
+﻿@model SoccerClub.Models.ContactUs
 @{
     ViewData["Title"] = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -46,36 +46,36 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="contact-inner-right">
-                                <form id="form-contact" action="https://html.themability.com/soccer/contact.html?submitted=true" method="post">
+                                <form id="form-contact" asp-action="ContactUs">
                                     <fieldset>
                                         <div class="grp-1">
                                             <div class="grp-in-2">
-                                                <span> Your Name</span>
-                                                <input type="text" name="search" value="" placeholder="Your Name"
+                                                <span> First Name *</span>
+                                                <input asp-for="FirstName" type="text"  value="" placeholder="Your Name"
                                                        class="form-control input-lg ui-autocomplete-input">
                                             </div>
                                             <div class="grp-in-2">
-                                                <span> Last Name</span>
-                                                <input type="text" name="search" value="" placeholder="Last Name"
+                                                <span> Last Name *</span>
+                                                <input asp-for="LastName" type="text"  value="" placeholder="Last Name"
                                                        class="form-control input-lg ui-autocomplete-input" required>
                                             </div>
                                         </div>
 
                                         <div class="grp-1">
                                             <div class="grp-in-2">
-                                                <span>Phone Number</span>
-                                                <input type="number" name="search" value="" placeholder="Phone Number"
+                                                <span>Phone Number *</span>
+                                                <input asp-for="PhoneNumber" type="number"  value="" placeholder="Phone Number"
                                                        class="form-control input-lg ui-autocomplete-input" required>
                                             </div>
                                             <div class="grp-in-2">
-                                                <span>Email</span>
-                                                <input type="email" name="search" value="" placeholder="Email"
+                                                <span>Email *</span>
+                                                <input asp-for="Email" type="email"  value="" placeholder="Email"
                                                        class="form-control input-lg ui-autocomplete-input" required>
                                             </div>
                                         </div>
                                         <div class="grp-3">
-                                            <span>Comment</span>
-                                            <input type="text" name="search" value="" placeholder="Comment"
+                                            <span>Comment *</span>
+                                            <input asp-for="Comment" type="text"  value="" placeholder="Comment"
                                                    class="form-control input-lg ui-autocomplete-input" required>
                                         </div>
                                         <div class="grp-1">

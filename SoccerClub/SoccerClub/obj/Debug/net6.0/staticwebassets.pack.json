@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SoccerClub.bundle.scp.css"
     },
     {
+      "Id": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\Images\\Picture1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Picture1.jpg"
+    },
+    {
       "Id": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_admin\\Edge\\index.html",
       "PackagePath": "staticwebassets\\assets_admin\\Edge\\index.html"
     },

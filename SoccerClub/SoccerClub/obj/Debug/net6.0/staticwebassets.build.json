@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8JmeJPQRn3Y1lRUfgod+t/AE8A7elNNqSvDVgdlcCII=",
+  "Hash": "Y2hnWDth0vzKwXLcrKOdaBlCX44GQlU5ePirs21IbcY=",
   "Source": "SoccerClub",
   "BasePath": "_content/SoccerClub",
   "Mode": "Default",
@@ -7478,6 +7478,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\Images\\Picture1.jpg",
+      "SourceId": "SoccerClub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\",
+      "BasePath": "_content/SoccerClub",
+      "RelativePath": "Images/Picture1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Picture1.jpg"
     }
   ]
 }

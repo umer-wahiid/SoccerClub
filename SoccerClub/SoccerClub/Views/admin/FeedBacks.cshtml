@@ -1,0 +1,73 @@
+﻿@model IEnumerable<SoccerClub.Models.Feedback>
+@{
+	ViewData["Title"] = "FeedfBacks";
+	Layout = "~/Views/Shared/_adminLayout.cshtml";
+	int sno = 1;
+}
+
+<div class="content-body">
+	<div class="container-fluid">
+		<div class="row page-titles mx-0">
+			<div class="col-sm-6 p-md-0">
+				<div class="welcome-text">
+					<h4>Users Feedback List</h4>
+					@*<span>Datatable</span>*@
+				</div>
+			</div>
+			@*            <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+			<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="javascript:void(0)">Table</a></li>
+			<li class="breadcrumb-item active"><a href="javascript:void(0)">Datatable</a></li>
+			</ol>
+			</div>*@
+		</div>
+		<!-- row -->
+
+
+		<div class="row">
+			<div class="col-12">
+				<div class="card">
+					<div class="card-header">
+						<h4 class="card-title">Feedbacks</h4>
+					</div>
+					<div class="card-body">
+						<div class="table-responsive">
+							<table id="example3" class="display" style="min-width: 845px">
+								<thead>
+									<tr>
+										<th>S.No</th>
+										<th>User Name</th>
+										<th>Email</th>
+										<th>Message</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+
+									@foreach (var item in Model)
+									{
+
+										<tr>
+											<td>@sno</td>
+											<td> @Html.DisplayFor(modelItem => item.User.Username)</td>
+											<td> @Html.DisplayFor(modelItem => item.User.Email)</td>
+											<td> @Html.DisplayFor(modelItem => item.Feedbacks)</td>
+											<td>
+												<div class="d-flex">
+													<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
+													<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+												</div>
+											</td>
+										</tr>
+
+										sno++;
+									}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

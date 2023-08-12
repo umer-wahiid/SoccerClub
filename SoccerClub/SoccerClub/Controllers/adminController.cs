@@ -1,68 +1,43 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SoccerClub.Data;
 
 namespace SoccerClub.Controllers
 {
     public class adminController : Controller
     {
+        private readonly SoccerClubContext context;
+
+        public adminController(SoccerClubContext soccerClub)
+        {
+            this.context = soccerClub;
+        }
         public IActionResult Index()
         {
             return View();
         }
         public IActionResult Users()
         {
-            return View();
+            return View(context.User.ToList());
         }
-        public IActionResult FeedfBacks()
+        public IActionResult FeedBacks()
         {
-            return View();
+            return View(context.Feedbacks.ToList());
         }
         public IActionResult Teams()
         {
-            return View();
+            return View(context.Teams.ToList());
         }
-        public IActionResult CreateTeam()
+        public IActionResult Contacts()
         {
-            return View();
-        }
-        public IActionResult TeamDetails()
-        {
-            return View();
+            return View(context.contactUs.ToList());
         }
         public IActionResult Players()
         {
-            return View();
-        }
-        public IActionResult CreatePlayer()
-        {
-            return View();
-        }
-        public IActionResult PlayerDetails()
-        {
-            return View();
+            return View(context.Players.ToList());
         }
         public IActionResult Matches()
         {
-            return View();
-        }
-        public IActionResult CreateMatch()
-        {
-            return View();
-        }
-        public IActionResult MatchDetails()
-        {
-            return View();
-        }
-        public IActionResult Product()
-        {
-            return View();
-        }
-        public IActionResult CreateProduct()
-        {
-            return View();
-        }
-        public IActionResult ProductsDetail()
-        {
-            return View();
+            return View(context.Matches.ToList());
         }
     }
 }

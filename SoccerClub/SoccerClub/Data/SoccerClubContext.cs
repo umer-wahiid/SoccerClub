@@ -16,5 +16,7 @@ namespace SoccerClub.Data
         public DbSet<Team> Teams { get; set; }
         public DbSet<Match> Matches { get; set; }
         public DbSet<Player> Players { get; set; }
+        public DbSet<ContactUs> contactUs { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
     }
 }

@@ -1,0 +1,61 @@
+﻿@model SoccerClub.Models.Match
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Match</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Time)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HomeTeam)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HomeTeam.Country)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AwayTeam)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AwayTeam.Country)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Venue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Venue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Season)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Season)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.League)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.League)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.MatchId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

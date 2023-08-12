@@ -1,0 +1,81 @@
+﻿@model IEnumerable<SoccerClub.Models.Player>
+
+@{
+    ViewData["Title"] = "Matches";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+    int sno = 1;
+}
+<div class="content-body">
+    <div class="container-fluid">
+        <div class="row page-titles mx-0">
+            <div class="col-sm-6 p-md-0">
+                <div class="welcome-text">
+                    <h4>List Of Players</h4>
+                    @*<span>Datatable</span>*@
+                </div>
+            </div>
+        </div>
+        <!-- row -->
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Players</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="example3" class="display" style="min-width: 845px">
+                                <thead>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Name</th>
+                                        <th>Nationality</th>
+                                        <th>Position</th>
+                                        <th>Image</th>
+                                        <th>Age</th>
+                                        <th>Team</th>
+                                        <th>Date Of Birth</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var item in Model)
+                                    {
+
+                                        <tr>
+                                            <td>@sno</td>
+                                            <td> @Html.DisplayFor(modelItem => item.Name)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.Nationality)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.Position)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.PlayerImage)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.Age)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.Team.Name)</td>
+                                            <td> @Html.DisplayFor(modelItem => item.DOB)</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a asp-controller="Players" asp-action="Edit" asp-route-id="@item.PlayerID" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a>
+                                                    <a asp-controller="Players" asp-action="Details" asp-route-id="@item.PlayerID" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                        <i class="fa fa-user"></i>
+                                                    </a>
+
+                                                    <a asp-controller="Players" asp-action="Delete" asp-route-id="@item.PlayerID" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        sno++;
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
