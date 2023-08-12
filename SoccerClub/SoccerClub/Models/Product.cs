@@ -4,7 +4,7 @@ namespace SoccerClub.Models
 {
     public class Product
     {
-        public int Productid { get; set; }
+        public int ProductId { get; set; }
         [Required]
         [StringLength(50)]
         [Display(Name = "Product Name")]

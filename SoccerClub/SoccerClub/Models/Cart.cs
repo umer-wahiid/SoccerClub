@@ -5,7 +5,7 @@ namespace SoccerClub.Models
 {
     public class Cart
     {
-        public int CartsId { get; set; }
+        public int CartId { get; set; }
         [Required]
         public int Price { get; set; }
         [Required]
@@ -15,6 +15,8 @@ namespace SoccerClub.Models
         [Required]
         public int ProductId { get; set; }
         public Product product { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
 
     }
 }
