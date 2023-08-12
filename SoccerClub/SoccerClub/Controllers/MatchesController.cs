@@ -65,8 +65,8 @@ namespace SoccerClub.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
 
-            ViewData["AwayTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.AwayTeamId);
-            ViewData["HomeTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.HomeTeamId);
+            //ViewData["AwayTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.AwayTeamId);
+            //ViewData["HomeTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.HomeTeamId);
 
         }
 
