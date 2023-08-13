@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Home - Soccer World HTML Template - Soccer</title>
+	<title>Soccer Club</title>
 	<meta name="description" content="Stelar">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -117,7 +117,7 @@
 											</a>
 										</div>
 										<div id="cart" class="cart-button">
-											<a asp-controller="Users" asp-action="Login">
+											<a asp-controller="Carts" asp-action="Cart">
 												<button class="btn btn-inverse btn-default btn-block" aria-expanded="true">
 													<i class="fa-solid fa-cart-shopping"></i>
 
@@ -125,17 +125,18 @@
 											</a>
 										</div>
 										<div id="cart" class="cart-button">
-											<a asp-controller="Users" asp-action="Login">
+											<a asp-controller="Users" asp-action="Logout">
 												<button class="btn btn-inverse btn-default btn-block" aria-expanded="true">
 													<i class="fa-solid fa-lock"></i>
 												</button>
 											</a>
 										</div>
+										
 									}
 									else
 									{
 										<div id="cart" class="cart-button">
-											<a asp-controller="Users" asp-action="Logout">
+											<a asp-controller="Users" asp-action="Login">
 												<button class="btn btn-inverse btn-default btn-block" aria-expanded="true">
 													<i class="fa-solid fa-lock"></i>
 												</button>

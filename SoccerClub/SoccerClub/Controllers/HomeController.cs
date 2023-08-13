@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 using SoccerClub.Data;
 using SoccerClub.Models;
 using System.Diagnostics;
+using SoccerClub.API;
 
 namespace SoccerClub.Controllers
 {
@@ -11,12 +14,14 @@ namespace SoccerClub.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly SoccerClubContext db;
+		private readonly IApiHelper _apiHelper;
 
-        public HomeController(ILogger<HomeController> logger, SoccerClubContext db)
+		public HomeController(ILogger<HomeController> logger, SoccerClubContext db, IApiHelper apiHelper)
         {
             _logger = logger;
             this.db = db;
-        }
+			this._apiHelper = apiHelper;
+		}
 
         public IActionResult Index()
         {
@@ -30,8 +35,25 @@ namespace SoccerClub.Controllers
             };
             return View(ViewModel);
         }
+		public async Task<IActionResult> ProductDetail(int? id)
+		{
+			if (id == null || db.Products == null)
+			{
+				return NotFound();
+			}
 
-        public IActionResult Matches()
+			var product = await db.Products
+				.Include(p => p.Category)
+				.FirstOrDefaultAsync(m => m.ProductId == id);
+			if (product == null)
+			{
+				return NotFound();
+			}
+
+			return View(product);
+		}
+
+		public IActionResult Matches()
         {
             var match = db.Matches.Include(m=>m.AwayTeam).Include(m=>m.HomeTeam).
                 ToList();
@@ -58,25 +80,46 @@ namespace SoccerClub.Controllers
 
 			return View(match);
 		}
+		public async Task<IActionResult> Shop()
+		{
+			ViewBag.CategoryId = db.Category.ToList();
+			return View(await db.Products.ToListAsync());
+		}
 
-        public IActionResult Shop()
-        {
-            return View();
-        }
-
-        public IActionResult Schedule()
+		public IActionResult Schedule()
         {
             var match = db.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam).
                 ToList();
             return View(match);
         }
+		public IActionResult Blog()
+		{
+			var jsonContent = _apiHelper.GetRecentUpdates();
+			jsonContent = jsonContent.Replace("\r\n", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
+			var jsonObject = JObject.Parse(jsonContent);
+			var articlesArray = jsonObject["articles"].ToString();
 
-        public IActionResult Blog()
-        {
-            return View();
-        }
+			List<Article> responseList = JsonConvert.DeserializeObject<List<Article>>(articlesArray);
 
-        public IActionResult Players()
+			return View(responseList);
+		}
+		public IActionResult BlogDetails(string url)
+		{
+			var jsonContent = _apiHelper.GetRecentUpdates();
+			var jsonObject = JObject.Parse(jsonContent);
+			var articlesArray = jsonObject["articles"].ToString();
+			List<Article> articles = JsonConvert.DeserializeObject<List<Article>>(articlesArray);
+
+			Article article = articles.FirstOrDefault(a => a.Url == url);
+			if (article != null)
+			{
+				return View(article);
+			}
+			return View();
+
+			// Handle article not found case (e.g., redirect to an error page)
+		}
+		public IActionResult Players()
         {
             return View(db.Players.ToList());
         }
@@ -128,7 +171,7 @@ namespace SoccerClub.Controllers
                 ViewBag.Name = HttpContext.Session.GetString("name");
                 return View();
             }
-            return RedirectToAction("Login", "User");
+            return RedirectToAction("Login", "Users");
         }
 
         [HttpPost]

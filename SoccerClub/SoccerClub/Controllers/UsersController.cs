@@ -56,43 +56,66 @@ namespace SoccerClub.Controllers
         // GET: Users/Create
         public IActionResult Register()
         {
-            return View();
+			if (Session.UserId == 0)
+			{
+				if (Session.IsAdmin == "Yes")
+				{
+
+					return RedirectToAction("Index", "admin");
+				}
+				return RedirectToAction("Index", "Home");
+
+			}
+			return View();
         }
 
         public IActionResult Login()
         {
+            if (Session.UserId != 0)
+			{
+				if (Session.IsAdmin == "Yes")
+				{
+
+					return RedirectToAction("Index", "admin");
+				}
+				return RedirectToAction("Index", "Home");
+               
+            }
             return View();
         }
 
 
-        [HttpPost]
-        public IActionResult Login(User user)
-        {
-            var userByPassword = _context.User.Where(x => x.Username.Equals(user.Username) && x.Password.Equals(user.Password)).FirstOrDefault();
-            if (userByPassword != null)
-            {
-                HttpContext.Session.SetInt32("UserId", userByPassword.UserId);
+		[HttpPost]
+		public IActionResult Login(User user)
+		{
+			if (Session.UserId == 0)
+			{
+				var userByPassword = _context.User.Where(x => x.Username.Equals(user.Username) && x.Password.Equals(user.Password)).FirstOrDefault();
+				if (userByPassword != null)
+				{
+					HttpContext.Session.SetInt32("UserId", userByPassword.UserId);
 
-                if (userByPassword.IsAdmin)
-                {
-                    HttpContext.Session.SetString("IsAdmin", "Yes");
-                    Session.UserId = HttpContext.Session.GetInt32("UserId") ?? 0;
-                    Session.IsAdmin = HttpContext.Session.GetString("IsAdmin") ?? "NO";
-                    return RedirectToAction("Index", "Home");
+					if (userByPassword.IsAdmin)
+					{
+						HttpContext.Session.SetString("IsAdmin", "Yes");
+						Session.UserId = HttpContext.Session.GetInt32("UserId") ?? 0;
+						Session.IsAdmin = HttpContext.Session.GetString("IsAdmin") ?? "NO";
+						return RedirectToAction("Index", "admin");
 
-                }
-                Session.UserId = HttpContext.Session.GetInt32("UserId") ?? 0;
-                HttpContext.Session.SetString("name",userByPassword.FullName);
-                return RedirectToAction("Index", "Home");
+					}
+					Session.UserId = HttpContext.Session.GetInt32("UserId") ?? 0;
+					return RedirectToAction("Index", "Home");
 
 
-            }
+				}
 
-            ViewBag.err = "Incorrect Password or Email";
-            return View(user);
-        }
+				ViewBag.err = "Incorrect Password or Email";
+				return View(user);
+			}
+			return View("Index", "Home");
+		}
 
-        public IActionResult Logout()
+		public IActionResult Logout()
         {
             HttpContext.Session.Clear();
             Session.UserId = 0;
@@ -107,14 +130,18 @@ namespace SoccerClub.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(User user)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Login");
-            }
-            return View(user);
-        }
+			if (Session.UserId == 0)
+			{
+				if (ModelState.IsValid)
+				{
+					_context.Add(user);
+					await _context.SaveChangesAsync();
+					return RedirectToAction("Login");
+				}
+				return View(user);
+			}
+			return View("Index", "Home");
+		}
         // GET: Users/Edit/5
         public async Task<IActionResult> UserEdit(int? id)
         {

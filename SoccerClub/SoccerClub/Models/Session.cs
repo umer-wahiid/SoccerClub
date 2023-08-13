@@ -4,7 +4,7 @@
 	{
 
 		public static int UserId { get; set; }
-		public static string IsAdmin { get; set; }
+		public static string IsAdmin { get; set; } = "NO";
 
     }
 }

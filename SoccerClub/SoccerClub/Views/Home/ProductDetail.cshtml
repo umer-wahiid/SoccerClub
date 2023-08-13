@@ -1,0 +1,102 @@
+﻿@model SoccerClub.Models.Product
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="breadcrumb-main">
+    <div class="container">
+        <div class="breadcrumb-container">
+            <h2 class="page-title">Product</h2>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Product</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<main>
+    <div id="product-info" class="container">
+        <div class="row">
+            <div id="content" class="col">
+                <div class="pro-detail product-content">
+                    <div class="row mb-3">
+                        <div class="col-md-4 product-left">
+                            <div class="thumbnails">
+                                <div class="image magnific-popup pro-image">
+                                    <a href="" class="thumbnail">
+                                        <img src=" @Html.DisplayFor(model => model.ImageUrl)" id="prozoom" title="compressor" alt="compressor"
+                                             class="img-thumbnail mb-3 w-100" data-zoom-image="#">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 product-left">
+                        </div>
+
+                        <div class="col-md-6 pt-lg-5 product-right">
+                            <h1 style="font-size:43px;font-weight:bolder;color:#F22361;">@Html.DisplayFor(model => model.ProductName)</h1>
+
+                            <ul class="list-unstyled pt-lg-5 manufacturer-listpro">
+                                <li>
+                                    <span class="disc">Category :</span>
+                                    <a class="disc1" href="#"> @Html.DisplayFor(model => model.Category.CategoryName)</a>
+                                </li>
+                                <li><span class="disc">Product Name:</span> <span class="disc1"> @Html.DisplayFor(model => model.ProductName)</span></li>
+                                <li><span class="disc">Availability:</span> <span class="disc1">In Stock</span></li>
+                                <li><span class="disc">Description:</span> <span class="disc1">@Html.DisplayFor(model => model.Description)</span></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h2>
+                                        <span class="price-new pro_price">Rs .  @Html.DisplayFor(model => model.Price)</span>
+                                    </h2>
+                                </li>
+                            </ul>
+                            <div id="product" class="product-option">
+                                <form asp-action="AddToCart" asp-controller="Carts"  data-oc-toggle="ajax">
+                                    <div class="mb-3">
+                                        <div class="quantity-addcart">
+                                            <div class="proquantity-detail">
+                                                <label for="input-quantity" class="form-label quantity-label">Qty    .</label>
+                                                <div class="product-btn-quantity border-1">
+                                                    <button class="minus border-1">
+                                                        <i class="fa fa-minus"></i>
+                                                    </button>
+                                                    <input type="text" name="quantity" value="1" size="2" id="input-quantity"
+                                                           class="form-control   border-1">
+                                                    
+                                                    <button class="plus  border-1">
+                                                        <i class="fa fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div id="error-quantity" class="form-text"></div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-group pro-buttons mb-3">
+                                        <input type="hidden" asp-for="ProductId" value="@Model.ProductId" />
+                                        <button type="submit" class="btn pro-compare" title="Add To Cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span class="d-lg-inline-block d-none">Add To Cart</span>
+                                        </button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1818,3 +1818,4 @@ D:\SoccerClub\SoccerClub\SoccerClub\SoccerClub\obj\Debug\net6.0\refint\SoccerClu
 D:\SoccerClub\SoccerClub\SoccerClub\SoccerClub\obj\Debug\net6.0\SoccerClub.pdb
 D:\SoccerClub\SoccerClub\SoccerClub\SoccerClub\obj\Debug\net6.0\SoccerClub.genruntimeconfig.cache
 D:\SoccerClub\SoccerClub\SoccerClub\SoccerClub\obj\Debug\net6.0\ref\SoccerClub.dll
+D:\SoccerClub\SoccerClub\SoccerClub\SoccerClub\bin\Debug\net6.0\RestSharp.dll

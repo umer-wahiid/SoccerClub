@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SoccerClub.Data;
+using SoccerClub.Models;
 
 namespace SoccerClub.Controllers
 {
@@ -12,33 +13,62 @@ namespace SoccerClub.Controllers
         {
             context = soccerClub;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
-        }
+			if (Session.IsAdmin == "NO")
+			{
+				return RedirectToAction("Index", "Home");
+			}
+			var soccerClubContext = context.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam);
+			return View(await soccerClubContext.ToListAsync());
+		}
         public IActionResult Users()
-        {
-            return View(context.User.ToList());
+		{
+			if (Session.IsAdmin == "NO")
+			{
+				return RedirectToAction("Index", "Home");
+			}
+			return View(context.User.ToList());
         }
         public IActionResult FeedBacks()
-        {
-            return View(context.Feedbacks.ToList());
+		{
+			if (Session.IsAdmin == "NO")
+			{
+				return RedirectToAction("Index", "Home");
+			}
+			return View(context.Feedbacks.ToList());
         }
         public IActionResult Teams()
-        {
-            return View(context.Teams.ToList());
+		{
+			if (Session.IsAdmin == "NO")
+			{
+				return RedirectToAction("Index", "Home");
+			}
+			return View(context.Teams.ToList());
         }
         public IActionResult Contacts()
-        {
-            return View(context.contactUs.ToList());
+		{
+			if (Session.IsAdmin == "NO")
+			{
+				return RedirectToAction("Index", "Home");
+			}
+			return View(context.contactUs.ToList());
         }
         public IActionResult Players()
-        {
-            return View(context.Players.ToList());
+		{
+			if (Session.IsAdmin == "NO")
+			{
+				return RedirectToAction("Index", "Home");
+			}
+			return View(context.Players.ToList());
         }
         public async Task<IActionResult> Matches()
-        {
-            var soccerClubContext = context.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam);
+		{
+			if (Session.IsAdmin == "NO")
+			{
+				return RedirectToAction("Index", "Home");
+			}
+			var soccerClubContext = context.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam);
             return View(await soccerClubContext.ToListAsync());
         }
     }
