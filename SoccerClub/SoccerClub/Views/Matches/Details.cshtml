@@ -4,13 +4,25 @@
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_adminLayout.cshtml";
 }
+<div class="content-body">
+    <div class="container-fluid">
+        <div class="row page-titles mx-0">
+            <div class="col-sm-6 p-md-0">
+                <div class="welcome-text">
+                    <h4>Details Of Match</h4>
+                </div>
+            </div>
+        </div>
 
-<h1>Details</h1>
 
-<div>
-    <h4>Match</h4>
-    <hr />
-    <dl class="row">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Match</h4>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Date)
         </dt>
@@ -55,7 +67,8 @@
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.MatchId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+</div>
+</div>
+</div>
+</div>
 </div>

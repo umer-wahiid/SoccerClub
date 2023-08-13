@@ -110,32 +110,35 @@ namespace SoccerClub.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PlayerID,Name,Nationality,Position,PlayerImage,Age,TeamId,DOB")] Player player)
+        public async Task<IActionResult> Edit(int id, Player player, IFormFile ImageUrl)
         {
             if (id != player.PlayerID)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (ImageUrl != null)
             {
-                try
+                string ext = Path.GetExtension(ImageUrl.FileName);
+                if (ext == ".jpg" || ext == "gif" || ext == ".png")
                 {
+                    string d = Path.Combine(_environment.WebRootPath, "Images");
+                    var fname = Path.GetFileName(ImageUrl.FileName);
+                    string filePath = Path.Combine(d, fname);
+                    using (var fs = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageUrl.CopyToAsync(fs);
+                    }
+                    player.PlayerImage = $"/Images/{fname}";
                     _context.Update(player);
                     await _context.SaveChangesAsync();
+
+                    return RedirectToAction("Players", "admin");
                 }
-                catch (DbUpdateConcurrencyException)
+                else
                 {
-                    if (!PlayerExists(player.PlayerID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    ViewBag.m = "Wrong Picture Format";
                 }
-                return RedirectToAction(nameof(Index));
             }
             ViewData["TeamId"] = new SelectList(_context.Teams, "TeamId", "Country", player.TeamId);
             return View(player);

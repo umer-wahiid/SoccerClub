@@ -35,7 +35,7 @@ namespace SoccerClub
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=admin}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
         }

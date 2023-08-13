@@ -1,0 +1,53 @@
+﻿@model SoccerClub.Models.User
+
+@{
+    ViewData["Title"] = "UserDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<main>
+    <div class="common-home">
+        <div id="content" class="col">
+            <div class="category-featured mt-50  wow fadeInUp">
+<div style="padding:60px;">
+                    <h4 style="font-weight:bolder;">@Html.DisplayFor(model => model.FullName)</h4>
+    <hr />
+
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            Phone Number
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNo)
+        </dd>
+    </dl>
+    <div id="cart" class="cart-button">
+        <a asp-action="UserEdit" asp-route-id="@Model?.UserId">
+            <button class="btn btn-inverse btn-default btn-block" aria-expanded="true">
+                Edit Info
+            </button>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</main>
+

@@ -1,0 +1,59 @@
+﻿@model SoccerClub.Models.User
+
+@{
+    ViewData["Title"] = "UserEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main>
+    <div class="common-home">
+        <div id="content" class="col">
+            <div class="category-featured mt-50  wow fadeInUp">
+                <div style="padding:60px;">
+                    <h4 style="font-weight:bolder;">Edit Profile</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UserEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UserId" />
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                                    <input asp-for="Username" type="text" style="color:white;background-color:#434242" placeholder="Your Username" class="form-control input-lg ui-autocomplete-input">
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                                    <input asp-for="FullName" type="text" style="color:white;background-color:#434242" placeholder="Your Username" class="form-control input-lg ui-autocomplete-input">
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                                    <input asp-for="Email" placeholder="Your Email" style="color:white;background-color:#434242" class="form-control input-lg ui-autocomplete-input">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNo" class="control-label"></label>
+                                    <input asp-for="PhoneNo" placeholder="Phone Number" style="color:white;background-color:#434242" class="form-control input-lg ui-autocomplete-input">
+                <span asp-validation-for="PhoneNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                                    <input asp-for="Password" type="password" style="color:white;background-color:#434242" class="form-control input-lg ui-autocomplete-input">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="control-label"></label>
+                                    <input asp-for="ConfirmPassword" type="password" style="color:white;background-color:#434242" class="form-control input-lg ui-autocomplete-input">
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+                                <div id="cart" class="cart-button">
+                                    <input type="submit" value="Save" class="btn btn-inverse btn-default btn-block" />
+            </div>
+        </form>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+</main>

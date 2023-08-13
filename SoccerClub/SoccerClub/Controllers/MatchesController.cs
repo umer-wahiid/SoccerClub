@@ -63,10 +63,10 @@ namespace SoccerClub.Controllers
         {
                 _context.Add(match);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Matches","admin");
 
-            //ViewData["AwayTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.AwayTeamId);
-            //ViewData["HomeTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.HomeTeamId);
+            ViewData["AwayTeamId"] = new SelectList(_context.Teams, "TeamId", "Name", match.AwayTeamId);
+            ViewData["HomeTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.HomeTeamId);
 
         }
 
@@ -83,8 +83,8 @@ namespace SoccerClub.Controllers
             {
                 return NotFound();
             }
-            ViewData["AwayTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.AwayTeamId);
-            ViewData["HomeTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.HomeTeamId);
+            ViewData["AwayTeamId"] = new SelectList(_context.Teams, "TeamId", "Name", match.AwayTeamId);
+            ViewData["HomeTeamId"] = new SelectList(_context.Teams, "TeamId", "Name", match.HomeTeamId);
             return View(match);
         }
 
@@ -92,37 +92,17 @@ namespace SoccerClub.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MatchId,Date,Time,HomeTeamId,AwayTeamId,Venue,Season,League")] Match match)
+        //[ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, Match match)
         {
             if (id != match.MatchId)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
                     _context.Update(match);
                     await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!MatchExists(match.MatchId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["AwayTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.AwayTeamId);
-            ViewData["HomeTeamId"] = new SelectList(_context.Teams, "TeamId", "Country", match.HomeTeamId);
-            return View(match);
+                return RedirectToAction("Matches","admin");
         }
 
         // GET: Matches/Delete/5

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model SoccerClub.Models.IndexVM
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -30,170 +31,53 @@
                             </h3>
                             <span class="page-title-right"></span>
                         </div>
-                        <div class="upcoming-section">
-                            <div class="row">
-                                <div class="col-sm-3 upcoming-game">
-                                    <article class="game-result">
-                                        <div class="game-info game-info-creative text-center">
-                                            <h6 class="game-info-title">
-                                                National Olympic
-                                            </h6>
-                                            <time class="time-big" datetime="2025-04-17">
-                                                <span class="heading-3">June 14,</span> 2023
-                                            </time>
-                                            <div>
-                                                <div class="game-info-main">
-                                                    <div class="game-info-team game-info-team-first">
-                                                        <div class="game-info-logo">
-                                                            <figure>
-                                                                <a href="#">
-                                                                    <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="match">
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            <p>Istanbul</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="game-info-team game-info-team-second">
-                                                        <div class="game-info-logo">
-                                                            <figure>
-                                                                <a href="#">
-                                                                    <img src="~/assets_web/images/team_logo/clubber-langs.png" alt="match">
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            <p>Italy</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-3 upcoming-game">
-                                    <article class="game-result">
-                                        <div class="game-info game-info-creative text-center">
-                                            <h6 class="game-info-title">
-                                                National Olympic
-                                            </h6>
-                                            <time class="time-big" datetime="2025-04-17">
-                                                <span class="heading-3">June 22,</span> 2023
-                                            </time>
-                                            <div>
-                                                <div class="game-info-main">
-                                                    <div class="game-info-team game-info-team-first">
-                                                        <div class="game-info-logo">
-                                                            <figure>
-                                                                <a href="#">
-                                                                    <img src="~/assets_web/images/team_logo/fumble-this.png" alt="match">
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            <p>Istanbul</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="game-info-team game-info-team-second">
-                                                        <div class="game-info-logo">
-                                                            <figure>
-                                                                <a href="#">
-                                                                    <img src="~/assets_web/images/team_logo/cougars.png" alt="match">
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            <p>Italy</p>
+                            <div class="upcoming-section">
+                                <div class="row">
+                                    @foreach (var item in Model.match)
+                                    {
+                                        <div class="col-sm-3 upcoming-game">
+                                            <article class="game-result">
+                                                <div class="game-info game-info-creative text-center">
+                                                    <h6 class="game-info-title">
+                                                        @item.League
+                                                    </h6>
+                                                    <time class="time-big" datetime="2025-04-17">
+                                                    <span class="heading-3">@item.Date.ToShortDateString()</span>
+                                                </time>
+                                                    <div>
+                                                        <div class="game-info-main">
+                                                            <div class="game-info-team game-info-team-first">
+                                                                <div class="game-info-logo">
+                                                                    <figure>
+                                                                        <a href="#">
+                                                                            <img src="@item.HomeTeam.LogoUrl" alt="match">
+                                                                        </a>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="team-name">
+                                                                    <p>@item.HomeTeam.Name</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="game-info-team game-info-team-second">
+                                                                <div class="game-info-logo">
+                                                                    <figure>
+                                                                        <a href="#">
+                                                                            <img src="@item.AwayTeam.LogoUrl" alt="match">
+                                                                        </a>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="team-name">
+                                                                    <p>@item.HomeTeam.Name</p>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </article>
                                         </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-3 upcoming-game">
-                                    <article class="game-result">
-                                        <div class="game-info game-info-creative text-center">
-                                            <h6 class="game-info-title">
-                                                National Olympic
-                                            </h6>
-                                            <time class="time-big" datetime="2025-04-17">
-                                                <span class="heading-3">July 13,</span> 2023
-                                            </time>
-                                            <div>
-                                                <div class="game-info-main">
-                                                    <div class="game-info-team game-info-team-first">
-                                                        <div class="game-info-logo">
-                                                            <figure>
-                                                                <a href="#">
-                                                                    <img src="~/assets_web/images/team_logo/Junior-Mints.png" alt="match">
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            <p>Istanbul</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="game-info-team game-info-team-second">
-                                                        <div class="game-info-logo">
-                                                            <figure>
-                                                                <a href="#">
-                                                                    <img src="~/assets_web/images/team_logo/clubber-langs.png" alt="match">
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            <p>Italy</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-3 upcoming-game">
-                                    <article class="game-result">
-                                        <div class="game-info game-info-creative text-center">
-                                            <h6 class="game-info-title">
-                                                National Olympic
-                                            </h6>
-                                            <time class="time-big" datetime="2025-04-17">
-                                                <span class="heading-3">July 21,</span> 2023
-                                            </time>
-                                            <div>
-                                                <div class="game-info-main">
-                                                    <div class="game-info-team game-info-team-first">
-                                                        <div class="game-info-logo">
-                                                            <figure>
-                                                                <a href="#">
-                                                                    <img src="~/assets_web/images/team_logo/clubber-langs.png" alt="match">
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            <p>Istanbul</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="game-info-team game-info-team-second">
-                                                        <div class="game-info-logo">
-                                                            <figure>
-                                                                <a href="#">
-                                                                    <img src="~/assets_web/images/team_logo/fumble-this.png" alt="match">
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                        <div class="team-name">
-                                                            <p>Italy</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    }
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -209,63 +93,8 @@
                             <span class="page-title-right"></span>
                         </div>
                         <div class="row" id="schedule_table">
-                            <div class="col-md-4 ">
-                                <div class="tab-1 table-responsive">
-                                    <table class="table1">
-                                        <tr>
-                                            <td class="table_heading" colspan="4">Series 1</td>
-                                        </tr>
-                                        <tr class="tab_head">
-                                            <th>club</th>
-                                            <th>w</th>
-                                            <th>d</th>
-                                            <th>l</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Fuzzy FZ</td>
-                                            <td>13</td>
-                                            <td>01</td>
-                                            <td>61</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lyrical LC</td>
-                                            <td>12</td>
-                                            <td>20</td>
-                                            <td>61</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Kings KG</td>
-                                            <td>25</td>
-                                            <td>36</td>
-                                            <td>61</td>
-                                        </tr>
-                                        <tr>
-                                            <td>France FC</td>
-                                            <td>30</td>
-                                            <td>40</td>
-                                            <td>62</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Kings KG</td>
-                                            <td>36</td>
-                                            <td>42</td>
-                                            <td>62</td>
-                                        </tr>
-                                        <tr>
-                                            <td>France FC</td>
-                                            <td>42</td>
-                                            <td>52</td>
-                                            <td>62</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4">
-                                                Showing 1 to 5 of 5 Entries
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
+
+                            <div class="col-md-12">
                                 <div class="tab-2 table-responsive">
                                     <table class="table2">
                                         <tr>
@@ -277,47 +106,14 @@
                                             <th>TIME</th>
                                             <th>VENUE</th>
                                         </tr>
+                                        @foreach(var item in Model.matches){
                                         <tr>
-                                            <td>May 11 ,2023</td>
-                                            <td>Royal RL vs LC</td>
-                                            <td>14:00</td>
-                                            <td>GST Stadium</td>
+                                            <td>@item.Date.ToShortDateString()</td>
+                                                <td>@item.HomeTeam.Name vs @item.AwayTeam.Name</td>
+                                                <td>@item.Date.ToShortTimeString()</td>
+                                                <td>@item.Venue</td>
                                         </tr>
-                                        <tr>
-                                            <td>May 12 ,2023</td>
-                                            <td>Kings KG vs RL</td>
-                                            <td>15:00</td>
-                                            <td>GST Stadium</td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 13 ,2023</td>
-                                            <td>Kings KG vs KG</td>
-                                            <td>18:00</td>
-                                            <td>GST Stadium</td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 14,2023</td>
-                                            <td>Lyrical LC vs CD</td>
-                                            <td>11:00</td>
-                                            <td>GST Stadium</td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 11 ,2023</td>
-                                            <td>Kings KG VS LC</td>
-                                            <td>12:00</td>
-                                            <td>GST Stadium</td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 11 ,2023</td>
-                                            <td>Fzzy FZ vs KG</td>
-                                            <td>18:00</td>
-                                            <td>GST Stadium</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4">
-                                                Showing 1 to 5 of 5 Entries
-                                            </td>
-                                        </tr>
+                                        }
                                     </table>
                                 </div>
                             </div>
@@ -341,234 +137,65 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-featured-tab" data-bs-toggle="pill" data-bs-target="#pills-featured" type="button" role="tab" aria-controls="pills-featured" aria-selected="true">Latest</button>
                                 </li>
-                                <li class="nav-item" role="presentation">
+                           @*     <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="pills-bestseller-tab" data-bs-toggle="pill" data-bs-target="#pills-bestseller" type="button" role="tab" aria-controls="pills-bestseller" aria-selected="false">Bestseller</button>
-                                </li>
+                                </li>*@
                             </ul>
                         </div>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="row">
                                 <div class="tab-pane fade show active" id="pills-featured" role="tabpanel" aria-labelledby="pills-featured-tab">
                                     <div class="owl-carousel products-carousel">
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product1.png" alt="match">
-                                                                    </a>
-                                                                </figure>
+                                        @foreach (var item in Model.product)
+                                        {
+
+                                            <div class="item">
+                                                <div class="col col-xs-12 single-column">
+                                                    <div class="team_store">
+                                                        <div class="store_right">
+                                                            <div class="game-info-logo">
+                                                                <div class="store-img">
+                                                                    <figure>
+                                                                        <a href="product.html">
+                                                                            <img src="@item.ImageUrl" alt="match">
+                                                                        </a>
+                                                                    </figure>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">T-shirt</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
-                                                                        Soccer Jersey
+                                                        <div class="store_left">
+                                                            <div class="title-rating">
+                                                                <div class="product-title">
+                                                                    <a href="#">@item.ProductName</a>
+                                                                </div>
+                                                                <div class="store-button-group">
+                                                                    <button class="addcart" asp-action="ProductDetail" asp-controller="Home" asp-route-id="@item.ProductId" title="Add to Cart">
+                                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                                        <span class="d-none">Add to Cart</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="product-caption">
+                                                                    <a href="product.html">
+                                                                        <div class="product-name">
+                                                                            @item.ProductName
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="product-price">
+                                                                        Rs. @item.Price
                                                                     </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    $45.00
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product2.png" alt="match">
-                                                                    </a>
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">Footwear</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
-                                                                        Shoes
-                                                                    </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    $40.00
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product3.png" alt="match">
-                                                                    </a>
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">Hand Accessories</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
-                                                                        Gloves
-                                                                    </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    $20.00
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product4.png" alt="match">
-                                                                    </a>
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">Game Accessories</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
-                                                                        Ball
-                                                                    </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    $25.00
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product5.png" alt="match">
-                                                                    </a>
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">Playground Accessories</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
-                                                                        Grass
-                                                                    </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    $70.00
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        }
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="pills-bestseller" role="tabpanel" aria-labelledby="pills-bestseller-tab">
                                     <div class="owl-carousel products-carousel">
+                                        @foreach(var item in Model.product){
+
                                         <div class="item">
                                             <div class="col col-xs-12 single-column">
                                                 <div class="team_store">
@@ -577,7 +204,7 @@
                                                             <div class="store-img">
                                                                 <figure>
                                                                     <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product6.png" alt="match">
+                                                                        <img src="@item.ImageUrl" alt="match">
                                                                     </a>
                                                                 </figure>
                                                             </div>
@@ -586,13 +213,10 @@
                                                     <div class="store_left">
                                                         <div class="title-rating">
                                                             <div class="product-title">
-                                                                <a href="#">Gadget</a>
+                                                                <a href="#">@item.ProductName</a>
                                                             </div>
                                                             <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
+                                                                <button class="addcart" asp-action="ProductDetail" asp-controller="Home" asp-route-id="@item.ProductId" title="Add to Cart">
                                                                     <i class="fa-solid fa-cart-shopping"></i>
                                                                     <span class="d-none">Add to Cart</span>
                                                                 </button>
@@ -600,11 +224,11 @@
                                                             <div class="product-caption">
                                                                 <a href="product.html">
                                                                     <div class="product-name">
-                                                                        Stop Watch
+                                                                            @item.ProductName
                                                                     </div>
                                                                 </a>
                                                                 <div class="product-price">
-                                                                    $35.00
+                                                                    Rs. @item.Price
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -612,178 +236,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product7.png" alt="match">
-                                                                    </a>
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">Game Accessories</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
-                                                                        Trophy
-                                                                    </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    $80.00
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product8.png" alt="match">
-                                                                    </a>
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">Game Accessories</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
-                                                                        Whistle
-                                                                    </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    $10.00
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product9.png" alt="match">
-                                                                    </a>
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">Footwear</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
-                                                                        Shoes
-                                                                    </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    $40.00
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="~/assets_web/images/team_store/product12.png" alt="match">
-                                                                    </a>
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">Playground Accessories</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="wishlist" type="submit" title="Add to wishlist">
-                                                                    <i class="fa-solid fa-heart"></i>
-                                                                </button>
-                                                                <button class="addcart" type="submit" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
-                                                                        Net
-                                                                    </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    $75.00
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        }
+
+
                                     </div>
                                 </div>
                             </div>
@@ -1178,71 +633,21 @@
                                 <span class="page-title-right"></span>
                             </div>
                             <div class="owl-carousel players-carousel">
+                                @foreach(var item in Model.player){
                                 <div class="item">
                                     <div class="player-up">
                                         <a href="players-details.html">
-                                            <img src="~/assets_web/images/playes/player4.png" alt="">
+                                            <img src="@item.PlayerImage" alt="">
                                         </a>
                                     </div>
                                     <div class="player-bottom">
                                         <a href="players-details.html">
-                                            <p class="player-name1">Lionel Messi</p>
+                                                <p class="player-name1">@item.Name</p>
                                         </a>
-                                        <p class="player-name2"> GOALKEEPER</p>
+                                            <p class="player-name2" style="text-transform:capitalize;"> @item.Position</p>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="player-up">
-                                        <a href="players-details.html">
-                                            <img src="~/assets_web/images/playes/player2.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="player-bottom">
-                                        <a href="players-details.html">
-                                            <p class="player-name1">Andres Iniesta</p>
-                                        </a>
-                                        <p class="player-name2"> FORWARD</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="player-up">
-                                        <a href="players-details.html">
-                                            <img src="~/assets_web/images/playes/player3.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="player-bottom">
-                                        <a href="players-details.html">
-                                            <p class="player-name1">Radamel Falcao</p>
-                                        </a>
-                                        <p class="player-name2"> FORWARD</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="player-up">
-                                        <a href="players-details.html">
-                                            <img src="~/assets_web/images/playes/player1.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="player-bottom">
-                                        <a href="players-details.html">
-                                            <p class="player-name1">Andrea Pirlo</p>
-                                        </a>
-                                        <p class="player-name2"> DEFENDER</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="player-up">
-                                        <a href="players-details.html">
-                                            <img src="~/assets_web/images/playes/player4.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="player-bottom">
-                                        <a href="players-details.html">
-                                            <p class="player-name1">Edinson Cavani</p>
-                                        </a>
-                                        <p class="player-name2"> DEFENDER</p>
-                                    </div>
-                                </div>
+                                }
                             </div>
                         </div>
                     </div>
@@ -1336,45 +741,6 @@
                 <!-- news latter -->
                 <div class="news mt-50 wow fadeInUp">
                     <div class="container">
-                        <div class="news-inner">
-                            <div class="themabilitynewsletterblock">
-                                <div class="themability-newsletter-form block-content box-content">
-                                    <div class="page-title toggled d-none">
-                                        <h3>Newsletter</h3>
-                                    </div>
-                                    <div class="block_box">
-                                        <div class="news-info">
-                                            <div class="row">
-                                                <div class="col-xl-6">
-                                                    <div class="newsletter_description_outer d-flex align-items-center">
-                                                        <div class="icon-emails">
-                                                            <i class="fa-solid fa-envelope"></i>
-                                                        </div>
-                                                        <div class="news-desc">
-                                                            <div class="title-text">
-                                                                <h3>Newsletter</h3>
-                                                                <h3 class="d-none">Get Discount 30% Off</h3>
-                                                            </div>
-                                                            <div class="news-description">Get free 20% discount for all product on your first order.</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-6 d-flex align-items-center news-right">
-                                                    <div class="newsletter_form">
-                                                        <form action="#" method="post" id="form_themability_newsletter" data-oc-toggle="ajax">
-                                                            <div class="subscribe-form">
-                                                                <input type="email" name="themability_newsletter_usr_email" id="themability_newsletter_usr_email" placeholder="Enter Your E-mail.." class="form-control input-lg inputNew txtemail">
-                                                                <button type="submit" data-bs-toggle="tooltip" title="" class="subscribe-btn btn-default">Subscribe</button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

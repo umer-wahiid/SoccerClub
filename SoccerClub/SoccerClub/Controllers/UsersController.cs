@@ -44,6 +44,14 @@ namespace SoccerClub.Controllers
 
             return View(user);
         }
+        // GET: Users/Details/5
+        public async Task<IActionResult> UserDetails(int? id)
+        {
+            var user = await _context.User
+                .FirstOrDefaultAsync(m => m.UserId == id);
+
+            return View(user);
+        }
 
         // GET: Users/Create
         public IActionResult Register()
@@ -74,6 +82,7 @@ namespace SoccerClub.Controllers
 
                 }
                 Session.UserId = HttpContext.Session.GetInt32("UserId") ?? 0;
+                HttpContext.Session.SetString("name",userByPassword.FullName);
                 return RedirectToAction("Index", "Home");
 
 
@@ -103,6 +112,21 @@ namespace SoccerClub.Controllers
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Login");
+            }
+            return View(user);
+        }
+        // GET: Users/Edit/5
+        public async Task<IActionResult> UserEdit(int? id)
+        {
+            if (id == null || _context.User == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _context.User.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
             }
             return View(user);
         }
@@ -153,6 +177,38 @@ namespace SoccerClub.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
+            }
+            return View(user);
+        }
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UserEdit(int id, [Bind("UserId,Username,Email,Password,ConfirmPassword,PhoneNo,FullName")] User user)
+        {
+            if (id != user.UserId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(user);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!UserExists(user.UserId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index","Home");
             }
             return View(user);
         }

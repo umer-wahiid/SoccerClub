@@ -1,4 +1,5 @@
-﻿
+﻿@model SoccerClub.Models.Match
+
 @{
     ViewData["Title"] = "MatchesDetail";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -31,12 +32,52 @@
                         <div class="row match-details-section1">
                             <div class="col-sm-6 about-left">
                                 <h2>About Match Details</h2>
-                                <p>
+                                @*<p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
                                     an unknown printer took a galley of type and scrambled it to make a type specimen
                                     book.
-                                </p>
+                                </p>*@
+                                <div class="card-body">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.Date)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Model.Date.ToShortDateString()
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.HomeTeam)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.HomeTeam.Name)
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.AwayTeam)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.AwayTeam.Name)
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.Venue)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.Venue)
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.Season)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.Season)
+                                        </dd>
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.League)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayFor(model => model.League)
+                                        </dd>
+                                    </dl>
+                                </div>
                                 <button class="btn-default">Buy Tickets</button>
                             </div>
                             <div class="col-sm-6 about-right">
@@ -48,24 +89,24 @@
                                                     <div class="game-info-logo">
                                                         <figure>
                                                             <a href="#">
-                                                                <img src="~/assets_web/images/team_logo/brash-thugs.png" alt="match">
+                                                                <img src="@Model.HomeTeam.LogoUrl" alt="match">
                                                             </a>
                                                         </figure>
                                                     </div>
                                                     <div class="team-name">
-                                                        <h6>Istanbul</h6>
+                                                        <h6>@Model.HomeTeam.Name</h6>
                                                     </div>
                                                 </div>
                                                 <div class="game-info-team game-info-team-second">
                                                     <div class="game-info-logo">
                                                         <figure>
                                                             <a href="#">
-                                                                <img src="~/assets_web/images/team_logo/clubber-langs.png" alt="match">
+                                                                <img src="@Model.AwayTeam.LogoUrl" alt="match">
                                                             </a>
                                                         </figure>
                                                     </div>
                                                     <div class="team-name">
-                                                        <h6>Italy</h6>
+                                                        <h6>@Model.AwayTeam.Name</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -74,346 +115,8 @@
                                 </article>
                             </div>
                         </div>
-                        <div class="row" id="schedule_table">
-                            <div class="col-md-12">
-                                <div class="tab-2 table-responsive">
-                                    <table class="table2">
-                                        <tr class="tab_head-schedule ">
-                                            <th>Date</th>
-                                            <th>Time</th>
-                                            <th>League</th>
-                                            <th>Seauson</th>
-                                            <th>Full Time</th>
-                                        </tr>
-                                        <tr>
-                                            <td>May 11 ,2023</td>
-                                            <td>12:00</td>
-                                            <td>FC League</td>
-                                            <td>2023</td>
-                                            <td>90</td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 14 ,2023</td>
-                                            <td>16:00</td>
-                                            <td>FC League</td>
-                                            <td>2023</td>
-                                            <td>90</td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 15 ,2023</td>
-                                            <td>17:00</td>
-                                            <td>FC League</td>
-                                            <td>2023</td>
-                                            <td>90</td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 11 ,2023</td>
-                                            <td>19:00</td>
-                                            <td>FC League</td>
-                                            <td>2023</td>
-                                            <td>90</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!--  -->
-                        <div class="row match-details-section3">
-                            <div class="col-sm-6 inner-details">
-                                <div class="head-1">France FC</div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">01</div>
-                                        </div>
-                                        <div class="name">
-                                            Lionel Messi
-                                            <p>Goalkeeper</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/Goalkeeper.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">02</div>
-                                        </div>
-                                        <div class="name">
-                                            Andres Iniesta
-                                            <p>Forward</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">03</div>
-                                        </div>
-                                        <div class="name">
-                                            Radamel Falcao
-                                            <p>Forward</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">04</div>
-                                        </div>
-                                        <div class="name">
-                                            Andrea Pirlo
-                                            <p>Midfielder</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">05</div>
-                                        </div>
-                                        <div class="name">
-                                            Yaya Toure
-                                            <p>Defender</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">06</div>
-                                        </div>
-                                        <div class="name">
-                                            Edinson Cavani
-                                            <p>Defender</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">07</div>
-                                        </div>
-                                        <div class="name">
-                                            David Silva
-                                            <p>Forward</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--  -->
-                            <div class="col-sm-6 inner-details">
-                                <div class="head-1">Italy</div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">01</div>
-                                        </div>
-                                        <div class="name">
-                                            Bastian Schweinsteiger
-                                            <p>Goalkeeper</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/Goalkeeper.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">02</div>
-                                        </div>
-                                        <div class="name">
-                                            Neymar
-                                            <p>Forward</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">03</div>
-                                        </div>
-                                        <div class="name">
-                                            Luis Suarez
-                                            <p>Forward</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">04</div>
-                                        </div>
-                                        <div class="name">
-                                            Vincent Kompany
-                                            <p>Forward</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">05</div>
-                                        </div>
-                                        <div class="name">
-                                            Gerard Pique
-                                            <p>Forward</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">06</div>
-                                        </div>
-                                        <div class="name">
-                                            Marco Reus
-                                            <p>Forward</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">07</div>
-                                        </div>
-                                        <div class="name">
-                                            Manuel Neuer
-                                            <p>Midfielder</p>
-                                        </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="~/assets_web/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <!-- news -->
                         <div class="news mt-50 wow fadeInUp">
-                            <div class="news-inner">
-                                <div class="themabilitynewsletterblock">
-                                    <div class="themability-newsletter-form block-content box-content">
-                                        <div class="page-title toggled d-none">
-                                            <h3>Newsletter</h3>
-                                        </div>
-                                        <div class="block_box">
-                                            <div class="news-info">
-                                                <div class="row">
-                                                    <div class="col-xl-6">
-                                                        <div class="newsletter_description_outer d-flex align-items-center">
-                                                            <div class="icon-emails">
-                                                                <i class="fa-solid fa-envelope"></i>
-                                                            </div>
-                                                            <div class="news-desc">
-                                                                <div class="title-text">
-                                                                    <h3>Newsletter</h3>
-                                                                    <h3 class="d-none">Get Discount 30% Off</h3>
-                                                                </div>
-                                                                <div class="news-description">
-                                                                    Get free 20% discount for all product on your first
-                                                                    order.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 d-flex align-items-center news-right">
-                                                        <div class="newsletter_form">
-                                                            <form action="#" method="post" id="form_themability_newsletter" data-oc-toggle="ajax">
-                                                                <div class="subscribe-form">
-                                                                    <input type="email" name="themability_newsletter_usr_email"
-                                                                           id="themability_newsletter_usr_email" placeholder="Enter Your E-mail.."
-                                                                           class="form-control input-lg inputNew txtemail">
-                                                                    <button type="submit" data-bs-toggle="tooltip" title=""
-                                                                            class="subscribe-btn btn-default">
-                                                                        Subscribe
-                                                                    </button>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

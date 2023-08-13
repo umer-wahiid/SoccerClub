@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SoccerClub.Data;
 using SoccerClub.Models;
 using System.Diagnostics;
@@ -18,18 +20,44 @@ namespace SoccerClub.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var ViewModel = new IndexVM
+            {
+                match = db.Matches.OrderByDescending(m => m.MatchId).Take(4).ToList(),
+                matches = db.Matches.OrderByDescending(m => m.MatchId).Take(5).ToList(),
+                player = db.Players.ToList(),
+                team = db.Teams.ToList(),
+                product = db.Products.ToList(),
+            };
+            return View(ViewModel);
         }
 
         public IActionResult Matches()
         {
-            return View();
+            var match = db.Matches.Include(m=>m.AwayTeam).Include(m=>m.HomeTeam).
+                ToList();
+            return View(match);
         }
 
-        public IActionResult MatchesDetail()
-        {
-            return View();
-        }
+
+		// GET: Matches/Details/5
+		public async Task<IActionResult> MatchesDetail(int? id)
+		{
+			if (id == null || db.Matches == null)
+			{
+				return NotFound();
+			}
+
+			var match = await db.Matches
+				.Include(m => m.AwayTeam)
+				.Include(m => m.HomeTeam)
+				.FirstOrDefaultAsync(m => m.MatchId == id);
+			if (match == null)
+			{
+				return NotFound();
+			}
+
+			return View(match);
+		}
 
         public IActionResult Shop()
         {
@@ -38,7 +66,9 @@ namespace SoccerClub.Controllers
 
         public IActionResult Schedule()
         {
-            return View();
+            var match = db.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam).
+                ToList();
+            return View(match);
         }
 
         public IActionResult Blog()
@@ -48,32 +78,71 @@ namespace SoccerClub.Controllers
 
         public IActionResult Players()
         {
-            return View();
+            return View(db.Players.ToList());
         }
 
-        public IActionResult PlayersDetail()
+        public async Task<IActionResult> PlayersDetail(int? id)
         {
-            return View();
+            if (id == null || db.Players == null)
+            {
+                return NotFound();
+            }
+
+            var player = await db.Players.Include(p => p.Team).FirstOrDefaultAsync(m => m.PlayerID == id);
+            if (player == null)
+            {
+                return NotFound();
+            }
+
+            return View(player);
         }
 
+        [HttpGet]
         public IActionResult Contact()
         {
             return View();
         }
+
         [HttpPost]
-		public IActionResult Contact(ContactUs contactUs)
-		{
-            if(ModelState.IsValid)
+        [ActionName("Contact")]
+        public IActionResult Contact(ContactUs contactUs)
+        {
+            if (ModelState.IsValid)
             {
                 db.contactUs.Add(contactUs);
                 db.SaveChanges();
-                ViewBag.Contact = "Your Message Sent Successfully";
-                return RedirectToAction("Contact");
-            }
-			return View(contactUs);
-		}
+                ViewBag.Contact = "Thanks For Reaching Out";
 
-		public IActionResult Cart()
+                return View();
+            }
+            return View(contactUs);
+        }
+        
+        [HttpGet]
+        public IActionResult Feedback()
+        {
+
+            if (Session.UserId != 0)
+            {
+
+                ViewBag.Name = HttpContext.Session.GetString("name");
+                return View();
+            }
+            return RedirectToAction("Login", "User");
+        }
+
+        [HttpPost]
+        public IActionResult Feedback(Feedback feed)
+        {
+                feed.UserId = Session.UserId;
+                db.Feedbacks.Add(feed);
+                db.SaveChanges();
+                ViewBag.feedback = "Thanks For Your Feedback";
+
+                return View();
+        }
+
+        public IActionResult Cart()
         {
             return View();
         }

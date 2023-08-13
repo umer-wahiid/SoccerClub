@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<SoccerClub.Models.Player>
+
 @{
     ViewData["Title"] = "Players";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -36,159 +37,23 @@
                             <span class="page-title-right"></span>
                         </div>
                         <div class="row player-squad">
+                            @foreach(var item in Model){
                             <div class="item col-md-3 player_image">
                                 <div class="player-up">
-                                    <a href="players-details.html">
-                                        <img src="~/assets_web/images/playes/player1.png" alt="">
+                                        <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
+                                        <img src="@item.PlayerImage" alt="">
                                     </a>
                                 </div>
                                 <div class="player-bottom">
-                                    <a href="players-details.html">
-                                        <p class="player-name1">Lionel Messi</p>
+                                    <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
+                                            <p class="player-name1">@item.Name</p>
                                     </a>
-                                    <p class="player-name2"> GOALKEEPER</p>
+                                        <p class="player-name2">@item.Position</p>
                                 </div>
                             </div>
-                            <div class="item col-md-3 player_image">
-                                <div class="player-up">
-                                    <a href="players-details.html">
-                                        <img src="~/assets_web/images/playes/player2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="player-bottom">
-                                    <a href="players-details.html">
-                                        <p class="player-name1">Andres Iniesta</p>
-                                    </a>
-                                    <p class="player-name2"> FORWARD</p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 player_image">
-                                <div class="player-up">
-                                    <a href="players-details.html">
-                                        <img src="~/assets_web/images/playes/player3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="player-bottom">
-                                    <a href="players-details.html">
-                                        <p class="player-name1">Radamel Falcao</p>
-                                    </a>
-                                    <p class="player-name2">FORWARD</p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 player_image">
-                                <div class="player-up">
-                                    <a href="players-details.html">
-                                        <img src="~/assets_web/images/playes/player4.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="player-bottom">
-                                    <a href="players-details.html">
-                                        <p class="player-name1">Andrea Pirlo</p>
-                                    </a>
-                                    <p class="player-name2"> MIDFIELDER</p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 player_image">
-                                <div class="player-up">
-                                    <a href="players-details.html">
-                                        <img src="~/assets_web/images/playes/player5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="player-bottom">
-                                    <a href="players-details.html">
-                                        <p class="player-name1">Yaya Toure</p>
-                                    </a>
-                                    <p class="player-name2"> FORWARD</p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 player_image">
-                                <div class="player-up">
-                                    <a href="players-details.html">
-                                        <img src="~/assets_web/images/playes/player6.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="player-bottom">
-                                    <a href="players-details.html">
-                                        <p class="player-name1">Bastian Schweinsteiger</p>
-                                    </a>
-                                    <p class="player-name2">GOALKEEPER</p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 player_image">
-                                <div class="player-up">
-                                    <a href="players-details.html">
-                                        <img src="~/assets_web/images/playes/player7.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="player-bottom">
-                                    <a href="players-details.html">
-                                        <p class="player-name1">Gerard Pique</p>
-                                    </a>
-                                    <p class="player-name2">FORWARD</p>
-                                </div>
-                            </div>
-                            <div class="item col-md-3 player_image">
-                                <div class="player-up">
-                                    <a href="players-details.html">
-                                        <img src="~/assets_web/images/playes/player8.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="player-bottom">
-                                    <a href="players-details.html">
-                                        <p class="player-name1">Marco Reus </p>
-                                    </a>
-                                    <p class="player-name2"> MIDFIELDER</p>
-                                </div>
-                            </div>
+                            }
                         </div>
                         <div class="news mt-50 wow fadeInUp">
-                            <div class="news-inner">
-                                <div class="themabilitynewsletterblock">
-                                    <div class="themability-newsletter-form block-content box-content">
-                                        <div class="page-title toggled d-none">
-                                            <h3>Newsletter</h3>
-                                        </div>
-                                        <div class="block_box">
-                                            <div class="news-info">
-                                                <div class="row">
-                                                    <div class="col-xl-6">
-                                                        <div class="newsletter_description_outer d-flex align-items-center">
-                                                            <div class="icon-emails">
-                                                                <i class="fa-solid fa-envelope"></i>
-                                                            </div>
-                                                            <div class="news-desc">
-                                                                <div class="title-text">
-                                                                    <h3>Newsletter</h3>
-                                                                    <h3 class="d-none">Get Discount 30% Off</h3>
-                                                                </div>
-                                                                <div class="news-description">
-                                                                    Get free 20% discount for all product on your first
-                                                                    order.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 d-flex align-items-center news-right">
-                                                        <div class="newsletter_form">
-                                                            <form action="#" method="post" id="form_themability_newsletter" data-oc-toggle="ajax">
-                                                                <div class="subscribe-form">
-                                                                    <input type="email" name="themability_newsletter_usr_email"
-                                                                           id="themability_newsletter_usr_email" placeholder="Enter Your E-mail.."
-                                                                           class="form-control input-lg inputNew txtemail">
-                                                                    <button type="submit" data-bs-toggle="tooltip" title=""
-                                                                            class="subscribe-btn btn-default">
-                                                                        Subscribe
-                                                                    </button>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

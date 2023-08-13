@@ -5,58 +5,90 @@
     Layout = "~/Views/Shared/_adminLayout.cshtml";
 }
 
-<h1>Edit</h1>
 
-<h4>Player</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="PlayerID" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+<div class="content-body">
+    <div class="container-fluid">
+        <div class="row page-titles mx-0">
+            <div class="col-sm-6 p-md-0">
+                <div class="welcome-text">
+                    <h4>Edit Player</h4>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Nationality" class="control-label"></label>
-                <input asp-for="Nationality" class="form-control" />
-                <span asp-validation-for="Nationality" class="text-danger"></span>
+        </div>
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Edit Player</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="basic-form">
+                            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <input type="hidden" asp-for="PlayerID" />
+
+                                <div class="row">
+                                    <div class="mb-3 col-md-10">
+                                        <label>Name</label>
+                                        <input asp-for="Name" required class="form-control" placeholder="Player Name">
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="mb-3 col-md-10">
+                                        <label>Nationality</label>
+                                        <input asp-for="Nationality" required class="form-control" placeholder="Country">
+                                        <span asp-validation-for="Nationality" class="text-danger"></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 col-md-10">
+                                            <label>Position</label>
+                                            <input asp-for="Position" required type="text" class="form-control">
+                                            <span asp-validation-for="Position" class="text-danger"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 col-md-10">
+                                            <label>Profile</label>
+                                            <input asp-for="PlayerImage" type="file" name="ImageUrl" required class="form-control">
+                                            <span asp-validation-for="PlayerImage" class="text-danger"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 col-md-10">
+                                            <label>Age</label>
+                                            <input asp-for="Age" type="text" required class="form-control">
+                                            <span asp-validation-for="Age" class="text-danger"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 col-md-10">
+                                            <label>Team</label>
+                                            <select asp-for="TeamId" required class="form-control" asp-items="ViewBag.TeamId"></select>
+                                            <span asp-validation-for="TeamId" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 col-md-10">
+                                            <label>Date Of Birth</label>
+                                            <input asp-for="DOB" required class="form-control">
+                                            <span asp-validation-for="DOB" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Update Player</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Position" class="control-label"></label>
-                <input asp-for="Position" class="form-control" />
-                <span asp-validation-for="Position" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PlayerImage" class="control-label"></label>
-                <input asp-for="PlayerImage" class="form-control" />
-                <span asp-validation-for="PlayerImage" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Age" class="control-label"></label>
-                <input asp-for="Age" class="form-control" />
-                <span asp-validation-for="Age" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TeamId" class="control-label"></label>
-                <select asp-for="TeamId" class="form-control" asp-items="ViewBag.TeamId"></select>
-                <span asp-validation-for="TeamId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DOB" class="control-label"></label>
-                <input asp-for="DOB" class="form-control" />
-                <span asp-validation-for="DOB" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 

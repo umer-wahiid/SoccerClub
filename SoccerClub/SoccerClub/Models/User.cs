@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace SoccerClub.Models
 {
@@ -29,6 +30,7 @@ namespace SoccerClub.Models
         [MinLength(5,ErrorMessage ="Password Must be Consists of 5 characters")]
         public string Password { get; set; }
         [Compare("Password")]
+        [DisplayName("Confirm Password")]
         public string ConfirmPassword{ get; set; }
         public bool IsAdmin { get;set; } = false;
     }

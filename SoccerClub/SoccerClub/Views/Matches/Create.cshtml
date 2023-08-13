@@ -4,7 +4,7 @@
 	ViewData["Title"] = "Create";
 	Layout = "~/Views/Shared/_adminLayout.cshtml";
 }
-@*
+
 <div class="content-body">
     <div class="container-fluid">
         <div class="row page-titles mx-0">
@@ -21,7 +21,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Team Form</h4>
+                        <h4 class="card-title">Schedule Match</h4>
                     </div>
                     <div class="card-body">
                         <div class="basic-form">
@@ -44,14 +44,14 @@
                                     <div class="mb-3 col-md-10">
                                         <label>AwayTeam</label>
                                         <select asp-for="AwayTeamId" class="form-control" asp-items="ViewBag.AwayTeamId"></select>
-                                        <span asp-validation-for="AwayTeamId" class="text-danger"></span>
+                                        <span asp-validation-for="AwayTeam" class="text-danger"></span>
 
                                     </div>
 
                                     <div class="mb-3 col-md-10">
                                         <label>HomeTeam</label>
                                         <select asp-for="HomeTeamId" class="form-control" asp-items="ViewBag.HomeTeamId"></select>
-                                        <span asp-validation-for="HomeTeamId" class="text-danger"></span>
+                                        <span asp-validation-for="HomeTeam" class="text-danger"></span>
 
                                     </div>
 
@@ -79,7 +79,7 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Add Product</button>
+                                <button type="submit" class="btn btn-primary">Add Match Schedule</button>
                             </form>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
             </div>
 
         </div>
-    </div>*@
+    </div>
 
 
 
@@ -110,7 +110,7 @@
 
 
 
-
+@*
 
 
 <div class="content-body">
@@ -187,3 +187,4 @@
 	</div>
 </div>
 
+*@

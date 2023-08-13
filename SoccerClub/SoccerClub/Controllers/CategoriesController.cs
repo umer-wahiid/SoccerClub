@@ -116,7 +116,7 @@ namespace SoccerClub.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
-        }
+         }
 
         // GET: Categories/Delete/5
         public async Task<IActionResult> Delete(int? id)

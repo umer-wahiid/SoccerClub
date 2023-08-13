@@ -22,8 +22,12 @@ namespace SoccerClub.Controllers
         // GET: Feedbacks
         public async Task<IActionResult> Index()
         {
-            var soccerClubContext = _context.Feedbacks.Include(f => f.User);
-            return View(await soccerClubContext.ToListAsync());
+            if (Session.UserId != 0)
+            {
+                var soccerClubContext = _context.Feedbacks.Include(f => f.User);
+                return View(await soccerClubContext.ToListAsync());
+            }
+            return RedirectToAction("Login");
         }
 
         // GET: Feedbacks/Details/5

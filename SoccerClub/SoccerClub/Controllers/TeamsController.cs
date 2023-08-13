@@ -109,34 +109,41 @@ namespace SoccerClub.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("TeamId,Name,Country,LogoUrl")] Team team)
+        public async Task<IActionResult> Edit(int id, Team team, IFormFile ImageUrl)
         {
             if (id != team.TeamId)
             {
                 return NotFound();
             }
-
-            if (ModelState.IsValid)
+            if (ImageUrl != null)
             {
-                try
+                string ext = Path.GetExtension(ImageUrl.FileName);
+                if (ext == ".jpg" || ext == "gif" || ext == ".png")
                 {
+                    string d = Path.Combine(_environment.WebRootPath, "Images");
+                    var fname = Path.GetFileName(ImageUrl.FileName);
+                    string filePath = Path.Combine(d, fname);
+                    using (var fs = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageUrl.CopyToAsync(fs);
+                    }
+                    team.LogoUrl = $"/Images/{fname}";
+
                     _context.Update(team);
                     await _context.SaveChangesAsync();
+
+                    return RedirectToAction("Teams", "admin");
+
+
                 }
-                catch (DbUpdateConcurrencyException)
+                else
                 {
-                    if (!TeamExists(team.TeamId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    ViewBag.m = "Wrong Picture Format";
                 }
-                return RedirectToAction(nameof(Index));
             }
-            return View(team);
+
+
+            return View();
         }
 
         // GET: Teams/Delete/5

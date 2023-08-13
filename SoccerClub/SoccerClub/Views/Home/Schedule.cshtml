@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<SoccerClub.Models.Match>
+
 @{
     ViewData["Title"] = "Schedule";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -64,87 +65,20 @@
                                             <th>Venue</th>
                                             <th class="ticket">action</th>
                                         </tr>
+                                        @foreach(var item in Model)
+                                        {
+                                            
                                         <tr>
-                                            <td>May 11 ,2023</td>
-                                            <td>Italy FC vs Fuzzy Fz</td>
-                                            <td>14:00</td>
-                                            <td>FC Cup</td>
-                                            <td>2023</td>
-                                            <td>GST stadium</td>
-                                            <td class="ticket"><button class="sh-btn btn-default">Buy Ticket</button></td>
+                                                <td>@item.Date.ToString("MMMM dd, yyyy")</td>
+                                                <td>@item.HomeTeam.Name vs @item.AwayTeam.Name</td>
+                                                <td>@item.Date.ToString("HH:mm")</td>
+                                                <td>@item.League</td>
+                                            <td>@item.Season</td>
+                                            <td>@item.Venue</td>
+                                            <td class="ticket"><a asp-action="MatchesDetail" asp-route-id="@item.MatchId" asp-controller="Home"> <button class="sh-btn btn-default">View Details</button> </a></td>
                                         </tr>
-                                        <tr>
-                                            <td>May 12 ,2023</td>
-                                            <td>Kings KG vs Rayal FC</td>
-                                            <td>18:00</td>
-                                            <td>FC Cup</td>
-                                            <td>2023</td>
-                                            <td>GST stadium</td>
-                                            <td class="ticket"><button class="sh-btn btn-default">Buy Ticket</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 13 ,2023</td>
-                                            <td>Italy FC vs France FC</td>
-                                            <td>19:00</td>
-                                            <td>FC Cup</td>
-                                            <td>2023</td>
-                                            <td>GST stadium</td>
-                                            <td class="ticket"><button class="sh-btn btn-default">Buy Ticket</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 11 ,2023</td>
-                                            <td>Fuzzy Fz vs Rayal FC</td>
-                                            <td>11:00</td>
-                                            <td>FC Cup</td>
-                                            <td>2023</td>
-                                            <td>GST stadium</td>
-                                            <td class="ticket"><button class="sh-btn btn-default">Buy Ticket</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 13 ,2023</td>
-                                            <td>Italy FC vs Kings KG</td>
-                                            <td>16:00</td>
-                                            <td>FC Cup</td>
-                                            <td>2023</td>
-                                            <td>GST stadium</td>
-                                            <td class="ticket"><button class="sh-btn btn-default">Buy Ticket</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 11 ,2023</td>
-                                            <td>Fuzzy Fz vs Kings KG</td>
-                                            <td>17:00</td>
-                                            <td>FC Cup</td>
-                                            <td>2023</td>
-                                            <td>GST stadium</td>
-                                            <td class="ticket"><button class="sh-btn btn-default">Buy Ticket</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 12 ,2023</td>
-                                            <td>Italy FC vs Fuzzy Fz</td>
-                                            <td>13:00</td>
-                                            <td>FC Cup</td>
-                                            <td>2023</td>
-                                            <td>GST stadium</td>
-                                            <td class="ticket"><button class="sh-btn btn-default">Buy Ticket</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 14 ,2023</td>
-                                            <td>Kings KG vs Fuzzy Fz</td>
-                                            <td>14:00</td>
-                                            <td>FC Cup</td>
-                                            <td>2023</td>
-                                            <td>GST stadium</td>
-                                            <td class="ticket"><button class="sh-btn btn-default">Buy Ticket</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>May 15 ,2023</td>
-                                            <td>Kings KG vs Rayal FC</td>
-                                            <td>19:00</td>
-                                            <td>FC Cup</td>
-                                            <td>2023</td>
-                                            <td>GST stadium</td>
-                                            <td class="ticket"><button class="sh-btn btn-default">Buy Ticket</button></td>
-                                        </tr>
+                                        }
+
                                     </table>
                                     <div class="previous row">
                                         <div class="col-sm-6 left1">
@@ -171,45 +105,6 @@
             </div>
             <div class="news mt-50 wow fadeInUp">
                 <div class="container">
-                    <div class="news-inner">
-                        <div class="themabilitynewsletterblock">
-                            <div class="themability-newsletter-form block-content box-content">
-                                <div class="page-title toggled d-none">
-                                    <h3>Newsletter</h3>
-                                </div>
-                                <div class="block_box">
-                                    <div class="news-info">
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="newsletter_description_outer d-flex align-items-center">
-                                                    <div class="icon-emails">
-                                                        <i class="fa-solid fa-envelope"></i>
-                                                    </div>
-                                                    <div class="news-desc">
-                                                        <div class="title-text">
-                                                            <h3>Newsletter</h3>
-                                                            <h3 class="d-none">Get Discount 30% Off</h3>
-                                                        </div>
-                                                        <div class="news-description">Get free 20% discount for all product on your first order.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6 d-flex align-items-center news-right">
-                                                <div class="newsletter_form">
-                                                    <form action="#" method="post" id="form_themability_newsletter" data-oc-toggle="ajax">
-                                                        <div class="subscribe-form">
-                                                            <input type="email" name="themability_newsletter_usr_email" id="themability_newsletter_usr_email" placeholder="Enter Your E-mail.." class="form-control input-lg inputNew txtemail">
-                                                            <button type="submit" data-bs-toggle="tooltip" title="" class="subscribe-btn btn-default">Subscribe</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
