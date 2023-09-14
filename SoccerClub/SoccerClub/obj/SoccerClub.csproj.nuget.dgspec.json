@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Hashir\\SFC-AWESOME\\Source\\SoccerClub\\SoccerClub\\SoccerClub.csproj": {}
+    "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj": {}
   },
   "projects": {
-    "E:\\Hashir\\SFC-AWESOME\\Source\\SoccerClub\\SoccerClub\\SoccerClub.csproj": {
+    "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Hashir\\SFC-AWESOME\\Source\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+        "projectUniqueName": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
         "projectName": "SoccerClub",
-        "projectPath": "E:\\Hashir\\SFC-AWESOME\\Source\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+        "projectPath": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
         "packagesPath": "C:\\Users\\Hashir\\.nuget\\packages\\",
-        "outputPath": "E:\\Hashir\\SFC-AWESOME\\Source\\SoccerClub\\SoccerClub\\obj\\",
+        "outputPath": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
