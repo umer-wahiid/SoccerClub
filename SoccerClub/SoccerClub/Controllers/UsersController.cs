@@ -56,7 +56,7 @@ namespace SoccerClub.Controllers
         // GET: Users/Create
         public IActionResult Register()
         {
-			if (Session.UserId == 0)
+			if (Session.UserId != 0)
 			{
 				if (Session.IsAdmin == "Yes")
 				{
