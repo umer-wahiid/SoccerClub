@@ -23,6 +23,7 @@ namespace SoccerClub.API
             RestResponse response =  client.Execute(request);
             string jsonContent = response.Content;
             jsonContent = jsonContent.Replace("\r\n", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
+            
             return jsonContent;
         }
     }

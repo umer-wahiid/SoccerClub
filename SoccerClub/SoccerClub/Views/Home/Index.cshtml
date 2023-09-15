@@ -156,7 +156,7 @@
                                                             <div class="game-info-logo">
                                                                 <div class="store-img">
                                                                     <figure>
-                                                                        <a href="product.html">
+                                                                        <a asp-action="ProductDetail" asp-route-id="@item.ProductId">
                                                                             <img src="@item.ImageUrl" alt="match">
                                                                         </a>
                                                                     </figure>
@@ -362,10 +362,10 @@
                                                         </div>
                                                         <div class="post-image-hover"> </div>
                                                         <p class="post_hover">
-                                                            <a class="icon zoom" title="Where can I get some?" href="#" data-lightbox="example-set">
+                                                                <a class="icon zoom" title="Where can I get some?" asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url" data-lightbox="example-set">
                                                                 <i class="fa fa-search-plus"></i>
                                                             </a>
-                                                            <a class="icon readmore_link" title="Click to view Read More" href="#">
+                                                                <a asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url" class="icon readmore_link" title="Click to view Read More" >
                                                                 <i class="fa fa-link"></i>
                                                             </a>
                                                         </p>
@@ -376,13 +376,13 @@
                                                     </div>
                                                     <div class="blog-details">
                                                         <h4 class="blog_title">
-                                                            <a href="ireland-qualification.html">@item.Title</a>
+                                                                <a asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url">@item.Title</a>
                                                         </h4>
                                                         <div class="blog-desc">@item.Description </div>
                                                         <div class="blog-border"></div>
                                                         <div class="view-blog text-end">
                                                             <div class="read-more">
-                                                                <a href="ireland-qualification.html" class="btn btn-default btn-info">read more</a>
+                                                                    <a asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url" class="btn btn-default btn-info">read more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -413,12 +413,12 @@
                                 @foreach(var item in Model.player){
                                 <div class="item">
                                     <div class="player-up">
-                                        <a href="players-details.html">
+                                            <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
                                             <img src="@item.PlayerImage" alt="">
                                         </a>
                                     </div>
                                     <div class="player-bottom">
-                                        <a href="players-details.html">
+                                            <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
                                                 <p class="player-name1">@item.Name</p>
                                         </a>
                                             <p class="player-name2" style="text-transform:capitalize;"> @item.Position</p>

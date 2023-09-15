@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SoccerClub",
+    "\\SoccerClub\\SoccerClub"
   ],
+  "SelectedNode": "\\SoccerClub\\SoccerClub.sln",
   "PreviewInSolutionExplorer": false
 }
