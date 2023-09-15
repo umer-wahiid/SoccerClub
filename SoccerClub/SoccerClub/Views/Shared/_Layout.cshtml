@@ -105,6 +105,18 @@
 						</div>
 						<div class="header-right col-xl-3 col-lg-6 col-sm-6" style="display:flex;justify-content:right;align-items:right;">
 							<div class="header-search">
+								@using (Html.BeginForm("Search", "Home", FormMethod.Get))
+								{
+									<div id="themabilitySearch" class="input-group themability-search">
+										<input type="text" name="keyword" value="" placeholder="Search..." class="form-control input-lg ui-autocomplete-input" autocomplete="off">
+										<span class="btn-search input-group-btn">
+											<button type="submit" class="btn  btn-lg">
+												<i class="icon-search">
+												</i>
+											</button>
+										</span>
+									</div>
+								}
 								
 								@{
 									if (Session.UserId != 0)
@@ -149,7 +161,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 	</header>
 
@@ -289,7 +300,7 @@
 					</div>
 				</div>
 			</div>
-			<p class="copyright">Powered By <a href="#">Soccer World </a><br> - 2023.</p>
+			<p class="copyright">Powered By <a href="#">Soccer Club </a><br> - 2023.</p>
 		</div>
 	</footer>
 	<a href="#" class="scrollToTop back-to-top" data-toggle="tooltip" title="" data-original-title="Top" style="display: block;"></a>

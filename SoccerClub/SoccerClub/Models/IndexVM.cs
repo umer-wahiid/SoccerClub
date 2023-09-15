@@ -11,5 +11,8 @@ namespace SoccerClub.Models
             public IEnumerable<Team> team { get; set; }
             public IEnumerable<Product> product { get; set; }
             public IEnumerable<Player> player { get; set; }
+            public IEnumerable<Article> Articles { get; set; }
+
+            
     }
 }

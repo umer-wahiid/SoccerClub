@@ -117,8 +117,7 @@ namespace SoccerClub.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+            
                 try
                 {
                     if (ImageUrl != null)
@@ -157,8 +156,6 @@ namespace SoccerClub.Controllers
                         throw;
                     }
                 }
-                return View();
-            }
             //ViewData["CategoryId"] = new SelectList(_context.Category, "CategoryId", "CategoryId", product.CategoryId);
             return View(product);
         }

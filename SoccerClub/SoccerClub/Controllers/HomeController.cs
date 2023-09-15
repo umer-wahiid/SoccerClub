@@ -25,6 +25,13 @@ namespace SoccerClub.Controllers
 
         public IActionResult Index()
         {
+			var jsonContent = _apiHelper.GetRecentUpdates();
+			jsonContent = jsonContent.Replace("\r\n", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
+			var jsonObject = JObject.Parse(jsonContent);
+			var articlesArray = jsonObject["articles"].ToString();
+
+			List<Article> responseList = JsonConvert.DeserializeObject<List<Article>>(articlesArray);
+
             var ViewModel = new IndexVM
             {
                 match = db.Matches.OrderByDescending(m => m.MatchId).Take(4).ToList(),
@@ -32,9 +39,23 @@ namespace SoccerClub.Controllers
                 player = db.Players.ToList(),
                 team = db.Teams.ToList(),
                 product = db.Products.ToList(),
+                Articles = responseList
+                
             };
             return View(ViewModel);
         }
+		public ActionResult Search(string keyword)
+		{
+            ViewBag.keyword = keyword;
+            var ViewModel = new IndexVM
+            {
+                matches = db.Matches.Where(m => m.AwayTeam.Name.Contains(keyword) || m.HomeTeam.Name.Contains(keyword)).ToList(),
+                player = db.Players.Where(m => m.Name.Contains(keyword)).ToList(),
+                team = db.Teams.Where(m => m.Name.Contains(keyword)).ToList(),
+                product = db.Products.Where(m => m.ProductName.Contains(keyword)).ToList(),
+            };
+            return View(ViewModel);
+		}
 		public async Task<IActionResult> ProductDetail(int? id)
 		{
 			if (id == null || db.Products == null)

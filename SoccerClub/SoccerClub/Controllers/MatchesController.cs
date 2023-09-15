@@ -141,7 +141,7 @@ namespace SoccerClub.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Matches", "admin");
         }
 
         private bool MatchExists(int id)

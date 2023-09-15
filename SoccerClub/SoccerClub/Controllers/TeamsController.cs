@@ -180,7 +180,7 @@ namespace SoccerClub.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Teams", "admin");
         }
 
         private bool TeamExists(int id)

@@ -336,6 +336,7 @@
                 </div>
                 <!-- blog -->
                 <div class="blog-section mt-50  wow fadeInUp">
+                    
                     <div class="box-content">
                         <div class="container">
                             <div class="page-title toggled">
@@ -348,11 +349,12 @@
                             <div class="row">
                                 <div class="large-12 columns">
                                     <div class="owl-carousel blog-carousel ">
+                                        @foreach(var item in Model.Articles){
                                         <div class="product-block col-xs-12">
                                             <div class="product-block-inner align-items-center">
                                                 <div class="blog-left">
                                                     <div class="blog-image">
-                                                        <img src="~/assets_web/images/blog/blog1.png" alt="Latest Blog" title="Latest Blog" class="img-responsive mw-100">
+                                                        <img src="@item.Image" alt="Latest Blog" title="Latest Blog" class="img-responsive mw-100">
                                                         <div class="date-time">
                                                             <i class="fa-regular fa-calendar-days d-none"></i>
                                                             <div class="blog-date">17</div>
@@ -371,20 +373,12 @@
                                                 </div>
                                                 <div class="blog-right">
                                                     <div class="date-comment blog-date-comment text-end">
-                                                        <div class="comment-wrapper">
-                                                            <div class="write-comment-count">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-comment-dots"></i>
-                                                                    <span>1 Comments</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                     <div class="blog-details">
                                                         <h4 class="blog_title">
-                                                            <a href="ireland-qualification.html">Ireland Qualification</a>
+                                                            <a href="ireland-qualification.html">@item.Title</a>
                                                         </h4>
-                                                        <div class="blog-desc"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </div>
+                                                        <div class="blog-desc">@item.Description </div>
                                                         <div class="blog-border"></div>
                                                         <div class="view-blog text-end">
                                                             <div class="read-more">
@@ -395,226 +389,9 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        }
                                         <!-- 2 -->
-                                        <div class="product-block col-xs-12">
-                                            <div class="product-block-inner align-items-center">
-                                                <div class="blog-left">
-                                                    <div class="blog-image">
-                                                        <img src="~/assets_web/images/blog/blog2.png" alt="Latest Blog" title="Latest Blog" class="img-responsive mw-100">
-                                                        <div class="date-time">
-                                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                                            <div class="blog-date">15</div>
-                                                            <div class="blog-month">May</div>
-                                                        </div>
-                                                        <div class="post-image-hover"> </div>
-                                                        <p class="post_hover">
-                                                            <a class="icon zoom" title="Where can I get some?" href="#" data-lightbox="example-set"><i class="fa fa-search-plus"></i></a>
-                                                            <a class="icon readmore_link" title="Click to view Read More" href="#"><i class="fa fa-link"></i></a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="blog-right">
-                                                    <div class="date-comment blog-date-comment text-end">
-                                                        <div class="comment-wrapper">
-                                                            <div class="write-comment-count">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-comment-dots"></i>
-                                                                    <span>0 Comments</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="blog-details">
-                                                        <h4 class="blog_title">
-                                                            <a href="many-publishing-packages.html">Many Publishing Packages</a>
-                                                        </h4>
-                                                        <div class="blog-desc"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </div>
-                                                        <div class="blog-border"></div>
-                                                        <div class="view-blog text-end">
-                                                            <div class="read-more">
-                                                                <a href="many-publishing-packages.html" class="btn btn-default btn-info">read more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 3 -->
-                                        <div class="product-block col-xs-12">
-                                            <div class="product-block-inner align-items-center">
-                                                <div class="blog-left">
-                                                    <div class="blog-image">
-                                                        <img src="~/assets_web/images/blog/blog3.png" alt="Latest Blog" title="Latest Blog" class="img-responsive mw-100">
-                                                        <div class="date-time">
-                                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                                            <div class="blog-date">10</div>
-                                                            <div class="blog-month">Apr</div>
-                                                        </div>
-                                                        <div class="post-image-hover"> </div>
-                                                        <p class="post_hover">
-                                                            <a class="icon zoom" title="Where can I get some?" href="#" data-lightbox="example-set"><i class="fa fa-search-plus"></i></a>
-                                                            <a class="icon readmore_link" title="Click to view Read More" href="#"><i class="fa fa-link"></i></a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="blog-right">
-                                                    <div class="date-comment blog-date-comment text-end">
-                                                        <div class="comment-wrapper">
-                                                            <div class="write-comment-count">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-comment-dots"></i>
-                                                                    <span>0 Comments</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="blog-details">
-                                                        <h4 class="blog_title">
-                                                            <a href="where-can-i-get.html">Where Can I Get Some ?</a>
-                                                        </h4>
-                                                        <div class="blog-desc"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </div>
-                                                        <div class="blog-border"></div>
-                                                        <div class="view-blog text-end">
-                                                            <div class="read-more">
-                                                                <a href="where-can-i-get.html" class="btn btn-default btn-info">read more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 4 -->
-                                        <div class="product-block col-xs-12">
-                                            <div class="product-block-inner align-items-center">
-                                                <div class="blog-left">
-                                                    <div class="blog-image">
-                                                        <img src="~/assets_web/images/blog/blog4.png" alt="Latest Blog" title="Latest Blog" class="img-responsive mw-100">
-                                                        <div class="date-time">
-                                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                                            <div class="blog-date">22</div>
-                                                            <div class="blog-month">Mar</div>
-                                                        </div>
-                                                        <div class="post-image-hover"> </div>
-                                                        <p class="post_hover">
-                                                            <a class="icon zoom" title="Where can I get some?" href="#" data-lightbox="example-set"><i class="fa fa-search-plus"></i></a>
-                                                            <a class="icon readmore_link" title="Click to view Read More" href="#"><i class="fa fa-link"></i></a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="blog-right">
-                                                    <div class="date-comment blog-date-comment text-end">
-                                                        <div class="comment-wrapper">
-                                                            <div class="write-comment-count">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-comment-dots"></i>
-                                                                    <span>0 Comments</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="blog-details">
-                                                        <h4 class="blog_title">
-                                                            <a href="there-are-many-variations.html">There Are Many Variations</a>
-                                                        </h4>
-                                                        <div class="blog-desc"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </div>
-                                                        <div class="blog-border"></div>
-                                                        <div class="view-blog text-end">
-                                                            <div class="read-more">
-                                                                <a href="there-are-many-variations.html" class="btn btn-default btn-info">read more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 5 -->
-                                        <div class="product-block col-xs-12">
-                                            <div class="product-block-inner align-items-center">
-                                                <div class="blog-left">
-                                                    <div class="blog-image">
-                                                        <img src="~/assets_web/images/blog/blog5.png" alt="Latest Blog" title="Latest Blog" class="img-responsive mw-100">
-                                                        <div class="date-time">
-                                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                                            <div class="blog-date">15</div>
-                                                            <div class="blog-month">Feb</div>
-                                                        </div>
-                                                        <div class="post-image-hover"> </div>
-                                                        <p class="post_hover">
-                                                            <a class="icon zoom" title="Where can I get some?" href="#" data-lightbox="example-set"><i class="fa fa-search-plus"></i></a>
-                                                            <a class="icon readmore_link" title="Click to view Read More" href="#"><i class="fa fa-link"></i></a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="blog-right">
-                                                    <div class="date-comment blog-date-comment text-end">
-                                                        <div class="comment-wrapper">
-                                                            <div class="write-comment-count">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-comment-dots"></i>
-                                                                    <span>0 Comments</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="blog-details">
-                                                        <h4 class="blog_title">
-                                                            <a href="it-is-established-fact.html">It Is Established Fact</a>
-                                                        </h4>
-                                                        <div class="blog-desc"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </div>
-                                                        <div class="blog-border"></div>
-                                                        <div class="view-blog text-end">
-                                                            <div class="read-more">
-                                                                <a href="it-is-established-fact.html" class="btn btn-default btn-info">read more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 6 -->
-                                        <div class="product-block col-xs-12">
-                                            <div class="product-block-inner align-items-center">
-                                                <div class="blog-left">
-                                                    <div class="blog-image">
-                                                        <img src="~/assets_web/images/blog/blog6.png" alt="Latest Blog" title="Latest Blog" class="img-responsive mw-100">
-                                                        <div class="date-time">
-                                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                                            <div class="blog-date">21</div>
-                                                            <div class="blog-month">Jan</div>
-                                                        </div>
-                                                        <div class="post-image-hover"> </div>
-                                                        <p class="post_hover">
-                                                            <a class="icon zoom" title="Where can I get some?" href="#" data-lightbox="example-set"><i class="fa fa-search-plus"></i></a>
-                                                            <a class="icon readmore_link" title="Click to view Read More" href="#"><i class="fa fa-link"></i></a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="blog-right">
-                                                    <div class="date-comment blog-date-comment text-end">
-                                                        <div class="comment-wrapper">
-                                                            <div class="write-comment-count">
-                                                                <a href="#">
-                                                                    <i class="fa-solid fa-comment-dots"></i>
-                                                                    <span>0 Comments</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="blog-details">
-                                                        <h4 class="blog_title">
-                                                            <a href="consectetur-adipiscing.html">Consectetur Adipiscing</a>
-                                                        </h4>
-                                                        <div class="blog-desc"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </div>
-                                                        <div class="blog-border"></div>
-                                                        <div class="view-blog text-end">
-                                                            <div class="read-more">
-                                                                <a href="consectetur-adipiscing.html" class="btn btn-default btn-info">read more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>

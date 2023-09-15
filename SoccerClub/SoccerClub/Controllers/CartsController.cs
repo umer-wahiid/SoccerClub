@@ -14,14 +14,14 @@ namespace SoccerClub.Controllers
             _context = context;
         }
         public IActionResult Cart(int? cartid)
-        
+
         {
             if (Session.UserId != 0)
             {
                 var cartItems = _context.Carts
                                 .Include(p => p.product)
                                  .ThenInclude(product => product.Category)
-                                .Where(x => x.UserId == Session.UserId&&x.Status==true)
+                                .Where(x => x.UserId == Session.UserId && x.Status == true)
                                 .ToList();
                 return View(cartItems);
             }
@@ -38,14 +38,15 @@ namespace SoccerClub.Controllers
             {
                 if (Session.UserId != 0)
                 {
-                    var cartIfExist = _context.Carts.Where(x => x.UserId == Session.UserId && x.ProductId.Equals(cart.ProductId)&&x.Status==true).FirstOrDefault();
+                    var cartIfExist = _context.Carts.Where(x => x.UserId == Session.UserId && x.ProductId.Equals(cart.ProductId) && x.Status == true).FirstOrDefault();
                     if (cartIfExist != null)
                     {
                         var getCartItem = _context.Carts.Find(cartIfExist.CartId);
-                        cart= getCartItem != null ? getCartItem : cart;
-                        cart.Quantity += getCartItem.Quantity;
-                        cart.Price = product.Price * cart.Quantity;
-                        _context.Update(cart);
+                        getCartItem.Quantity += cart.Quantity;
+                        getCartItem.Price = product.Price * getCartItem.Quantity;
+
+
+                        _context.Update(getCartItem);
                         _context.SaveChanges();
                         return RedirectToAction("Cart");
 
@@ -58,7 +59,7 @@ namespace SoccerClub.Controllers
                         _context.SaveChanges();
                         return RedirectToAction("Cart", "Carts");
                     }
-                    
+
                 }
 
                 return RedirectToAction("Login", "Users");
@@ -68,11 +69,26 @@ namespace SoccerClub.Controllers
 
         public IActionResult DelItem(int id)
         {
-            return View();
+            if (id == null || _context.Carts == null)
+            {
+                return NotFound();
+            }
+
+            var cartItem = _context.Carts.Find(id);
+            if (cartItem == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                _context.Carts.Remove(cartItem);
+                _context.SaveChanges();
+                return RedirectToAction("Cart");
+            }
         }
         public IActionResult Checkout()
         {
-            if(Session.UserId != 0)
+            if (Session.UserId != 0)
             {
                 Order order = new Order();
                 int totalAmount = 0;
@@ -89,14 +105,25 @@ namespace SoccerClub.Controllers
                 order.OrderDate = DateTime.Now;
                 order.TotalPrice = totalAmount;
 
-                  _context.Orders.Add(order);
-                  _context.SaveChanges();
-        
+                _context.Orders.Add(order);
+                _context.SaveChanges();
+                var thisOrderId = _context.Orders
+                                .Where(x => x.UserId == Session.UserId)
+                                .Max(x => x.OrderId);
+
                 //_context.Carts.Update();
                 //_context.SaveChanges();
-                return RedirectToAction("Order");
+                return RedirectToAction("Order", new { id = thisOrderId });
             }
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult Order(int id)
+        {
+            var order = _context.Orders.Where(x => x.OrderId == id).FirstOrDefault();
+            if (order != null)
+                return View(order);
+            return RedirectToAction("Cart");
         }
     }
 }

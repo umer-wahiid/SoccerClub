@@ -43,14 +43,14 @@
                                     </div>
                                     <div class="mb-3 col-md-10">
                                         <label>AwayTeam</label>
-                                        <select asp-for="AwayTeamId" class="form-control" asp-items="ViewBag.AwayTeamId"></select>
+                                        <select asp-for="AwayTeamId" class="form-control" asp-items="@(ViewData["AwayTeamId"] as SelectList)"></select>
                                         <span asp-validation-for="AwayTeam" class="text-danger"></span>
 
                                     </div>
 
                                     <div class="mb-3 col-md-10">
                                         <label>HomeTeam</label>
-                                        <select asp-for="HomeTeamId" class="form-control" asp-items="ViewBag.HomeTeamId"></select>
+                                        <select asp-for="HomeTeamId" class="form-control" asp-items="@(ViewData["HomeTeamId"] as SelectList)"></select>
                                         <span asp-validation-for="HomeTeam" class="text-danger"></span>
 
                                     </div>

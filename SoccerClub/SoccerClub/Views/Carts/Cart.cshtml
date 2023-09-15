@@ -27,63 +27,74 @@
     <main>
         <div id="information-information" class="container">
             <div class="row">
-                <div id="content" class="col">
+                @if (Model.Any())
+                {
+                    <div id="content" class="col">
 
-                    <div id="shopping-cart">
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <td class="text-center">Image</td>
-                                        <td class="text-start">Product Name</td>
-                                        <td class="text-start">Model</td>
-                                        <td class="text-start">Quantity</td>
-                                        <td class="text-end">Unit Price</td>
-                                        <td class="text-end">Total</td>
-                                        <td class="text-end"></td>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                        <div id="shopping-cart">
+                            <div class="table-responsive">
 
-                                    @foreach (var item in Model)
-                                    {
+                                <table class="table table-bordered">
+                                    <thead>
                                         <tr>
-                                            <td class="text-center">
-                                                <a href="#">
-                                                    <img src="@item.product.ImageUrl" alt="T-shirt" title="T-shirt"
-                                                         class="img-thumbnail">
-                                                </a>
-                                            </td>
-                                            <td class="text-start text-wrap"><a href="#">@item.product.Category.CategoryName</a> </td>
-                                            <td class="text-start">@item.product.ProductName</td>
-                                            <td class="text-start">
-                                                @item.Quantity
-                                            </td>
-                                            <td class="text-end">Rs . @item.product.Price</td>
-                                            <td class="text-end">Rs . @item.Price</td>
+                                            <td class="text-center">Image</td>
+                                            <td class="text-start">Product Name</td>
+                                            <td class="text-start">Model</td>
+                                            <td class="text-start">Quantity</td>
+                                            <td class="text-end">Unit Price</td>
+                                            <td class="text-end">Total</td>
+                                            <td class="text-end"></td>
                                         </tr>
-                                        total += item.Price;
-                                    }
-                                </tbody>
-                                <tfoot id="checkout-total">
+                                    </thead>
+                                    <tbody>
 
-                                    <tr>
-                                        <td colspan="5" class="text-end"><strong>Total</strong></td>
-                                        <td class="text-end">Rs .@total</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td class="text-center">
+                                                    <a href="#">
+                                                        <img src="@item.product.ImageUrl" alt="T-shirt" title="T-shirt"
+                                                             class="img-thumbnail">
+                                                    </a>
+                                                </td>
+                                                <td class="text-start text-wrap"><a href="#">@item.product.Category.CategoryName</a> </td>
+                                                <td class="text-start">@item.product.ProductName</td>
+                                                <td class="text-start">
+                                                    @item.Quantity
+                                                </td>
+                                                <td class="text-end">Rs . @item.product.Price</td>
+                                                <td class="text-end">Rs . @item.Price</td>
+                                                <td><a asp-action="DelItem" asp-controller="Carts" asp-route-id="@item.CartId">Delete</a></td>
+                                            </tr>
+                                            total += item.Price;
+                                        }
+                                    </tbody>
+                                    <tfoot id="checkout-total">
+
+                                        <tr>
+                                            <td colspan="6" class="text-end"><strong>Total</strong></td>
+                                            <td class="text-end">Rs .@total</td>
+                                        </tr>
+
+                                    </tfoot>
+                                </table>
+
+                            </div>
                         </div>
+                        <h2>What would you like to do next?</h2>
                     </div>
-                    <h2>What would you like to do next?</h2>
-                </div>
-                <br>
-                <div class="d-inline-block pt-5 pd-2 w-100">
-                    <div class="float-start"><a asp-action="Shop" asp-controller="Home" class="btn btn-default ">Continue Shopping</a></div>
+                    <br>
+                    <div class="d-inline-block pt-5 pd-2 w-100">
+                        <div class="float-start"><a asp-action="Shop" asp-controller="Home" class="btn btn-default ">Continue Shopping</a></div>
 
-                    <div class="float-end"><a asp-action="Checkout" class="btn btn-default ">Checkout</a></div>
-                </div>
-               
+                        <div class="float-end"><a asp-action="Checkout" class="btn btn-default ">Checkout</a></div>
+                    </div>
+                }
+                else
+                {
+                    <h2>Your Cart is Empty Now</h2>
+                }
+
 
             </div>
         </div>
