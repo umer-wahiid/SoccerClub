@@ -8,7 +8,7 @@
     <div class="common-home">
         <div id="content" class="col">
             <div class="category-featured mt-50  wow fadeInUp">
-<div style="padding:60px;">
+                <div style="padding:60px;">
                     <h4 style="font-weight:bolder;">@Html.DisplayFor(model => model.FullName)</h4>
     <hr />
 
@@ -37,6 +37,12 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.PhoneNo)
         </dd>
+         <dt class="col-sm-2">
+             Your Address
+         </dt>
+         <dd class="col-sm-10">
+             @Html.DisplayFor(model => model.Address)   
+         </dd>
     </dl>
     <div id="cart" class="cart-button">
         <a asp-action="UserEdit" asp-route-id="@Model?.UserId">
@@ -44,7 +50,13 @@
                 Edit Info
             </button>
         </a>
+     <a asp-action="Delete" asp-route-id="@Model?.UserId">
+         <button class="btn btn-inverse btn-default btn-block" aria-expanded="true">
+             Delete
+         </button>
+     </a>
     </div>
+    
 </div>
 </div>
 </div>

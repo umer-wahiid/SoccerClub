@@ -25,6 +25,9 @@ namespace SoccerClub.Models
         [MaxLength(11, ErrorMessage = "Invalid Phone Number or Format")]
         public string PhoneNo { get; set; }
 
+        [MaxLength(500, ErrorMessage = "Maximum 500 Characters are Allowed")]
+        public string Address { get; set; }
+
         [Required(ErrorMessage = "Enter Your Password")]
         [MaxLength(30, ErrorMessage = "Only 30 Characters are Allowed")]
         [MinLength(5,ErrorMessage ="Password Must be Consists of 5 characters")]

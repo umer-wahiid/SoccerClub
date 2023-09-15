@@ -26,6 +26,7 @@ namespace SoccerClub.Models
                 player = players,
                 team = teams,
                 product = products,
+                
             };
 
             return View(ViewModel);

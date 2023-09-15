@@ -210,7 +210,7 @@ namespace SoccerClub.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UserEdit(int id, [Bind("UserId,Username,Email,Password,ConfirmPassword,PhoneNo,FullName")] User user)
+        public async Task<IActionResult> UserEdit(int id, [Bind("UserId,Username,Email,Address,Password,ConfirmPassword,PhoneNo,FullName")] User user)
         {
             if (id != user.UserId)
             {
@@ -274,7 +274,9 @@ namespace SoccerClub.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            Logout();
+            return RedirectToAction("Index", "Home");
+            //return RedirectToAction(nameof(Index));
         }
 
         private bool UserExists(int id)
