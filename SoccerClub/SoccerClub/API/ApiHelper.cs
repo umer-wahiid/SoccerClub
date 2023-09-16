@@ -26,5 +26,20 @@ namespace SoccerClub.API
             
             return jsonContent;
         }
-    }
+
+		public string TopTenScores()
+		{
+			var options = new RestClientOptions("http://api.football-data.org")
+			{
+				MaxTimeout = -1,
+			};
+			var client = new RestClient(options);
+			var request = new RestRequest("/v4/competitions/PL/scorers", Method.Get);
+			request.AddHeader("X-Auth-Token", "69d6a0600dd341feac1fa7ff7e78536c");
+			RestResponse response = client.Execute(request);
+			string jsonContent = response.Content;
+			return jsonContent;
+		}
+	}
 }
+

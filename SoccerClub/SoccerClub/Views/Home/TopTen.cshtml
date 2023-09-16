@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Root
+
+<h1>Top Ten Scorers</h1>
+
+<table>
+    <tr>
+        <th>Player Name</th>
+        <th>Team</th>
+        <th>Goals</th>
+        <th>Assists</th>
+        <th>Penalties</th>
+    </tr>
+    @foreach (var scorer in Model.scorers)
+    {
+        <tr>
+            <td>@scorer.player.firstName @scorer.player.lastName</td>
+            <td>@scorer.team.name</td>
+            <td>@scorer.goals</td>
+            <td>@(scorer.assists ?? 0)</td>
+            <td>@(scorer.penalties ?? 0)</td>
+        </tr>
+    }
+</table>

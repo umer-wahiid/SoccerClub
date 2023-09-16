@@ -31,7 +31,7 @@
                     <div class="box-content">
                         <div class="row match-details-section1">
                             <div class="col-sm-6 about-left">
-                                <h2>About Match Details</h2>
+                                <h2 style="color:#F22361;margin-left:15px;">@Html.DisplayFor(model => model.League)</h2>
                                 @*<p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
@@ -97,6 +97,7 @@
                                                         <h6>@Model.HomeTeam.Name</h6>
                                                     </div>
                                                 </div>
+                                                <div>VS</div>
                                                 <div class="game-info-team game-info-team-second">
                                                     <div class="game-info-logo">
                                                         <figure>

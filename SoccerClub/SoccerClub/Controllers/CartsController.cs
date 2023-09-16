@@ -122,7 +122,7 @@ namespace SoccerClub.Controllers
         {
             var order = _context.Orders.Where(x => x.OrderId == id).FirstOrDefault();
             if (order != null)
-                return View(order);
+                return View();
             return RedirectToAction("Cart");
         }
     }

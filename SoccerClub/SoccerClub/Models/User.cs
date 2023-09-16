@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Newtonsoft.Json.Serialization;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace SoccerClub.Models
@@ -22,7 +23,8 @@ namespace SoccerClub.Models
 
         [Required(ErrorMessage = "Enter Your Phone Number(eg.03XXXXXXXXX)")]
         [DataType(DataType.PhoneNumber)]
-        [MaxLength(11, ErrorMessage = "Invalid Phone Number or Format")]
+		[RegularExpression("^03[0-9]{9}$", ErrorMessage = "Invalid format. It should start with '03' and have 8 digits.")]
+		[MaxLength(11, ErrorMessage = "Invalid Phone Number or Format")]
         public string PhoneNo { get; set; }
 
         [MaxLength(500, ErrorMessage = "Maximum 500 Characters are Allowed")]
