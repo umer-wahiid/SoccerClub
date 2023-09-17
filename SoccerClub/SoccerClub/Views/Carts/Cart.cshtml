@@ -43,7 +43,7 @@
                                             <td class="text-start">Quantity</td>
                                             <td class="text-end">Unit Price</td>
                                             <td class="text-end">Total</td>
-                                            <td class="text-end"></td>
+                                            <td class="text-end">Action</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -64,7 +64,7 @@
                                                 </td>
                                                 <td class="text-end">Rs . @item.product.Price</td>
                                                 <td class="text-end">Rs . @item.Price</td>
-                                                <td><a asp-action="DelItem" asp-controller="Carts" asp-route-id="@item.CartId">Delete</a></td>
+                                                <td class="text-center"><a asp-action="DelItem" asp-controller="Carts" asp-route-id="@item.CartId"><i class="fas fa-trash-alt"></i></a></td>
                                             </tr>
                                             total += item.Price;
                                         }
@@ -72,8 +72,9 @@
                                     <tfoot id="checkout-total">
 
                                         <tr>
-                                            <td colspan="6" class="text-end"><strong>Total</strong></td>
+                                            <td colspan="5" class="text-end"><strong>Total</strong></td>
                                             <td class="text-end">Rs .@total</td>
+                                            <td></td>
                                         </tr>
 
                                     </tfoot>
@@ -84,7 +85,7 @@
                         <h2>What would you like to do next?</h2>
                     </div>
                     <br>
-                    <div class="d-inline-block pt-5 pd-2 w-100">
+                    <div class="d-inline-block pt-5 pd-2 mb-5 w-100">
                         <div class="float-start"><a asp-action="Shop" asp-controller="Home" class="btn btn-default ">Continue Shopping</a></div>
 
                         <div class="float-end"><a asp-action="Checkout" class="btn btn-default ">Checkout</a></div>

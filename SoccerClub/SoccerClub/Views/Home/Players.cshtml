@@ -4,24 +4,6 @@
     ViewData["Title"] = "Players";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<!-- breadcrumb -->
-<div class="breadcrumb-main">
-    <div class="container">
-        <div class="breadcrumb-container">
-            <h2 class="page-title">Players</h2>
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a href="#">Players</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
 <!-- main -->
 <main>
     <div class="players-main">
@@ -29,35 +11,43 @@
             <div class="container">
                 <div class="schedule-section mt-50  wow fadeInUp">
                     <div class="box-content">
-                        <div class="page-title toggled">
-                            <span class="page-title-left"></span>
-                            <h3>
-                                Players Squad
-                            </h3>
-                            <span class="page-title-right"></span>
-                        </div>
-                        <div class="row player-squad">
-                            @foreach(var item in Model){
-                            <div class="item col-md-3 player_image">
-                                <div class="player-up">
-                                        <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
-                                        <img src="@item.PlayerImage" alt="">
-                                    </a>
+                       
+                            @foreach (var teamGroup in Model.GroupBy(p => p.Team))
+                            {
+                            <div class="page-title mb-5 toggled">
+                                <span class="page-title-left"></span>
+                                <h3>
+                                    @teamGroup.Key.Name Players Squad
+                                </h3>
+                                <span class="page-title-right"></span>
+                            </div>
+                            <div class="row player-squad">
+                              
+                                <div class="row player-squad">
+                                    @foreach (var item in teamGroup)
+                                    {
+                                        <div class="item col-md-3 player_image">
+                                            <div class="player-up">
+                                                <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
+                                                    <img src="@item.PlayerImage" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="player-bottom">
+                                                <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
+                                                    <p class="player-name1">@item.Name</p>
+                                                </a>
+                                                <p class="player-name2">@item.Position</p>
+                                            </div>
+                                        </div>
+                                    }
                                 </div>
-                                <div class="player-bottom">
-                                    <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
-                                            <p class="player-name1">@item.Name</p>
-                                    </a>
-                                        <p class="player-name2">@item.Position</p>
+                                <div class="news mt-50 wow fadeInUp">
                                 </div>
+                                
                             </div>
                             }
-                        </div>
-                        <div class="news mt-50 wow fadeInUp">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</main>
+    </main>

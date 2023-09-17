@@ -3,7 +3,7 @@
     public interface IApiHelper
     {
         string GetRecentUpdates();
-        string TopTenScores();
+        string TopTenScores(string competition);
 
 	}
 }

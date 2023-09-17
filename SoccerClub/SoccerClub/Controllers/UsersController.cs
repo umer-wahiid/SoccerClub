@@ -100,16 +100,16 @@ namespace SoccerClub.Controllers
 						HttpContext.Session.SetString("IsAdmin", "Yes");
 						Session.UserId = HttpContext.Session.GetInt32("UserId") ?? 0;
 						Session.IsAdmin = HttpContext.Session.GetString("IsAdmin") ?? "NO";
+                        Session.Name = userByPassword.FullName;
 						return RedirectToAction("Index", "admin");
 
 					}
 					Session.UserId = HttpContext.Session.GetInt32("UserId") ?? 0;
-					return RedirectToAction("Index", "Home");
-
-
+                    Session.Name = userByPassword.FullName;
+                    return RedirectToAction("Index", "Home");
 				}
 
-				ViewBag.err = "Incorrect Password or Email";
+				ViewBag.err = "Incorrect Password or Username";
 				return View(user);
 			}
 			return View("Index", "Home");

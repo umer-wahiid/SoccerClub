@@ -1,335 +1,330 @@
 ﻿<!DOCTYPE HTML>
 <html lang="en-US">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Soccer Club</title>
-	<meta name="description" content="Stelar">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="~/assets_web/images/favicon.png">
-	<!-- bootstrap CSS -->
-	<link rel="stylesheet" href="~/assets_web/css/bootstrap.min.css" type="text/css" media="all">
-	<!-- Animated Text CSS -->
-	<link href="~/assets_web/ajax/libs/animate.css/3.3.0/animate.min.css" rel="stylesheet">
-	<!-- owl-carousel CSS -->
-	<link rel="stylesheet" href="~/assets_web/css/owl.carousel.css" type="text/css" media="all">
-	<!-- font-awesome CSS -->
-	<link rel="stylesheet" href="~/assets_web/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-	<!-- icomoon CSS -->
-	<link rel="stylesheet" href="~/assets_web/fonts/themability-font.css" type="text/css" media="all">
-	<!-- Main Style CSS -->
-	<link rel="stylesheet" href="~/assets_web/style.css" type="text/css" media="all">
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&amp;family=Poppins:wght@300&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Soccer Club</title>
+    <meta name="description" content="Stelar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="~/assets_web/images/favicon.png">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets_web/css/bootstrap.min.css" type="text/css" media="all">
+    <!-- Animated Text CSS -->
+    <link href="~/assets_web/ajax/libs/animate.css/3.3.0/animate.min.css" rel="stylesheet">
+    <!-- owl-carousel CSS -->
+    <link rel="stylesheet" href="~/assets_web/css/owl.carousel.css" type="text/css" media="all">
+    <!-- font-awesome CSS -->
+    <link rel="stylesheet" href="~/assets_web/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- icomoon CSS -->
+    <link rel="stylesheet" href="~/assets_web/fonts/themability-font.css" type="text/css" media="all">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="~/assets_web/style.css" type="text/css" media="all">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&amp;family=Poppins:wght@300&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
 
-	<style>
-		.toactive{
-			color: #F22361;
-		}
-	</style>
+    <style>
+        .toactive {
+            border-bottom: 2px solid #F22361;
+            color: #F22361;
+        }
+    </style>
 
 </head>
 
 
 <body class="common-home soccer">
-	<div class="loader">
-	</div>
-	<header class=" ">
-		<div class="slotmachine-main-menu hidden-xs hidden-sm">
-			<div class="slotmachine-nav-area fluid">
-				<div class="container">
-					<div class="row header-inner align-items-center sub_sub_menu">
-						<div class="col-xl-2 col-lg-6 col-sm-6 header-left">
-							<div id="logo">
+    <div class="loader">
+    </div>
+    <header class=" ">
+        <div class="slotmachine-main-menu hidden-xs hidden-sm">
+            <div class="slotmachine-nav-area fluid">
+                <div class="container">
+                    <div class="row header-inner align-items-center sub_sub_menu">
+                        <div class="col-xl-2 col-lg-6 col-sm-6 header-left">
+                            <div id="logo">
 
-								<a asp-controller="Home" asp-action="Index">
-									<img src="~/assets_web/images/logo.png" title="Your Store" alt="Your Store" class="img-fluid">
-								</a>
-							</div>
-						</div>
-						<div class="header-center text-lg-center col-xl-7 col-lg-12">
-							<nav class="slotmachine-menu main-search-menu">
-								<div class="navbar-header d-lg-none">
-									<button type="button" id="show-header_menu" data-toggle="collapse" class="navbar-toggle">
-										<i class="fa-solid fa-bars"></i>
-									</button>
-								</div>
-								<div class="main-menu-outer">
-									<div class="d-lg-none menu-title">
-										Menu
-										<i class="fa-solid fa-xmark"></i>
-									</div>
-									<div class="container">
-										<ul class="main-menu nav-scroll mb-0 header_menu " data-megamenuid="46" data-transition="slide"
-											data-animationtime="500">
-											<li class="header-menu-item">
-												<a asp-controller="Home" asp-action="Index">
+                                <a asp-controller="Home" asp-action="Index">
+                                    <img src="~/assets_web/images/logo.png" title="Your Store" alt="Your Store" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-center text-lg-center col-xl-7 col-lg-12">
+                            <nav class="slotmachine-menu main-search-menu">
+                                <div class="navbar-header d-lg-none">
+                                    <button type="button" id="show-header_menu" data-toggle="collapse" class="navbar-toggle">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </button>
+                                </div>
+                                <div class="main-menu-outer">
+                                    <div class="d-lg-none menu-title">
+                                        Menu
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                    <div class="container">
+                                        <ul class="main-menu nav-scroll mb-0 header_menu " data-megamenuid="46" data-transition="slide"
+                                            data-animationtime="500">
+                                            <li class="header-menu-item">
+                                                <a asp-controller="Home" asp-action="Index">
 
-													<span class="@ViewBag.Home"><strong>Home </strong></span>
-												</a>
-											</li>
-											<li class="header-menu-item">
+                                                    <span class="@ViewBag.Home"><strong>Home </strong></span>
+                                                </a>
+                                            </li>
+                                            <li class="header-menu-item">
 
-												<a asp-controller="Home" asp-action="Matches">
-													<span class="@ViewBag.matches"><strong>Matches</strong></span>
-												</a>
-											</li>
+                                                <a asp-controller="Home" asp-action="Matches">
+                                                    <span class="@ViewBag.matches"><strong>Matches</strong></span>
+                                                </a>
+                                            </li>
 
-											<li class="header-menu-item">
-												<a asp-controller="Home" asp-action="Shop">
-													<span class="@ViewBag.shop"><strong>Shop</strong></span>
-												</a>
-											</li>
-											<li class="header-menu-item">
-												<a asp-controller="Home" asp-action="Schedule">
-													<span class="@ViewBag.schedule"><strong>Schedule</strong></span>
-												</a>
-											</li>
-											<li class="header-menu-item">
-												<a asp-controller="Home" asp-action="Blog">
-													<span class="@ViewBag.blog"><strong>Blog</strong></span>
-												</a>
-											</li>
-											<li class="header-menu-item">
-												<a asp-controller="Home" asp-action="Players">
-													<span class="@ViewBag.players"><strong>Players</strong></span>
-												</a>
-											</li>
-											<li class="header-menu-item">
-												<a asp-controller="Home" asp-action="Contact">
-													<span class="@ViewBag.contact"><strong>contact</strong></span>
-												</a>
-											</li>
-											<li class="header-menu-item">
-												<a asp-controller="Home" asp-action="Feedback">
-													<span class="@ViewBag.feedbackActive"><strong>FeedBack</strong></span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</nav>
-						</div>
-						<div class="header-right col-xl-3 col-lg-6 col-sm-6" style="display:flex;justify-content:right;align-items:right;">
-							<div class="header-search">
-								@using (Html.BeginForm("Search", "Home", FormMethod.Get))
-								{
-									<div id="themabilitySearch" class="input-group themability-search">
-										<input type="text" name="keyword" value="" placeholder="Search..." class="form-control input-lg ui-autocomplete-input" autocomplete="off">
-										<span class="btn-search input-group-btn">
-											<button type="submit" class="btn  btn-lg">
-												<i class="icon-search">
-												</i>
-											</button>
-										</span>
-									</div>
-								}
+                                            <li class="header-menu-item">
+                                                <a asp-controller="Home" asp-action="Shop">
+                                                    <span class="@ViewBag.shop"><strong>Shop</strong></span>
+                                                </a>
+                                            </li>
+                                            <li class="header-menu-item">
+                                                <a asp-controller="Home" asp-action="Schedule">
+                                                    <span class="@ViewBag.schedule"><strong>Schedule</strong></span>
+                                                </a>
+                                            </li>
+                                            <li class="header-menu-item">
+                                                <a asp-controller="Home" asp-action="Blog">
+                                                    <span class="@ViewBag.blog"><strong>Blog</strong></span>
+                                                </a>
+                                            </li>
+                                            <li class="header-menu-item">
+                                                <a asp-controller="Home" asp-action="Players">
+                                                    <span class="@ViewBag.pl"><strong>Players</strong></span>
+                                                </a>
+                                            </li>
+                                            <li class="header-menu-item">
+                                                <a asp-controller="Home" asp-action="Contact">
+                                                    <span class="@ViewBag.contact"><strong>contact</strong></span>
+                                                </a>
+                                            </li>
+                                            <li class="header-menu-item">
+                                                <a asp-controller="Home" asp-action="Feedback">
+                                                    <span class="@ViewBag.feedbackActive"><strong>FeedBack</strong></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="header-right col-xl-3 col-lg-6 col-sm-6" style="display:flex;justify-content:right;align-items:right;">
+                            <div class="header-search">
+                                @using (Html.BeginForm("Search", "Home", FormMethod.Get))
+                                {
+                                    <div id="themabilitySearch" class="input-group themability-search">
+                                        <input type="text" name="keyword" value="" placeholder="Search..." class="form-control input-lg ui-autocomplete-input" autocomplete="off">
+                                        <span class="btn-search input-group-btn">
+                                            <button type="submit" class="btn  btn-lg">
+                                                <i class="icon-search">
+                                                </i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                }
 
-								@{
-									if (Session.UserId != 0)
-									{
-										<div id="cart" class="cart-button">
-											<a asp-controller="Users" asp-action="UserDetails" asp-route-id="@Session.UserId">
-												<button class="btn btn-inverse btn-default btn-block" aria-expanded="true">
-													<i class="fa-solid fa-user"></i>
-												</button>
-											</a>
-										</div>
-										<div id="cart" class="cart-button">
-											<a asp-controller="Carts" asp-action="Cart">
-												<button class="btn btn-inverse btn-default btn-block" aria-expanded="true">
-													<i class="fa-solid fa-cart-shopping"></i>
+                                @if (Session.UserId != 0){
+                                    <div id="cart" class="cart-button" title="Profile">
+                                        <a asp-controller="Users" asp-action="UserDetails" asp-route-id="@Session.UserId" class="btn btn-inverse btn-default btn-block">
+                                            <i class="fa-solid fa-user"></i>
+                                        </a>
+                                    </div>
+                                    <div id="cart" class="cart-button" title="Cart">
+                                        <a asp-controller="Carts" asp-action="Cart" class="btn btn-inverse btn-default btn-block">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            @if (Session.CartCount != "0")
+                                            {
+                                                <span id="cart-total" class="new">
+                                                    <span class="d-none">My Cart</span>@Session.CartCount
+                                                    <span class="d-none">items</span>
+                                                </span>
+                                            }
+                                        </a>
+                                    </div>
+                                    <div id="cart" class="cart-button" title="Logout">
+                                        <a asp-controller="Users" asp-action="Logout" class="btn btn-inverse btn-default btn-block">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div id="cart" class="cart-button" title="Login">
+                                        <a asp-controller="Users" asp-action="Login" class="btn btn-inverse btn-default btn-block" aria-expanded="true">
+                                            <i class="fas fa-sign-in-alt"></i>
+                                        </a>
+                                    </div>
+                                }
 
-												</button>
-											</a>
-										</div>
-										<div id="cart" class="cart-button">
-											<a asp-controller="Users" asp-action="Logout">
-												<button class="btn btn-inverse btn-default btn-block" aria-expanded="true">
-													<i class="fa-solid fa-lock"></i>
-												</button>
-											</a>
-										</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-									}
-									else
-									{
-										<div id="cart" class="cart-button">
-											<a asp-controller="Users" asp-action="Login">
-												<button class="btn btn-inverse btn-default btn-block" aria-expanded="true">
-													<i class="fa-solid fa-lock"></i>
-												</button>
-											</a>
-										</div>
-									}
-								}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+    @RenderBody()
 
-	@RenderBody()
-
-	<!-- .PAGE CONTENT -->
-	<p class="border-dashed"></p>
-	<!-- FOOTER AREA -->
-	<footer>
-		<div class="container">
-			<div class="footer-top">
-				<div class="row">
-					<div class="col-lg-3">
-						<div class="position-footer-left">
-							<div>
-								<h2 class="toggled">
-									contact
-									<span class="toggle"><i class="fa fa-chevron-down"></i></span>
-								</h2>
-								<ul class="list-unstyled footer_collaps">
-									<li>
-										<div class="site">
-											<div class="contact_title"><i class="fa-solid fa-location-dot"></i></div>
-											<div class="contact_site">
-												National park,d1 588436,
-												<br>United States
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="phone">
-											<div class="contact_title"><i class="fa fa-phone"></i></div>
-											<div class="contact_site">+91 123 456 789</div>
-										</div>
-									</li>
-									<li>
-										<div class="fax">
-											<div class="contact_title"><i class="fa fa-fax"></i></div>
-											<div class="contact_site">0123-456-789</div>
-										</div>
-									</li>
-									<li>
-										<div class="email">
-											<div class="contact_title"><i class="fa fa-envelope"></i></div>
-											<div class="contact_site"><a href="mailto:info@Yourstore.com">demo@Yourstore.com</a></div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<h2 class="toggled">Information <span class="toggle"><i class="fa fa-chevron-down"></i></span></h2>
-						<ul class="list-unstyled footer_collaps">
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Delivery Information</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Terms &amp; Conditions</a></li>
-							<li><a href="#"> Site Map</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 d-none">
-						<h2 class="toggled">Customer Service</h2>
-						<ul class="list-unstyled footer_collaps"></ul>
-					</div>
-					<div class="col-lg-3">
-						<h2 class="toggled">Extras <span class="toggle"><i class="fa fa-chevron-down"></i></span></h2>
-						<ul class="list-unstyled">
-							<li><a href="#">Brands</a></li>
-							<li><a href="#">Gift Certificates</a></li>
-							<li><a href="#">Affiliate</a></li>
-							<li><a href="#">Specials</a></li>
-							<li><a href="#"> Site Map</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3">
-						<h2 class="toggled">My Account <span class="toggle"><i class="fa fa-chevron-down"></i></span></h2>
-						<ul class="list-unstyled footer_collaps">
-							<li><a href="#">My Account</a></li>
-							<li><a href="#">Order History</a></li>
-							<li><a href="#">Wish List</a></li>
-							<li><a href="#">Newsletter</a></li>
-							<li>
-								<a href="#">Returns</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-lg-3">
-						<div class="position-footer-right">
-							<div>
-								<h2 class="toggled">find us on</h2>
-								<div class="follow-link">
-									<div class="social-media">
-										<a href="#">
-											<i class="fa-brands fa-facebook-f"></i>
-										</a>
-										<a href="#">
-											<i class="fa-brands fa-twitter"></i>
-										</a>
-										<a href="#">
-											<i class="fa-brands fa-instagram"></i>
-										</a>
-										<a href="#">
-											<i class="fa-brands fa-pinterest"></i>
-										</a>
-										<a href="#">
-											<i class="fa-brands fa-youtube"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="position-footer-right">
-							<div>
-								<h2 class="toggled">payment</h2>
-								<div class="payment-link">
-									<div class="payment-method">
-										<a href="#">
-											<i class="fa-brands fa-cc-visa"></i>
-										</a>
-										<a href="#">
-											<i class="fa-brands fa-cc-mastercard"></i>
-										</a>
-										<a href="#">
-											<i class="fa-brands fa-cc-paypal"></i>
-										</a>
-										<a href="#">
-											<i class="fa-brands fa-cc-discover"></i>
-										</a>
-										<a href="#">
-											<i class="fa-brands fa-cc-amex"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<p class="copyright">Powered By <a href="#">Soccer Club </a><br> - 2023.</p>
-		</div>
-	</footer>
-	<a href="#" class="scrollToTop back-to-top" data-toggle="tooltip" title="" data-original-title="Top" style="display: block;"></a>
-	<!-- .FOOTER AREA -->
-	<!-- Main jquery js -->
-	<script src="~/assets_web/js/vendor/jquery-3.2.1.min.js"></script>
-	<!-- bootstrap js -->
-	<script src="~/assets_web/js/bootstrap.min.js"></script>
-	<!-- owl-carousel js -->
-	<script src="~/assets_web/js/owl.carousel.min.js"></script>
-	<!-- wow js -->
-	<script src="~/assets_web/ajax/libs/wow/1.1.2/wow.min.js"></script>
-	<!-- Main js -->
-	<script src="~/assets_web/js/theme.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <!-- .PAGE CONTENT -->
+    <p class="border-dashed"></p>
+    <!-- FOOTER AREA -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="position-footer-left">
+                            <div>
+                                <h2 class="toggled">
+                                    contact
+                                    <span class="toggle"><i class="fa fa-chevron-down"></i></span>
+                                </h2>
+                                <ul class="list-unstyled footer_collaps">
+                                    <li>
+                                        <div class="site">
+                                            <div class="contact_title"><i class="fa-solid fa-location-dot"></i></div>
+                                            <div class="contact_site">
+                                                National park,d1 588436,
+                                                <br>United States
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="phone">
+                                            <div class="contact_title"><i class="fa fa-phone"></i></div>
+                                            <div class="contact_site">+91 123 456 789</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="fax">
+                                            <div class="contact_title"><i class="fa fa-fax"></i></div>
+                                            <div class="contact_site">0123-456-789</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="email">
+                                            <div class="contact_title"><i class="fa fa-envelope"></i></div>
+                                            <div class="contact_site"><a href="mailto:info@Yourstore.com">demo@Yourstore.com</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="toggled">Information <span class="toggle"><i class="fa fa-chevron-down"></i></span></h2>
+                        <ul class="list-unstyled footer_collaps">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#"> Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 d-none">
+                        <h2 class="toggled">Customer Service</h2>
+                        <ul class="list-unstyled footer_collaps"></ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="toggled">Extras <span class="toggle"><i class="fa fa-chevron-down"></i></span></h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Brands</a></li>
+                            <li><a href="#">Gift Certificates</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Specials</a></li>
+                            <li><a href="#"> Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="toggled">My Account <span class="toggle"><i class="fa fa-chevron-down"></i></span></h2>
+                        <ul class="list-unstyled footer_collaps">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Wish List</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="position-footer-right">
+                            <div>
+                                <h2 class="toggled">find us on</h2>
+                                <div class="follow-link">
+                                    <div class="social-media">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-pinterest"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-footer-right">
+                            <div>
+                                <h2 class="toggled">payment</h2>
+                                <div class="payment-link">
+                                    <div class="payment-method">
+                                        <a href="#">
+                                            <i class="fa-brands fa-cc-visa"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-cc-mastercard"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-cc-paypal"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-cc-discover"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-cc-amex"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Powered By <a href="#">Soccer Club </a><br> - 2023.</p>
+        </div>
+    </footer>
+    <a href="#" class="scrollToTop back-to-top" data-toggle="tooltip" title="" data-original-title="Top" style="display: block;"></a>
+    <!-- .FOOTER AREA -->
+    <!-- Main jquery js -->
+    <script src="~/assets_web/js/vendor/jquery-3.2.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="~/assets_web/js/bootstrap.min.js"></script>
+    <!-- owl-carousel js -->
+    <script src="~/assets_web/js/owl.carousel.min.js"></script>
+    <!-- wow js -->
+    <script src="~/assets_web/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Main js -->
+    <script src="~/assets_web/js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
 
 
-	@await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("Scripts", required: false)
 
 </body>
 </html>

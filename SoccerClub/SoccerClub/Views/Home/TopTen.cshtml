@@ -2,27 +2,75 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+	int count = 1;
 }
-@model Root
+@model IndexVM
 
-<h1>Top Ten Scorers</h1>
+<main>
+	<div class="common-home">
+		@foreach (var leagues in ViewBag.TopTenScores)
+		{
+			count = 1;
+			var data = (Root)leagues.GetValue(Model);
+			<div id="content" class="col">
+				<!-- fixures -->
+				<div class="category-featured mt-50  wow fadeInUp">
+					<div class="box-content">
+						<div class="container">
+							<div class="page-title toggled">
+								<span class="page-title-left"></span>
+								<h3>
+									Top Ten Scorrers of @data.competition.name
+								</h3>
+								<span class="page-title-right"></span>
+							</div>
 
-<table>
-    <tr>
-        <th>Player Name</th>
-        <th>Team</th>
-        <th>Goals</th>
-        <th>Assists</th>
-        <th>Penalties</th>
-    </tr>
-    @foreach (var scorer in Model.scorers)
-    {
-        <tr>
-            <td>@scorer.player.firstName @scorer.player.lastName</td>
-            <td>@scorer.team.name</td>
-            <td>@scorer.goals</td>
-            <td>@(scorer.assists ?? 0)</td>
-            <td>@(scorer.penalties ?? 0)</td>
-        </tr>
-    }
-</table>
+							@foreach (var item in data.scorers)
+							{
+
+								<div class="row matche-1">
+									<div class="col-6 matches-team-left ">
+										<div class="date-time">
+											<i class="fa-regular fa-calendar-days d-none"></i>
+											<div class="blog-date">@count</div>
+										</div>
+										<div class="matches-team">
+											<a>
+												<img src="@item.team.crest" alt="">
+												<div class="matches-team-name">
+													@item.team.shortName
+												</div>
+											</a>
+										</div>
+										<div class="vs">     </div>
+										<div class="matches-team">
+											<a>
+												<div class="matches-team-name">
+													@item.player.name
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="matches-team-right col-6">
+										<div class="match-location">
+											<div>Matches Played: @item.playedMatches</div>
+											<div>Goals : @item.goals</div>
+											<div>Assists: @((item.assists == null) ? 0 : item.goals)</div>
+											<div>Penalties : @((item.penalties == null) ? 0 : item.goals)</div>
+											<a asp-action="MatchesDetail" asp-controller="Home" asp-route-id="" class="btn-default">view details</a>
+										</div>
+									</div>
+								</div>
+								count += 1;
+							}
+
+							<div class="news mt-50 wow fadeInUp">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		}
+		
+	</div>
+</main>

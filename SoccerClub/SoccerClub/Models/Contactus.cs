@@ -17,7 +17,8 @@ namespace SoccerClub.Models
 
 		[Required(ErrorMessage = "Enter Your Phone Number(eg.03XXXXXXXXX)")]
 		[StringLength(11, ErrorMessage = "Please Enter Valid Phone Number")]
-		public string PhoneNumber { get; set; }
+        [RegularExpression("^03[0-9]{9}$", ErrorMessage = "Invalid format. It should start with '03' and have 8 digits.")]
+        public string PhoneNumber { get; set; }
 
 		[Required(ErrorMessage = "Enter Your Email")]
 		[MaxLength(50, ErrorMessage = "Maximum 50 Characters Allowed")]

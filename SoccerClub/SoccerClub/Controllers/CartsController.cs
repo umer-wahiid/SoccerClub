@@ -23,6 +23,7 @@ namespace SoccerClub.Controllers
                                  .ThenInclude(product => product.Category)
                                 .Where(x => x.UserId == Session.UserId && x.Status == true)
                                 .ToList();
+                Session.CartCount=cartItems.Count().ToString();
                 return View(cartItems);
             }
 
@@ -90,6 +91,7 @@ namespace SoccerClub.Controllers
         {
             if (Session.UserId != 0)
             {
+                Session.CartCount = "0";
                 Order order = new Order();
                 int totalAmount = 0;
                 var cartdata = _context.Carts.Include(p => p.product).Include(u => u.User).Where(x => x.UserId.Equals(Session.UserId) && x.Status == true).ToList();

@@ -19,8 +19,9 @@
 	<link rel="icon" type="image/png" href="~/assets_web/images/favicon.png">
 
 </head>
-<body class="img js-fullheight" style="background-image: url(../assets_login/images/bg.jpg);">
-	<section class="ftco-section">
+<body>
+
+	<section class="img js-fullheight" style="background-image: url(../assets_login/images/bg.jpg);display:flex;justify-content:center;align-items:center;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
@@ -69,17 +70,13 @@
 									<input asp-for="Address" id="addressInput" type="text" class="form-control" readonly="readonly" hidden>
 								</div>
 							</div>
-
+							<p class="w-100 text-center"> Already have an account? <a asp-action="Login" asp-controller="Users" class="txtreg">Login</a></p>
 							<div class="form-group">
 								<button type="submit" class="form-control btn btn-primary submit px-3">Sign Up</button>
 							</div>
 							
 						</form>
-						<p class="w-100 text-center">Already have an Account ?</p>
-						<div class="social d-flex text-center">
-							@*<a href="#" class="px-2 py-2 mr-md-1 rounded d-none"><span class="ion-logo-facebook mr-2"></span> Facebook</a>*@
-							<a asp-action="Login" asp-controller="Users" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span>Login</a>
-						</div>
+						
 					</div>
 				</div>
 			</div>

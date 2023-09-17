@@ -3,28 +3,11 @@
     ViewData["Title"] = "Feedback";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<!-- breadcrumb -->
-<div class="breadcrumb-main">
-    <div class="container">
-        <div class="breadcrumb-container">
-            <h2 class="page-title">Feedback</h2>
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a href="#">Feedback</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+
 <!-- main -->
 <main>
-    <div class="common-home">
-        <div id="content" class="col">
+    <div class="common-home mt-5">
+        <div id="content" class="mt-5 col">
             <div class="container">
                 <div class="box-content">
                     <div class="row">
@@ -32,11 +15,9 @@
                             <div class="contact-inner">
                                 <span style="color:lawngreen;">@ViewBag.feedback</span>
                                 <br></br>
-                                <span>contact with us</span>
-                                <h2>Get In Touch With Authority</h2>
+                                <h2>Together, We Grow<br/>Provide Your Valuable Feedback</h2>
                                 <p>
-                                    Get probable winning tips from professional betting tipsters across all sports
-                                    and offers from leading bookmakers! See how it works!
+                                    Your feedback matters! We value your thoughts and insights, which help us improve our services. Please take a moment to share your feedback with us. Thank you for helping us serve you better!
                                 </p>
                             </div>
                         </div>
@@ -52,7 +33,7 @@
                                         <div class="grp-1">
                                             <div class="grp-in-2">
                                                 <span> Full Name *</span>
-                                                <input type="text" value="@ViewBag.Name" readonly
+                                                <input type="text" value="@Session.Name" readonly
                                                        class="form-control input-lg ui-autocomplete-input">
                                             </div>
                                         </div>

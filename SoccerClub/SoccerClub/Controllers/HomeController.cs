@@ -8,6 +8,7 @@ using SoccerClub.Models;
 using System.Diagnostics;
 using SoccerClub.API;
 using Microsoft.DotNet.MSIdentity.Shared;
+using System.Net.Http.Json;
 
 namespace SoccerClub.Controllers
 {
@@ -23,17 +24,34 @@ namespace SoccerClub.Controllers
 			this.db = db;
 			this._apiHelper = apiHelper;
 		}
-		public IActionResult TopTen()
+       
+        public IActionResult TopTen()
+		
 		{
 
-			var jsonContent = _apiHelper.TopTenScores();
-			jsonContent = jsonContent.Replace("\r\n", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
-			Root apiResponse = JsonConvert.DeserializeObject<Root>(jsonContent);
-			//var jsonObject = JObject.Parse(jsonContent);
-			//var CompetitionArray = jsonObject["scorers"].ToString();
-			//Root responseList = JsonConvert.DeserializeObject<Root>(jsonContent);
-			//return View(responseList);
-			return View(apiResponse);
+			var wcResponse = _apiHelper.TopTenScores("WC");
+			wcResponse = wcResponse.Replace("\r\n", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
+			Root wcApiResponse = JsonConvert.DeserializeObject<Root>(wcResponse);
+
+			var clResponse = _apiHelper.TopTenScores("SA");
+			clResponse = clResponse.Replace("\r\n", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
+			Root clApiResponse = JsonConvert.DeserializeObject<Root>(clResponse);
+
+			var plResponse = _apiHelper.TopTenScores("PL");
+			plResponse = plResponse.Replace("\r\n", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
+			Root plApiResponse = JsonConvert.DeserializeObject<Root>(plResponse);
+
+			var topTenScorersViewModel = new IndexVM
+			{
+                WorldCup= wcApiResponse,
+                Premier = plApiResponse,
+                UEFA = clApiResponse
+            };
+            var allTopScorers = topTenScorersViewModel.GetType().GetProperties()
+            .Where(prop => prop.PropertyType == typeof(Root))
+            .ToList();
+           ViewBag.TopTenScores = allTopScorers;
+                return View(topTenScorersViewModel);
 		}
 
 		public IActionResult Index()
@@ -63,8 +81,8 @@ namespace SoccerClub.Controllers
 			ViewBag.keyword = keyword;
 			var ViewModel = new IndexVM
 			{
-				matches = db.Matches.Where(m => m.AwayTeam.Name.Contains(keyword) || m.HomeTeam.Name.Contains(keyword)).ToList(),
-				player = db.Players.Where(m => m.Name.Contains(keyword)).ToList(),
+				matches = db.Matches.Include(x => x.AwayTeam).Include(x => x.HomeTeam).Where(m => m.AwayTeam.Name.Contains(keyword) || m.HomeTeam.Name.Contains(keyword)).ToList(),
+				player = db.Players.Include(x => x.Team).Where(m => m.Name.Contains(keyword)).ToList(),
 				team = db.Teams.Where(m => m.Name.Contains(keyword)).ToList(),
 				product = db.Products.Where(m => m.ProductName.Contains(keyword)).ToList(),
 			};
@@ -96,8 +114,6 @@ namespace SoccerClub.Controllers
 				ToList();
 			return View(match);
 		}
-
-
 		// GET: Matches/Details/5
 		public async Task<IActionResult> MatchesDetail(int? id)
 		{
@@ -163,8 +179,8 @@ namespace SoccerClub.Controllers
 		}
 		public IActionResult Players()
 		{
-            ViewBag.players = "toactive";
-            return View(db.Players.ToList());
+            ViewBag.pl = "toactive";
+            return View(db.Players.Include(x=>x.Team).ToList());
 		}
 
 		public async Task<IActionResult> PlayersDetail(int? id)
@@ -212,8 +228,9 @@ namespace SoccerClub.Controllers
             ViewBag.feedbackActive = "toactive";
             if (Session.UserId != 0)
 			{
-				ViewBag.Name = HttpContext.Session.GetString("Name");
-				return View();
+
+				ViewBag.feedback = "";
+                return View();
 			}
 			return RedirectToAction("Login", "Users");
 		}

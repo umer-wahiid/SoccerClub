@@ -3,12 +3,18 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Newtonsoft.Json;
 using RestSharp;
 using SoccerClub.Models;
+using System.Configuration;
 using Method = RestSharp.Method;
 
 namespace SoccerClub.API
 {
     public class ApiHelper:IApiHelper
     {
+		private readonly IConfiguration _configuration;
+		public ApiHelper(IConfiguration _configuration) 
+        {
+            this._configuration = _configuration;
+        }
         public string GetRecentUpdates()
         {
             var options = new RestClientOptions("https://gnews.io")
@@ -26,16 +32,17 @@ namespace SoccerClub.API
             
             return jsonContent;
         }
-
-		public string TopTenScores()
-		{
+         
+		public string TopTenScores(string competition)
+        {
+            var apiKey = _configuration["ApiSettings:TopTenApiKey"];
 			var options = new RestClientOptions("http://api.football-data.org")
 			{
 				MaxTimeout = -1,
 			};
 			var client = new RestClient(options);
-			var request = new RestRequest("/v4/competitions/PL/scorers", Method.Get);
-			request.AddHeader("X-Auth-Token", "69d6a0600dd341feac1fa7ff7e78536c");
+			var request = new RestRequest($"/v4/competitions/{competition}/scorers", Method.Get);
+            request.AddHeader("X-Auth-Token", apiKey);
 			RestResponse response = client.Execute(request);
 			string jsonContent = response.Content;
 			return jsonContent;

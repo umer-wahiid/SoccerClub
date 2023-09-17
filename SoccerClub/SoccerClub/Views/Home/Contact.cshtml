@@ -4,104 +4,116 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!-- breadcrumb -->
-<div class="breadcrumb-main">
-    <div class="container">
-        <div class="breadcrumb-container">
-            <h2 class="page-title">Contact</h2>
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
 <!-- main -->
 <main>
-    <div class="common-home">
-        <div id="content" class="col">
-            <div class="container">
-                <div class="box-content">
-                    <div class="row">
-                        <div class="contact-section1">
-                            <div class="contact-inner">
-                                <span style="color:lawngreen;">@ViewBag.ContactMsg</span>
-                                <br></br>
-                                <span>contact with us</span>
-                                <h2>Get In Touch With Authority</h2>
-                                <p>
-                                    Get probable winning tips from professional betting tipsters across all sports
-                                    and offers from leading bookmakers! See how it works!
-                                </p>
-                            </div>
+    <div class="common-home mt-5 mb-5">
+        <div id="content" class="mt-5 mb-5 col">
+            <div class="container mt-5 mb-5">
+                <div class="shop-section row d-flex justify-content-center">
+
+                    <div class="col col-md-3 mb-5 col-sm-12 col-md-3 text-center">
+                        <div class="team_store contact-cards">
+                            <div class=" mb-3 contctbrand "><i class="fa fa-map-marker" style="color:#F22361;font-size:xx-large"></i></div>
+                            <h2 class="fw-bold">LOCATION</h2>
+                            <p class=" fw-bold" style="color:;">Street #420,Demo Socitey. </p>
                         </div>
                     </div>
-                    <div class="row contact-section2">
-                        <div class="col-sm-6">
-                            <img src="~/assets_web/images/contact/contact.png" alt="" class="w-100">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="contact-inner-right">
-                                <form id="form-contact" asp-action="Contact">
-                                    <fieldset>
-                                        <div class="grp-1">
-                                            <div class="grp-in-2">
-                                                <span> First Name *</span>
-                                                <input asp-for="FirstName" type="text"  value="" placeholder="Your Name"
-                                                       class="form-control input-lg ui-autocomplete-input">
-                                            </div>
-                                            <div class="grp-in-2">
-                                                <span> Last Name *</span>
-                                                <input asp-for="LastName" type="text"  value="" placeholder="Last Name"
-                                                       class="form-control input-lg ui-autocomplete-input" required>
-                                            </div>
-                                        </div>
 
-                                        <div class="grp-1">
-                                            <div class="grp-in-2">
-                                                <span>Phone Number *</span>
-                                                <input asp-for="PhoneNumber" type="number"  value="" placeholder="Phone Number"
+                    <div class="col col-md-3 mb-5 col-sm-12 col-md-3 text-center">
+                        <div class="team_store contact-cards">
+                            <div class=" mb-3 contctbrand "><i class="fa fa-envelope" style="color:#F22361;font-size:xx-large"></i></div>
+                            <h2 class="fw-bold">EMAIL</h2>
+                            <p class=" fw-bold" style="color:;">SoccerClub@SfcAwesome.com</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col col-md-3 mb-5 col-sm-12 col-md-3 text-center">
+                        <div class="team_store contact-cards">
+                            <div class=" mb-3 contctbrand "><i class="fa fa-phone" style="color:#F22361;font-size:xx-large"></i></div>
+                            <h2 class="fw-bold">PHONE</h2>
+                            <p class=" fw-bold">0317 0241586</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="box-content">
+                        <div class="row">
+                            <div class="contact-section1">
+                                <div class="contact-inner">
+                                    <span style="color:lawngreen;">@ViewBag.ContactMsg</span>
+                                    <br></br>
+                                    <span>contact with us</span>
+                                    <h2>Get In Touch With Authority</h2>
+                                    <p>
+                                        Get probable winning tips from professional betting tipsters across all sports
+                                        and offers from leading bookmakers! See how it works!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row contact-section2">
+                            <div class="col-sm-6">
+                                <img src="~/assets_web/images/contact/contact.png" alt="" class="w-100">
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="contact-inner-right">
+                                    <form id="form-contact" asp-action="Contact">
+                                        <fieldset>
+                                            <div class="grp-1">
+                                                <div class="grp-in-2">
+                                                    <span> First Name *</span>
+                                                    <input asp-for="FirstName" type="text" value="" placeholder="Your Name"
+                                                           class="form-control input-lg ui-autocomplete-input">
+                                                </div>
+                                                <div class="grp-in-2">
+                                                    <span> Last Name *</span>
+                                                    <input asp-for="LastName" type="text" value="" placeholder="Last Name"
+                                                           class="form-control input-lg ui-autocomplete-input" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="grp-1">
+                                                <div class="grp-in-2">
+                                                    <span>Phone Number *</span>
+                                                    <input asp-for="PhoneNumber" type="number" value="" placeholder="Phone Number"
+                                                           class="form-control input-lg ui-autocomplete-input" required>
+                                                </div>
+                                                <div class="grp-in-2">
+                                                    <span>Email *</span>
+                                                    <input asp-for="Email" type="email" value="" placeholder="Email"
+                                                           class="form-control input-lg ui-autocomplete-input" required>
+                                                </div>
+                                            </div>
+                                            <div class="grp-3">
+                                                <span>Comment *</span>
+                                                <input asp-for="Comment" type="text" value="" placeholder="Comment"
                                                        class="form-control input-lg ui-autocomplete-input" required>
                                             </div>
-                                            <div class="grp-in-2">
-                                                <span>Email *</span>
-                                                <input asp-for="Email" type="email"  value="" placeholder="Email"
-                                                       class="form-control input-lg ui-autocomplete-input" required>
+                                            <div class="grp-1">
+                                                <div class="grp-in-2">
+                                                    <button type="submit" class="btn-default">Confirm</button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="grp-3">
-                                            <span>Comment *</span>
-                                            <input asp-for="Comment" type="text"  value="" placeholder="Comment"
-                                                   class="form-control input-lg ui-autocomplete-input" required>
-                                        </div>
-                                        <div class="grp-1">
-                                            <div class="grp-in-2">
-                                                <button type="submit" class="btn-default">Confirm</button>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="col-xs-12 form-message">
+                                                <div class="submitted">Your message has been sent successfully</div>
                                             </div>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset>
-                                        <div class="col-xs-12 form-message">
-                                            <div class="submitted">Your message has been sent successfully</div>
-                                        </div>
-                                    </fieldset>
-                                </form>
+                                        </fieldset>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="container">
+                </div>
+                <!--  -->
+                <!--  -->
             </div>
-            <div class="container">
-
-            </div>
-            <!--  -->
-            <!--  -->
         </div>
     </div>
 </main>

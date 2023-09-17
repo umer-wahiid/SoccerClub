@@ -36,7 +36,7 @@ namespace SoccerClub.Controllers
 			{
 				return RedirectToAction("Index", "Home");
 			}
-			return View(context.Feedbacks.ToList());
+			return View(context.Feedbacks.Include(x=>x.User).ToList());
         }
         public IActionResult Teams()
 		{
