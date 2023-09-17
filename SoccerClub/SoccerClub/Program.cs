@@ -18,8 +18,8 @@ namespace SoccerClub
             });
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
-			builder.Services.AddTransient<IApiHelper, ApiHelper>();
+            builder.Services.AddHttpClient();
+            builder.Services.AddTransient<IApiHelper, ApiHelper>();
 			var app = builder.Build();
 
             // Configure the HTTP request pipeline.

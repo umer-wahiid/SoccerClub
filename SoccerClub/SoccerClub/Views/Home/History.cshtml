@@ -1,0 +1,308 @@
+﻿@{
+    ViewData["Title"] = "History";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .blog_title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        background-color: #F22361;
+    }
+
+    .Maintitle::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 3px;
+        background-color: #F22361;
+    }
+
+    ol {
+        padding: 0px 50px 0px 50px;
+    }
+
+        ol li:not(:first-child) span {
+            color: #F22361;
+        }
+</style>
+<main>
+    <div class="common-home">
+        <div id="content" class="col">
+            <div class="container p-5">
+                <div class="single-blog">
+                    <div class="article-blog">
+                        <div class="blog-image">
+                            <img src="~/assets_login/images/bg.jpg" alt="There Are Many Variations" title="There Are Many Variations" class="img-responsive mw-100">
+                        </div>
+                        <div style="font-weight: bold;font-size:30px;display:flex; justify-content:center;align-items:center;margin-top:30px;">
+                            <span class="Maintitle" style="position:relative;display: inline-block;">SOCCER - The World's Game</span>
+                        </div>
+                        <div class="blog-description pt-4">
+                            <div class="date-time-single">
+                                @* <i class="fa-regular fa-calendar-days"></i> *@
+                                <span style="padding:0px 15px 0px 15px;">First Played : 	Mid-19th century England</span>
+                            </div>
+                            @*                             <div class="blog_title" style="font-weight: bold;position:relative;display: inline-block;">
+                            SOCCER - The World's Game
+                            </div> *@
+                            <div class="blog-desc">
+                                <p style="padding:0px 15px 0px 15px;text-align: justify;">
+                                    Soccer  is a team sport played between two teams of 11 players each, who primarily use their feet to propel a ball around a rectangular field called a pitch. The objective of the game is to score more goals than the opposing team by moving the ball beyond the goal line into a rectangular-framed goal defended by the opposing team. Traditionally, the game has been played over two 45-minute halves, for a total match time of 90 minutes. With an estimated 250 million players active in over 200 countries and territories, it is the world's most popular sport.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="blog-description pt-4" style="padding:0px 15px 0px 15px;">
+                            <div class="blog_title" style="font-weight: bold;position:relative;display: inline-block;">
+                                HISTORY
+                            </div>
+                            <div class="blog-desc">
+                                <p style="padding:0px 15px 0px 15px;text-align: justify;">
+                                    The term soccer comes from Oxford "-er" slang, which was prevalent at the University of Oxford in England from about 1875, and is thought to have been borrowed from the slang of Rugby School. Initially spelled assoccer, it was later reduced to the modern spelling. This form of slang also gave rise to rugger for rugby football, fiver and tenner for five pound and ten pound notes, and the now-archaic footer that was also a name for association football. The word soccer arrived at its final form in 1895 and was first recorded in 1889 in the earlier form of socca.
+                                </p>
+                                <p style="padding:0px 15px 0px 15px;text-align: justify;">
+                                    Football in itself does not have a classical history. Notwithstanding any similarities to other ball games played around the world, FIFA has described that no historical connection exists with any game played in antiquity outside Europe. The history of football in England dates back to at least the eighth century. The modern rules of association football are based on the mid-19th century efforts to standardise the widely varying forms of football played in the public schools of England.
+                                </p>
+                                <p style="padding:0px 15px 0px 15px;text-align: justify;">
+                                    The Cambridge rules, first drawn up at the University of Cambridge in 1848, were particularly influential in the development of subsequent codes, including association football. The Cambridge rules were written at Trinity College, Cambridge, at a meeting attended by representatives from Eton, Harrow, Rugby, Winchester and Shrewsbury schools. They were not universally adopted. During the 1850s, many clubs unconnected to schools or universities were formed throughout the English-speaking world to play various forms of football. Some came up with their own distinct codes of rules, most notably the Sheffield Football Club, formed by former public school pupils in 1857, which led to the formation of a Sheffield FA in 1867. In 1862, John Charles Thring of Uppingham School also devised an influential set of rules.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="blog-description pt-4" style="padding:0px 15px 0px 15px;">
+                            <div class="blog_title" style="font-weight: bold;position:relative;display: inline-block;">
+                                RULES
+                            </div>
+                            <div class="blog-desc">
+                                <p style="padding:0px 15px 0px 15px;text-align: justify;">
+                                    Soccer, also known as football in most parts of the world, is governed by a set of rules to ensure fair play and consistency in the game. These rules are defined by the International Football Association Board (IFAB). Here are some of the fundamental rules of soccer:
+                                    <ol style="padding:0px 50px 0px 50px;">
+                                        <li>
+                                            <span style="color:#F22361;">The Field: </span>
+                                            Soccer is typically played on a rectangular field with dimensions that can vary but are generally around 100-130 meters (328-427 feet) in length and 64-75 meters (210-245 feet) in width. The field is marked with lines for boundaries, a center circle, and penalty areas.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">The Ball: </span>
+                                            The game is played with a spherical ball.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Teams: </span>
+                                            Each team consists of 11 players, including one goalkeeper.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Objective: </span>
+                                            The primary objective is to score goals by getting the ball into the opposing team's goal. The team with the most goals at the end of the game wins.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Offside Rule: </span>
+                                            A player is in an offside position if they are nearer to the opponent's goal line than the ball when it is played to them, unless:
+                                            <ul>
+                                                <li>They are in their own half of the field.</li>
+                                                <li>
+                                                    They are level with the second-to-last defender (including the goalkeeper).
+                                                </li>
+                                                <li>
+                                                    They are level with the last two defenders if they are in line with the second-to-last defender (including the goalkeeper).
+                                                </li>
+                                                <li>
+                                                    Being in an offside position is not an offense in itself, but a player can be penalized for being actively involved in play while in an offside position.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Fouls and Free Kicks: </span>
+                                            Common fouls include tripping, pushing, holding, and dangerous play. When a foul occurs, the opposing team is awarded a free kick, which can be either direct (a goal can be scored directly from the kick) or indirect (another player must touch the ball before a goal can be scored).
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Yellow and Red Cards: </span>
+                                            Referees use yellow cards to caution players for unsporting behavior and red cards to send players off the field for serious misconduct. A red card can result from dangerous fouls or repeated yellow card offenses.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Penalty Kicks: </span>
+                                            A penalty kick is awarded when a foul is committed by the defending team within their penalty area. It's a one-on-one situation between the attacker and the goalkeeper.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Throw-Ins: </span>
+                                            When the ball goes out of play over the touchline (side boundary), the opposing team is awarded a throw-in.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Corners: </span>
+                                            When the ball goes out of play over the goal line, with the last touch coming from a defending player, the attacking team is awarded a corner kick.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Duration of the Game: </span>
+                                            A standard soccer match consists of two halves, each lasting 45 minutes, with a 15-minute halftime interval. In some cases, extra time and penalty shootouts may be used to determine a winner in knockout competitions.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span style="color:#F22361;">Substitutions: </span>
+                                            Teams are allowed a certain number of substitutions during a match, depending on the competition's rules.
+                                        </li>
+                                    </ol>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="blog-description pt-4" style="padding:0px 15px 0px 15px;">
+                            <div class="blog_title" style="font-weight: bold;position:relative;display: inline-block;">
+                                TRICKS & TACTICS
+                            </div>
+                            <div class="blog-desc">
+                                <p style="padding:0px 15px 0px 15px;text-align: justify;">
+                                    Soccer is a sport that involves a combination of skills, strategies, and tactics. Here are some common tricks and tactics used in soccer:
+                                    <ol>
+                                        <li>
+                                            <span>Dribbling: </span>
+                                            Skillful ball control to bypass opponents.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Feints and Step-Overs:</span>
+                                            Deceptive body movements to trick defenders.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Nutmeg:</span>
+                                            Passing the ball through an opponent's legs.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Elastico:</span>
+                                            Quick change of direction using the inside and outside of the foot.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Rainbow Flick:</span>
+                                            A flick over the head followed by a kick.
+                                        </li>
+
+                                        <li class="mt-2">
+                                            <span>Formation: </span>
+                                            Organizing players on the field (e.g., 4-4-2, 4-3-3).
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Counterattack:</span>
+                                            Swift transitions from defense to offense.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>High Press:</span>
+                                            Pressuring opponents high on the field to regain possession.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Tiki-Taka:</span>
+                                            Quick, short passing to maintain control.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Set Pieces:</span>
+                                            Rehearsed plays from free kicks and corners.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Passing and Movement:</span>
+                                            Effective teamwork with passing and positioning.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Overlapping Runs:</span>
+                                            Fullbacks provide width with overlapping runs.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Pressing Triggers:</span>
+                                            Initiating high-pressure situations strategically.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Switching Play:</span>
+                                            Changing attack direction to surprise opponents.
+                                        </li>
+                                        <li class="mt-2">
+                                            <span>Off-the-Ball Runs:</span>
+                                            Creating passing options and stretching defenses.
+                                        </li>
+                                    </ol>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="blog-description pt-4" style="padding:0px 15px 0px 15px;">
+                            <div class="blog_title" style="font-weight: bold;position:relative;display: inline-block;">
+                                FIELD DETAILS
+                            </div>
+                            <div class="blog-desc">
+                                <p style="padding:0px 15px 0px 15px;text-align: justify;">
+                                    In soccer, the playing field is an essential component of the game. Here are the key details and dimensions of a standard soccer field:
+                                    <ol>
+                                        <li>
+                                            <span>Field Shape:</span> Soccer fields are typically rectangular in shape.
+                                        </li>
+                                        <li>
+                                            <span>Field Dimensions:</span>
+                                            <ul>
+                                                <li>
+                                                    Length (touchline):
+                                                    <ul>
+                                                        <li>Minimum: 100 meters (100-130 yards)</li>
+                                                        <li>Maximum: 130 meters (130-145 yards)</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    Width (goal line):
+                                                    <ul>
+                                                        <li>Minimum: 64 meters (50-100 yards)</li>
+                                                        <li>Maximum: 75 meters (100-130 yards)</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Center Circle:</span> A circle with a radius of 9.15 meters (10 yards) is located at the center of the field. It is used for the kickoff at the start of each half.
+                                        </li>
+                                        <li>
+                                            <span>Goal Area (Penalty Area):</span> Goal areas are rectangular areas extending out from the goalposts.
+                                            <ul>
+                                                <li>Dimensions: 16.5 meters (18 yards) deep and 40.3 meters (44 yards) wide.</li>
+                                                <li>The goalkeeper may handle the ball within this area.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Penalty Spot:</span> Located 11 meters (12 yards) from the goal line, directly in front of the center of the goal. Penalty kicks are taken from this spot.
+                                        </li>
+                                        <li>
+                                            <span>Penalty Arc:</span> An arc with a radius of 9.15 meters (10 yards) is drawn from the penalty spot. Players must stay outside this arc during penalty kicks.
+                                        </li>
+                                        <li>
+                                            <span>Corner Arc:</span> Quarter circles with a radius of 1 meter (1 yard) are drawn at each corner of the field. Corner kicks are taken from within these arcs.
+                                        </li>
+                                        <li>
+                                            <span>Goalposts:</span>
+                                            <ul>
+                                                <li>Each goal has two upright posts, equidistant from the corner flag.</li>
+                                                <li>The distance between the inside edges of the posts is 7.32 meters (24 feet).</li>
+                                                <li>The height of the crossbar, which connects the two posts, is 2.44 meters (8 feet).</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Goal Nets:</span> Nets are attached to the goal frame behind each goal. They help indicate when a goal has been scored.
+                                        </li>
+                                        <li>
+                                            <span>Center Circle:</span> The center circle, with a radius of 9.15 meters (10 yards), surrounds the center spot. Players must be outside this circle during kickoffs.
+                                        </li>
+                                        <li>
+                                            <span>Technical Areas:</span> Technical areas are designated areas along the touchline where coaches and substitutes can stand during the game.
+                                        </li>
+                                        <li>
+                                            <span>Halfway Line:</span> The halfway line divides the field into two equal halves.
+                                        </li>
+                                        <li>
+                                            <span>Substitution Zones:</span> Substitutes enter and exit the field from designated substitution zones.
+                                        </li>
+                                    </ol>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
