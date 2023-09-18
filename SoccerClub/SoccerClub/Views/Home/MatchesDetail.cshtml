@@ -1,11 +1,13 @@
-﻿@model SoccerClub.Models.Match
+﻿@model SoccerClub.Models.IndexVM
 
 @{
     ViewData["Title"] = "MatchesDetail";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var n = 1;
+    var m = 1;
 }
 <!-- breadcrumb -->
-<div class="breadcrumb-main">
+@* <div class="breadcrumb-main">
     <div class="container">
         <div class="breadcrumb-container">
             <h2 class="page-title">Match Details</h2>
@@ -21,7 +23,7 @@
             </ul>
         </div>
     </div>
-</div>
+</div> *@
 <!-- main -->
 <main>
     <div class="common-home">
@@ -31,54 +33,54 @@
                     <div class="box-content">
                         <div class="row match-details-section1">
                             <div class="col-sm-6 about-left">
-                                <h2 style="color:#F22361;margin-left:15px;">@Html.DisplayFor(model => model.League)</h2>
+                                <h2 style="color:#F22361;margin-left:15px;">@Html.DisplayFor(model => model.Match.League)</h2>
                                 @*<p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                    an unknown printer took a galley of type and scrambled it to make a type specimen
-                                    book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book.
                                 </p>*@
                                 <div class="card-body">
                                     <dl class="row">
                                         <dt class="col-sm-2">
-                                            @Html.DisplayNameFor(model => model.Date)
+                                            @Html.DisplayNameFor(model => model.Match.Date)
                                         </dt>
                                         <dd class="col-sm-10">
-                                            @Model.Date.ToShortDateString()
+                                            @Model.Match.Date.ToShortDateString()
                                         </dd>
                                         <dt class="col-sm-2">
-                                            @Html.DisplayNameFor(model => model.HomeTeam)
+                                            @Html.DisplayNameFor(model => model.Match.HomeTeam)
                                         </dt>
                                         <dd class="col-sm-10">
-                                            @Html.DisplayFor(model => model.HomeTeam.Name)
+                                            @Html.DisplayFor(model => model.Match.HomeTeam.Name)
                                         </dd>
                                         <dt class="col-sm-2">
-                                            @Html.DisplayNameFor(model => model.AwayTeam)
+                                            @Html.DisplayNameFor(model => model.Match.AwayTeam)
                                         </dt>
                                         <dd class="col-sm-10">
-                                            @Html.DisplayFor(model => model.AwayTeam.Name)
+                                            @Html.DisplayFor(model => model.Match.AwayTeam.Name)
                                         </dd>
                                         <dt class="col-sm-2">
-                                            @Html.DisplayNameFor(model => model.Venue)
+                                            @Html.DisplayNameFor(model => model.Match.Venue)
                                         </dt>
                                         <dd class="col-sm-10">
-                                            @Html.DisplayFor(model => model.Venue)
+                                            @Html.DisplayFor(model => model.Match.Venue)
                                         </dd>
                                         <dt class="col-sm-2">
-                                            @Html.DisplayNameFor(model => model.Season)
+                                            @Html.DisplayNameFor(model => model.Match.Season)
                                         </dt>
                                         <dd class="col-sm-10">
-                                            @Html.DisplayFor(model => model.Season)
+                                            @Html.DisplayFor(model => model.Match.Season)
                                         </dd>
                                         <dt class="col-sm-2">
-                                            @Html.DisplayNameFor(model => model.League)
+                                            @Html.DisplayNameFor(model => model.Match.League)
                                         </dt>
                                         <dd class="col-sm-10">
-                                            @Html.DisplayFor(model => model.League)
+                                            @Html.DisplayFor(model => model.Match.League)
                                         </dd>
                                     </dl>
                                 </div>
-                               
+
                             </div>
                             <div class="col-sm-6 about-right">
                                 <article class="game-result">
@@ -89,12 +91,12 @@
                                                     <div class="game-info-logo">
                                                         <figure>
                                                             <a href="#">
-                                                                <img src="@Model.HomeTeam.LogoUrl" alt="match">
+                                                                <img src="@Model.Match.HomeTeam.LogoUrl" alt="match">
                                                             </a>
                                                         </figure>
                                                     </div>
                                                     <div class="team-name">
-                                                        <h6>@Model.HomeTeam.Name</h6>
+                                                        <h6>@Model.Match.HomeTeam.Name</h6>
                                                     </div>
                                                 </div>
                                                 <div>VS</div>
@@ -102,18 +104,67 @@
                                                     <div class="game-info-logo">
                                                         <figure>
                                                             <a href="#">
-                                                                <img src="@Model.AwayTeam.LogoUrl" alt="match">
+                                                                <img src="@Model.Match.AwayTeam.LogoUrl" alt="match">
                                                             </a>
                                                         </figure>
                                                     </div>
                                                     <div class="team-name">
-                                                        <h6>@Model.AwayTeam.Name</h6>
+                                                        <h6>@Model.Match.AwayTeam.Name</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </article>
+                            </div>
+                        </div>
+                        <div class="row match-details-section3">
+                            <div class="col-sm-6 inner-details">
+                                <div class="head-1">@Model.Match.HomeTeam.Name</div>
+                                @foreach(var item in Model.player){
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">@m</div>
+                                        </div>
+                                        <div class="name">
+                                            @item.Name
+                                            <p>@item.Position</p>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                            <img src="assets/images/gaming/ChildrenBall.png" alt="">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    m++;
+                                }
+                            </div>
+                            <!--  -->
+                            <div class="col-sm-6 inner-details">
+                                <div class="head-1">@Model.Match.AwayTeam.Name</div>
+                                @foreach(var item in Model.awayplayer){
+                                <div class="row matche-1">
+                                    <div class="col-6 matches-team-left ">
+                                        <div class="date-time">
+                                            <i class="fa-regular fa-calendar-days d-none"></i>
+                                            <div class="blog-date">@n</div>
+                                        </div>
+                                        <div class="name">
+                                            @item.Name
+                                                <p>@item.Position</p>
+                                        </div>
+                                    </div>
+                                    <div class="matches-team-right col-6">
+                                        <div class="match-location">
+                                                <img src="assets/images/gaming/ChildrenBall.png" alt="">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    n++;
+                                }
                             </div>
                         </div>
                         <!-- news -->
