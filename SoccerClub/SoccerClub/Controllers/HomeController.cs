@@ -14,17 +14,14 @@ namespace SoccerClub.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        private readonly SoccerClubContext db;
+        private readonly SoccerClubContext _context;
         private readonly IApiHelper _apiHelper;
 
-        public HomeController(ILogger<HomeController> logger, SoccerClubContext db, IApiHelper apiHelper)
+        public HomeController(SoccerClubContext _context, IApiHelper apiHelper)
         {
-            _logger = logger;
-            this.db = db;
+            this._context = _context;
             this._apiHelper = apiHelper;
         }
-
         public IActionResult TopTen()
 
         {
@@ -53,7 +50,6 @@ namespace SoccerClub.Controllers
             ViewBag.TopTenScores = allTopScorers;
             return View(topTenScorersViewModel);
         }
-
         public IActionResult Index()
         {
             ViewBag.Home = "toactive";
@@ -63,7 +59,7 @@ namespace SoccerClub.Controllers
             //var articlesArray = jsonObject["articles"].ToString();
 
             //List<Article> responseList = JsonConvert.DeserializeObject<List<Article>>(articlesArray);
-            var UpComming = db.Matches.Include(x => x.AwayTeam).Include(x => x.HomeTeam).Where(m => m.Date > DateTime.Now).OrderBy(m => m.Date).FirstOrDefault();
+            var UpComming = _context.Matches.Include(x => x.AwayTeam).Include(x => x.HomeTeam).Where(m => m.Date > DateTime.Now).OrderBy(m => m.Date).FirstOrDefault();
 
             if(UpComming != null)
             {
@@ -73,11 +69,11 @@ namespace SoccerClub.Controllers
             }
             var ViewModel = new IndexVM
             {
-                match = db.Matches.OrderByDescending(m => m.MatchId).Take(4).ToList(),
-                matches = db.Matches.OrderByDescending(m => m.MatchId).Take(5).ToList(),
-                player = db.Players.ToList(),
-                team = db.Teams.ToList(),
-                product = db.Products.ToList()
+                match = _context.Matches.OrderByDescending(m => m.MatchId).Take(4).ToList(),
+                matches = _context.Matches.OrderByDescending(m => m.MatchId).Take(5).ToList(),
+                player = _context.Players.ToList(),
+                team = _context.Teams.ToList(),
+                product = _context.Products.ToList()
                 //Articles = responseList
             };
             return View(ViewModel);
@@ -87,22 +83,22 @@ namespace SoccerClub.Controllers
             ViewBag.keyword = keyword;
             var ViewModel = new IndexVM
             {
-                matches = db.Matches.Include(x => x.AwayTeam).Include(x => x.HomeTeam).Where(m => m.AwayTeam.Name.Contains(keyword) || m.HomeTeam.Name.Contains(keyword)).ToList(),
-                player = db.Players.Include(x => x.Team).Where(m => m.Name.Contains(keyword)).ToList(),
-                team = db.Teams.Where(m => m.Name.Contains(keyword)).ToList(),
-                product = db.Products.Where(m => m.ProductName.Contains(keyword)).ToList(),
+                matches = _context.Matches.Include(x => x.AwayTeam).Include(x => x.HomeTeam).Where(m => m.AwayTeam.Name.Contains(keyword) || m.HomeTeam.Name.Contains(keyword)).ToList(),
+                player = _context.Players.Include(x => x.Team).Where(m => m.Name.Contains(keyword)).ToList(),
+                team = _context.Teams.Where(m => m.Name.Contains(keyword)).ToList(),
+                product = _context.Products.Where(m => m.ProductName.Contains(keyword)).ToList(),
             };
             return View(ViewModel);
         }
         public async Task<IActionResult> ProductDetail(int? id)
         {
             ViewBag.shop = "toactive";
-            if (id == null || db.Products == null)
+            if (id == null || _context.Products == null)
             {
                 return NotFound();
             }
 
-            var product = await db.Products
+            var product = await _context.Products
                 .Include(p => p.Category)
                 .FirstOrDefaultAsync(m => m.ProductId == id);
             if (product == null)
@@ -112,11 +108,10 @@ namespace SoccerClub.Controllers
 
             return View(product);
         }
-
         public IActionResult Matches()
         {
             ViewBag.matches = "toactive";
-            var match = db.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam).
+            var match = _context.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam).
                 ToList();
             return View(match);
         }
@@ -124,18 +119,18 @@ namespace SoccerClub.Controllers
         public async Task<IActionResult> MatchesDetail(int? id)
         {
             ViewBag.matches = "toactive";
-            if (id == null || db.Matches == null)
+            if (id == null || _context.Matches == null)
             {
                 return NotFound();
             }
 
-            var match = await db.Matches
+            var match = await _context.Matches
                 .Include(m => m.AwayTeam)
                 .Include(m => m.HomeTeam)
                 .FirstOrDefaultAsync(m => m.MatchId == id);
             ViewBag.MatchDetails = match;
-            var HomePlayers = await db.Players.Where(m => m.TeamId == match.HomeTeamId).ToListAsync();
-            var AwayPlayers = await db.Players.Where(m => m.TeamId == match.AwayTeamId).ToListAsync();
+            var HomePlayers = await _context.Players.Where(m => m.TeamId == match.HomeTeamId).ToListAsync();
+            var AwayPlayers = await _context.Players.Where(m => m.TeamId == match.AwayTeamId).ToListAsync();
 
             var ViewModel = new IndexVM
             {
@@ -149,14 +144,14 @@ namespace SoccerClub.Controllers
         public async Task<IActionResult> Shop()
         {
             ViewBag.shop = "toactive";
-            ViewBag.CategoryId = db.Category.ToList();
-            return View(await db.Products.ToListAsync());
+            ViewBag.CategoryId = _context.Category.ToList();
+            return View(await _context.Products.ToListAsync());
         }
 
         public IActionResult Schedule()
         {
             ViewBag.schedule = "toactive";
-            var match = db.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam).
+            var match = _context.Matches.Include(m => m.AwayTeam).Include(m => m.HomeTeam).
                 ToList();
             return View(match);
         }
@@ -192,18 +187,17 @@ namespace SoccerClub.Controllers
         public IActionResult Players()
         {
             ViewBag.pl = "toactive";
-            return View(db.Players.Include(x => x.Team).ToList());
+            return View(_context.Players.Include(x => x.Team).ToList());
         }
-
         public async Task<IActionResult> PlayersDetail(int? id)
         {
 
-            if (id == null || db.Players == null)
+            if (id == null || _context.Players == null)
             {
                 return NotFound();
             }
             ViewBag.players = "toactive";
-            var player = await db.Players.Include(p => p.Team).FirstOrDefaultAsync(m => m.PlayerID == id);
+            var player = await _context.Players.Include(p => p.Team).FirstOrDefaultAsync(m => m.PlayerID == id);
             if (player == null)
             {
                 return NotFound();
@@ -211,7 +205,6 @@ namespace SoccerClub.Controllers
 
             return View(player);
         }
-
         [HttpGet]
         public IActionResult Contact()
         {
@@ -225,8 +218,8 @@ namespace SoccerClub.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.contactUs.Add(contactUs);
-                db.SaveChanges();
+                _context.contactUs.Add(contactUs);
+                _context.SaveChanges();
                 ViewBag.ContactMsg = "Thanks For Reaching Out";
 
                 return View();
@@ -251,8 +244,8 @@ namespace SoccerClub.Controllers
         public IActionResult Feedback(Feedback feed)
         {
             feed.UserId = Session.UserId;
-            db.Feedbacks.Add(feed);
-            db.SaveChanges();
+            _context.Feedbacks.Add(feed);
+            _context.SaveChanges();
             ViewBag.feedback = "Thanks For Your Feedback";
 
             return View();
@@ -273,8 +266,10 @@ namespace SoccerClub.Controllers
             ViewBag.history = "toactive";
             return View();
         }
-
-
+        public IActionResult SiteMap()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

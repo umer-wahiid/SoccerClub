@@ -13,7 +13,7 @@ namespace SoccerClub.Controllers
         {
             _context = context;
         }
-        public IActionResult Cart(int? cartid)
+        public IActionResult Cart()
 
         {
             if (Session.UserId != 0)
@@ -27,7 +27,7 @@ namespace SoccerClub.Controllers
                 return View(cartItems);
             }
 
-            return View("Index", "Home");
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpPost]
