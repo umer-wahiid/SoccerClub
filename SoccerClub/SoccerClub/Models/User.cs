@@ -20,11 +20,12 @@ namespace SoccerClub.Models
         [Required(ErrorMessage = "Enter Your Email")]
         [MaxLength(40, ErrorMessage = "Only 40 Characters are Allowed")]
         [DataType(DataType.EmailAddress)]
+        [RegularExpression(@"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$", ErrorMessage = "Invalid email format.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Enter Your Phone Number(eg.03XXXXXXXXX)")]
         [DataType(DataType.PhoneNumber)]
-		[RegularExpression("^03[0-9]{9}$", ErrorMessage = "Invalid format. It should start with '03' and have 8 digits.")]
+		[RegularExpression("^03[0-9]{9}$", ErrorMessage = "Invalid format. It should start with '03' and have 9 digits.")]
 		[MaxLength(11, ErrorMessage = "Invalid Phone Number or Format")]
         public string PhoneNo { get; set; }
 

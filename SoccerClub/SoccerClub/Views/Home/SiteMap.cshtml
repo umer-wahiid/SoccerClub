@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -9,11 +8,11 @@
     <main>
         <div class="common-home mt-5">
             <div id="content" class="col mt-5">
-                <div class="container" >
-                    <div class="page-title toggled" >
+                <div class="container">
+                    <div class="page-title toggled">
                         <span class="page-title-left"></span>
                         <h3>
-                           SiteMap
+                            SiteMap
                         </h3>
                         <span class="page-title-right"></span>
                     </div>
@@ -22,15 +21,31 @@
                             <div class="container">
                                 <ul>
                                     <li class="m-3"><a asp-action="Index" asp-controller="Home">Home</a></li>
-                                    <li class="m-3"><a asp-action="Shop" asp-controller="Home">Marchendise</a></li>
-                                    <li class="m-3"><a asp-action="Players" asp-controller="Home">Players</a></li>
-                                    <li class="m-3"><a >Players Details</a></li>
-                                    <li class="m-3"><a asp-action="TopTen" asp-controller="Home">Top Ten Players</a></li>
-                                    <li class="m-3"><a asp-action="Matches" asp-controller="Home">Match</a></li>
-                                    <li class="m-3"><a asp-action="Schedule" asp-controller="Home">Schedule</a></li>
+                                    <li class="m-3">
+                                        <a asp-action="Shop" asp-controller="Home">Marchendise</a>
+                                        <ul>
+                                            <li><a asp-action="Cart" asp-controller="Carts">Cart</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="m-3">
+                                        <a asp-action="Players" asp-controller="Home">Players</a>
+                                        <ul>
+                                            <li><a asp-action="Players" asp-controller="Home">Players List</a></li>
+                                            <li><a asp-action="TopTen" asp-controller="Home">Top 10 Players</a></li>
+                                        </ul>
+                                    </li>
+                                    @* <li class="m-3"><a asp-action="TopTen" asp-controller="Home">Top Ten Players</a></li> *@
+                                    <li class="m-3">
+                                        <a asp-action="Matches" asp-controller="Home">Match</a>
+                                        <ul>
+                                            <li><a asp-action="Matches" asp-controller="Home">Matches List</a></li>
+                                            <li><a asp-action="Schedule" asp-controller="Home">Match Schedule</a></li>
+                                        </ul>
+                                    </li>
+                                    @* <li class="m-3"><a asp-action="Schedule" asp-controller="Home">Schedule</a></li> *@
                                     <li class="m-3"><a asp-action="Contact" asp-controller="Home">Contact Us</a></li>
                                     <li class="m-3"><a asp-action="History" asp-controller="Home">Histroy of Soccer Club</a></li>
-                                    <li class="m-3"><a asp-action="Cart" asp-controller="Carts">Cart</a></li>
+                                    <li class="m-3"><a asp-action="Blog" asp-controller="Home">Blogs</a></li>
                                     <li class="m-3"><a asp-action="Login" asp-controller="Users">Login</a></li>
                                     <li class="m-3"><a asp-action="Register" asp-controller="Users">Register</a></li>
                                 </ul>

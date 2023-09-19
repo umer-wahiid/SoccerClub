@@ -25,7 +25,6 @@ namespace SoccerClub.Controllers
         public IActionResult TopTen()
 
         {
-
             var wcResponse = _apiHelper.TopTenScores("WC");
             wcResponse = wcResponse.Replace("\r\n", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
             Root wcApiResponse = JsonConvert.DeserializeObject<Root>(wcResponse);
@@ -47,6 +46,7 @@ namespace SoccerClub.Controllers
             var allTopScorers = topTenScorersViewModel.GetType().GetProperties()
             .Where(prop => prop.PropertyType == typeof(Root))
             .ToList();
+            ViewBag.pl = "toactive";
             ViewBag.TopTenScores = allTopScorers;
             return View(topTenScorersViewModel);
         }
@@ -73,6 +73,7 @@ namespace SoccerClub.Controllers
                 matches = _context.Matches.OrderByDescending(m => m.MatchId).Take(5).ToList(),
                 player = _context.Players.ToList(),
                 team = _context.Teams.ToList(),
+                Feedbacks = _context.Feedbacks.Include(x => x.User).ToList(),
                 product = _context.Products.ToList()
                 //Articles = responseList
             };
@@ -196,7 +197,7 @@ namespace SoccerClub.Controllers
             {
                 return NotFound();
             }
-            ViewBag.players = "toactive";
+            ViewBag.pl = "toactive";
             var player = await _context.Players.Include(p => p.Team).FirstOrDefaultAsync(m => m.PlayerID == id);
             if (player == null)
             {
@@ -276,5 +277,6 @@ namespace SoccerClub.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+       
     }
 }

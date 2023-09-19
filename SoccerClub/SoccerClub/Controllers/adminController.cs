@@ -13,6 +13,11 @@ namespace SoccerClub.Controllers
         {
             context = soccerClub;
         }
+        public IActionResult OrderDetails()
+        {
+			var Order = context.Orders.Include(p => p.User).ToList();
+			return View(Order);
+        }
         public async Task<IActionResult> Index()
         {
 			if (Session.IsAdmin == "NO")

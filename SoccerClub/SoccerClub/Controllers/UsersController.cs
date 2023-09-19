@@ -109,7 +109,7 @@ namespace SoccerClub.Controllers
                     return RedirectToAction("Index", "Home");
 				}
 
-				ViewBag.err = "Incorrect Password or Username";
+				ViewBag.Showerr = "Incorrect Password or Username";
 				return View(user);
 			}
 			return View("Index", "Home");
