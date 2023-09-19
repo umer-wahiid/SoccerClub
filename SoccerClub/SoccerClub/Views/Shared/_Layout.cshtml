@@ -34,8 +34,8 @@
 
 
 <body class="common-home soccer">
-    <div class="loader">
-    </div>
+    @* <div class="loader">
+    </div> *@
     @if (ViewBag.Home != null && ViewBag.HomeTeam != null)
     {
         <nav id="top">
@@ -45,9 +45,9 @@
                         <div class="contact-info">
                             <a href="#">
                                 <i style="color: #F22361;" class="fa fa-bell"></i>
-                                <span >@ViewBag.HomeTeam</span>
+                                <span>@ViewBag.HomeTeam</span>
                                 <span style="color: #F22361;padding: 0px 10px 0px 10px;">VS</span>
-                                <span >@ViewBag.AwayTeam</span>
+                                <span>@ViewBag.AwayTeam</span>
                             </a>
                         </div>
                     </div>

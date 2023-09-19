@@ -17,11 +17,10 @@
 
 	<link rel="stylesheet" href="~/assets_login/css/style.css">
 	<link rel="icon" type="image/png" href="~/assets_web/images/favicon.png">
-
 </head>
 <body>
-
-	<section class="img js-fullheight" style="background-image: url(../assets_login/images/bg.jpg);display:flex;justify-content:center;align-items:center;">
+	<div style="background-color:black;">
+	<section class="img js-fullheight" style="background-image: url(../assets_login/images/bg.png);display:flex;justify-content:center;align-items:center;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
@@ -32,42 +31,41 @@
 				<div class="col-md-12 col-lg-8">
 					<div class="login-wrap p-0">
 						<h3 class="mb-4 text-center">Don't have an account?</h3>
-						<form asp-action="Register" class="signin-form">
+						<form asp-action="Register">
 							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 							<div class="row">
 
 								<div class="form-group col-md-6">
-
-									<input asp-for="FullName" type="text" class="form-control" placeholder="FullName" required>
+									<input asp-for="FullName" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="text" class="form-control" placeholder="FullName" required>
 									<span asp-validation-for="FullName" class="text-danger"></span>
 								</div>
 								<div class="form-group col-md-6">
-									<input asp-for="Email" type="email" class="form-control" placeholder="Email" required>
+									<input asp-for="Email" type="email" style="background-color: rgba(0, 0, 0, 0.5) !important;" class="form-control" placeholder="Email" required>
 									<span asp-validation-for="Email" class="text-danger"></span>
 								</div>
 							</div>
 							<div class="row">
 								<div class="form-group col-md-6">
-									<input asp-for="Username" type="text" class="form-control" placeholder="Username" required>
+									<input asp-for="Username" type="text" style="background-color: rgba(0, 0, 0, 0.5) !important;" class="form-control" placeholder="Username" required>
 									<span asp-validation-for="Username" class="text-danger"></span>
 								</div>
 								<div class="form-group col-md-6">
-									<input asp-for="PhoneNo" class="form-control"  placeholder="PhoneNumber" required>
+									<input asp-for="PhoneNo" class="form-control" style="background-color: rgba(0, 0, 0, 0.5) !important;" placeholder="PhoneNumber" required>
 									<span asp-validation-for="PhoneNo" class="fw-bold text-danger"></span>
 								</div>
 
 								<div class="form-group col-md-6">
-									<input asp-for="Password" id="password-field" type="password" class="form-control" placeholder="Password" required>
-									<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+									<input asp-for="Password" id="password-field" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="password" class="form-control" placeholder="Password" required>
+									@* <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> *@
 									<span asp-validation-for="Password" class="text-danger"></span>
 								</div>
 								<div class="form-group col-md-6">
-									<input asp-for="ConfirmPassword" id="cpassword-field" type="password" class="form-control" placeholder="Confirm Password" required>
-									<span toggle="#cpassword-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+									<input asp-for="ConfirmPassword" id="cpassword-field" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="password" class="form-control" placeholder="Confirm Password" required>
+									@* <span toggle="#cpassword-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> *@
 									<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
 								</div>
 								<div class="form-group col-md-6">
-									<input asp-for="Address" id="addressInput" type="text" class="form-control" readonly="readonly" hidden>
+									<input asp-for="Address" id="addressInput" type="text" style="background-color: rgba(0, 0, 0, 0.5) !important;" class="form-control" readonly="readonly" hidden>
 								</div>
 							</div>
 							<p class="w-100 text-center"> Already have an account? <a asp-action="Login" asp-controller="Users" class="txtreg">Login</a></p>
@@ -82,24 +80,16 @@
 			</div>
 		</div>
 	</section>
-
+	</div>
 	<script src="~/assets_login/js/jquery.min.js"></script>
 	<script src="~/assets_login/js/popper.js"></script>
 	<script src="~/assets_login/js/bootstrap.min.js"></script>
 	<script src="~/assets_login/js/main.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
 </body>
 </html>
-Copy code
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		var addressInput = document.getElementById("addressInput");
-		var defaultAddressValue = "Your Address";
-		addressInput.value = defaultAddressValue;
-		
-	});
-</script>
-
 
 
 

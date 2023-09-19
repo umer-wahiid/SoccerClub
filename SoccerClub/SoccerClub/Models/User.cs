@@ -14,7 +14,8 @@ namespace SoccerClub.Models
 
         [Required(ErrorMessage = "Enter Your Full Name")]
         [MaxLength(50, ErrorMessage = "Only 50 Characters are Allowed")]
-        public string FullName { get; set; }
+		[RegularExpression("^[A-Za-z]+([- ][A-Za-z]+)*$", ErrorMessage = "Invalid format.")]
+		public string FullName { get; set; }
 
         [Required(ErrorMessage = "Enter Your Email")]
         [MaxLength(40, ErrorMessage = "Only 40 Characters are Allowed")]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y5MQVLTlNnbDOfSb+vzan6n5tLiVk2iol5o20e279ms=",
+  "Hash": "JxyDHa5i+2dZE4zH7Rh8WbuJaYlMu6TjkfPfpUcpZnI=",
   "Source": "SoccerClub",
   "BasePath": "_content/SoccerClub",
   "Mode": "Default",
@@ -4488,12 +4488,12 @@
       "OriginalItemSpec": "wwwroot\\assets_login\\images\\.DS_Store"
     },
     {
-      "Identity": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\bg.jpg",
+      "Identity": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\bg.png",
       "SourceId": "SoccerClub",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\",
       "BasePath": "_content/SoccerClub",
-      "RelativePath": "assets_login/images/bg.jpg",
+      "RelativePath": "assets_login/images/bg.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -4502,7 +4502,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets_login\\images\\bg.jpg"
+      "OriginalItemSpec": "wwwroot\\assets_login\\images\\bg.png"
+    },
+    {
+      "Identity": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\bg-old.jpg",
+      "SourceId": "SoccerClub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\",
+      "BasePath": "_content/SoccerClub",
+      "RelativePath": "assets_login/images/bg-old.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets_login\\images\\bg-old.jpg"
     },
     {
       "Identity": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\.DS_Store",

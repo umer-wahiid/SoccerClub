@@ -1129,8 +1129,12 @@
       "PackagePath": "staticwebassets\\assets_login\\images\\._.DS_Store"
     },
     {
-      "Id": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\bg.jpg",
-      "PackagePath": "staticwebassets\\assets_login\\images\\bg.jpg"
+      "Id": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\bg-old.jpg",
+      "PackagePath": "staticwebassets\\assets_login\\images\\bg-old.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\images\\bg.png",
+      "PackagePath": "staticwebassets\\assets_login\\images\\bg.png"
     },
     {
       "Id": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\assets_login\\js\\.DS_Store",

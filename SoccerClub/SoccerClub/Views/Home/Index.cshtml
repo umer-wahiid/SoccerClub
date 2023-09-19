@@ -31,20 +31,23 @@
                             </h3>
                             <span class="page-title-right"></span>
                         </div>
-                            <div class="upcoming-section">
-                                <div class="row">
-                              
+                        <div class="upcoming-section">
+                            <div class="row">
+
                                 @foreach (var item in Model.match)
-                                    {
+                                {
+                                    
                                         <div class="col-sm-3 upcoming-game">
+                                            <a asp-action="MatchesDetail" asp-controller="Home" asp-route-id="@item.MatchId">
+
                                             <article class="game-result">
                                                 <div class="game-info game-info-creative text-center">
                                                     <h6 class="game-info-title">
                                                         @item.League
                                                     </h6>
                                                     <time class="time-big" datetime="2025-04-17">
-                                                    <span class="heading-3">@item.Date.ToShortDateString()</span>
-                                                </time>
+                                                        <span class="heading-3">@item.Date.ToShortDateString()</span>
+                                                    </time>
                                                     <div>
                                                         <div class="game-info-main">
                                                             <div class="game-info-team game-info-team-first">
@@ -75,10 +78,12 @@
                                                     </div>
                                                 </div>
                                             </article>
+                                        </a>
                                         </div>
-                                    }
-                                </div>
+                                    
+                                }
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,13 +112,14 @@
                                             <th>TIME</th>
                                             <th>VENUE</th>
                                         </tr>
-                                        @foreach(var item in Model.matches){
-                                        <tr>
-                                            <td>@item.Date.ToShortDateString()</td>
+                                        @foreach (var item in Model.matches)
+                                        {
+                                            <tr>
+                                                <td>@item.Date.ToShortDateString()</td>
                                                 <td>@item.HomeTeam.Name vs @item.AwayTeam.Name</td>
                                                 <td>@item.Date.ToShortTimeString()</td>
                                                 <td>@item.Venue</td>
-                                        </tr>
+                                            </tr>
                                         }
                                     </table>
                                 </div>
@@ -138,8 +144,8 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-featured-tab" data-bs-toggle="pill" data-bs-target="#pills-featured" type="button" role="tab" aria-controls="pills-featured" aria-selected="true">Latest</button>
                                 </li>
-                           @*     <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-bestseller-tab" data-bs-toggle="pill" data-bs-target="#pills-bestseller" type="button" role="tab" aria-controls="pills-bestseller" aria-selected="false">Bestseller</button>
+                                @*     <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-bestseller-tab" data-bs-toggle="pill" data-bs-target="#pills-bestseller" type="button" role="tab" aria-controls="pills-bestseller" aria-selected="false">Bestseller</button>
                                 </li>*@
                             </ul>
                         </div>
@@ -195,48 +201,49 @@
                                 </div>
                                 <div class="tab-pane fade" id="pills-bestseller" role="tabpanel" aria-labelledby="pills-bestseller-tab">
                                     <div class="owl-carousel products-carousel">
-                                        @foreach(var item in Model.product){
+                                        @foreach (var item in Model.product)
+                                        {
 
-                                        <div class="item">
-                                            <div class="col col-xs-12 single-column">
-                                                <div class="team_store">
-                                                    <div class="store_right">
-                                                        <div class="game-info-logo">
-                                                            <div class="store-img">
-                                                                <figure>
-                                                                    <a href="product.html">
-                                                                        <img src="@item.ImageUrl" alt="match">
-                                                                    </a>
-                                                                </figure>
+                                            <div class="item">
+                                                <div class="col col-xs-12 single-column">
+                                                    <div class="team_store">
+                                                        <div class="store_right">
+                                                            <div class="game-info-logo">
+                                                                <div class="store-img">
+                                                                    <figure>
+                                                                        <a href="product.html">
+                                                                            <img src="@item.ImageUrl" alt="match">
+                                                                        </a>
+                                                                    </figure>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="store_left">
-                                                        <div class="title-rating">
-                                                            <div class="product-title">
-                                                                <a href="#">@item.ProductName</a>
-                                                            </div>
-                                                            <div class="store-button-group">
-                                                                <button class="addcart" asp-action="ProductDetail" asp-controller="Home" asp-route-id="@item.ProductId" title="Add to Cart">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="d-none">Add to Cart</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="product-caption">
-                                                                <a href="product.html">
-                                                                    <div class="product-name">
+                                                        <div class="store_left">
+                                                            <div class="title-rating">
+                                                                <div class="product-title">
+                                                                    <a href="#">@item.ProductName</a>
+                                                                </div>
+                                                                <div class="store-button-group">
+                                                                    <button class="addcart" asp-action="ProductDetail" asp-controller="Home" asp-route-id="@item.ProductId" title="Add to Cart">
+                                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                                        <span class="d-none">Add to Cart</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="product-caption">
+                                                                    <a href="product.html">
+                                                                        <div class="product-name">
                                                                             @item.ProductName
+                                                                        </div>
+                                                                    </a>
+                                                                    <div class="product-price">
+                                                                        Rs. @item.Price
                                                                     </div>
-                                                                </a>
-                                                                <div class="product-price">
-                                                                    Rs. @item.Price
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                         }
 
 
@@ -336,8 +343,8 @@
                     </div>
                 </div>
                 <!-- blog -->
-                <div class="blog-section mt-50  wow fadeInUp">
-                    
+               @*  <div class="blog-section mt-50  wow fadeInUp">
+
                     <div class="box-content">
                         <div class="container">
                             <div class="page-title toggled">
@@ -349,57 +356,58 @@
                             </div>
                             <div class="row">
                                 <div class="large-12 columns">
-                               @*      <div class="owl-carousel blog-carousel ">
-                                        @foreach(var item in Model.Articles){
-                                        <div class="product-block col-xs-12">
-                                            <div class="product-block-inner align-items-center">
-                                                <div class="blog-left">
-                                                    <div class="blog-image">
-                                                        <img src="@item.Image" alt="Latest Blog" title="Latest Blog" class="img-responsive mw-100">
-                                                        <div class="date-time">
-                                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                                            <div class="blog-date">17</div>
-                                                            <div class="blog-month">may</div>
-                                                        </div>
-                                                        <div class="post-image-hover"> </div>
-                                                        <p class="post_hover">
+                                    <div class="owl-carousel blog-carousel ">
+                                        @foreach (var item in Model.Articles)
+                                        {
+                                            <div class="product-block col-xs-12">
+                                                <div class="product-block-inner align-items-center">
+                                                    <div class="blog-left">
+                                                        <div class="blog-image">
+                                                            <img src="@item.Image" alt="Latest Blog" title="Latest Blog" class="img-responsive mw-100">
+                                                            <div class="date-time">
+                                                                <i class="fa-regular fa-calendar-days d-none"></i>
+                                                                <div class="blog-date">17</div>
+                                                                <div class="blog-month">may</div>
+                                                            </div>
+                                                            <div class="post-image-hover"> </div>
+                                                            <p class="post_hover">
                                                                 <a class="icon zoom" title="Where can I get some?" asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url" data-lightbox="example-set">
-                                                                <i class="fa fa-search-plus"></i>
-                                                            </a>
-                                                                <a asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url" class="icon readmore_link" title="Click to view Read More" >
-                                                                <i class="fa fa-link"></i>
-                                                            </a>
-                                                        </p>
+                                                                    <i class="fa fa-search-plus"></i>
+                                                                </a>
+                                                                <a asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url" class="icon readmore_link" title="Click to view Read More">
+                                                                    <i class="fa fa-link"></i>
+                                                                </a>
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="blog-right">
-                                                    <div class="date-comment blog-date-comment text-end">
-                                                    </div>
-                                                    <div class="blog-details">
-                                                        <h4 class="blog_title">
+                                                    <div class="blog-right">
+                                                        <div class="date-comment blog-date-comment text-end">
+                                                        </div>
+                                                        <div class="blog-details">
+                                                            <h4 class="blog_title">
                                                                 <a asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url">@item.Title</a>
-                                                        </h4>
-                                                        <div class="blog-desc">@item.Description </div>
-                                                        <div class="blog-border"></div>
-                                                        <div class="view-blog text-end">
-                                                            <div class="read-more">
+                                                            </h4>
+                                                            <div class="blog-desc">@item.Description </div>
+                                                            <div class="blog-border"></div>
+                                                            <div class="view-blog text-end">
+                                                                <div class="read-more">
                                                                     <a asp-controller="Home" asp-action="BlogDetails" asp-route-url="@item.Url" class="btn btn-default btn-info">read more</a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                         }
                                         <!-- 2 -->
-                                       
-                                    </div> *@
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- player squrd -->
+                <!-- player squrd --> *@
                 <div class="players-squade mt-50  wow fadeInUp">
                     <div class="box-content">
                         <div class="container">
@@ -411,20 +419,21 @@
                                 <span class="page-title-right"></span>
                             </div>
                             <div class="owl-carousel players-carousel">
-                                @foreach(var item in Model.player){
-                                <div class="item">
-                                    <div class="player-up">
+                                @foreach (var item in Model.player)
+                                {
+                                    <div class="item">
+                                        <div class="player-up">
                                             <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
-                                            <img src="@item.PlayerImage" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="player-bottom">
+                                                <img src="@item.PlayerImage" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="player-bottom">
                                             <a asp-controller="Home" asp-action="PlayersDetail" asp-route-id="@item.PlayerID">
                                                 <p class="player-name1">@item.Name</p>
-                                        </a>
+                                            </a>
                                             <p class="player-name2" style="text-transform:capitalize;"> @item.Position</p>
+                                        </div>
                                     </div>
-                                </div>
                                 }
                             </div>
                         </div>
