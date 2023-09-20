@@ -18,25 +18,58 @@
                         <span class="page-title-right"></span>
                     </div>
                     <div class="row">
-                        @*  <div class="heading-shop ">
-                        <div class="row shophead1">
-                        <div class="col-sm-6">
+                        <div class="heading-shop ">
+                            <div class="row shophead1">
+                                <div class="col-sm-6">
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="select-cat-sort ">
+                                        <select id="input-sort" class="form-select form-control" onchange="location = this.value;">
+                                            @if (ViewBag.de == "de")
+                                            {
+                                                <option value="@Url.Action("Shop", "Home")" selected>Default</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@Url.Action("Shop", "Home")">Default</option>
+                                            }
+                                            @if (ViewBag.de == "az")
+                                            {
+                                                <option value="@Url.Action("Shop", "Home", new { id = "A-Z" })" selected>Name (A - Z)</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@Url.Action("Shop", "Home", new { id = "A-Z" })">Name (A - Z)</option>
+                                            }
+                                            @if (ViewBag.de == "za")
+                                            {
+                                                <option value="@Url.Action("Shop", "Home", new { id = "Z-A" })" selected>Name (Z - A)</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@Url.Action("Shop", "Home", new { id = "Z-A" })">Name (Z - A)</option>
+                                            }
+                                            @if (ViewBag.de == "lh")
+                                            {
+                                                <option value="@Url.Action("Shop", "Home", new { id = "LtoH" })" selected>Price (Low &gt; High)</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@Url.Action("Shop", "Home", new { id = "LtoH" })">Price (Low &gt; High)</option>
+                                            }
+                                            @if (ViewBag.de == "hl")
+                                            {
+                                                <option value="@Url.Action("Shop", "Home", new { id = "HtoL" })" selected>Price (High &gt; Low)</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@Url.Action("Shop", "Home", new { id = "HtoL" })">Price (High &gt; Low)</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                        <div class="select-cat-sort ">
-                        <select id="input-sort" class="form-select form-control" onchange="location = this.value;">
-                        <option value="" selected="">Default</option>
-                        <option value="">Name (A - Z)</option>
-                        <option value="">Name (Z - A)</option>
-                        <option value="">Price (Low &gt; High)</option>
-                        <option value="">Price (High &gt; Low)</option>
-                        <option value="">Rating (Highest)</option>
-                        <option value="">Rating (Lowest)</option>
-                        </select>
-                        </div>
-                        </div>
-                        </div>
-                        </div> *@
                         <div class="container">
                             <div class="shop-section row">
                                 @foreach (var item in Model)
@@ -65,7 +98,7 @@
                                                                 <i class="fa-solid fa-cart-shopping"></i>
                                                                 <span class="d-none">Add to Cart</span>
                                                             </button>
-                                                       </a>
+                                                        </a>
                                                     </div>
                                                     <div class="product-caption">
                                                         <div class="product-name">
@@ -80,61 +113,8 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 }
-
-
-                            </div>
-
-                        </div>
-                        <div class="news mt-50 wow fadeInUp">
-                            <div class="news-inner">
-                                <div class="themabilitynewsletterblock">
-                                    <div class="themability-newsletter-form block-content box-content">
-                                        <div class="page-title toggled d-none">
-                                            <h3>Newsletter</h3>
-                                        </div>
-                                        <div class="block_box">
-                                            <div class="news-info">
-                                                <div class="row">
-                                                    <div class="col-xl-6">
-                                                        <div class="newsletter_description_outer d-flex align-items-center">
-                                                            <div class="icon-emails">
-                                                                <i class="fa-solid fa-envelope"></i>
-                                                            </div>
-                                                            <div class="news-desc">
-                                                                <div class="title-text">
-                                                                    <h3>Newsletter</h3>
-                                                                    <h3 class="d-none">Get Discount 30% Off</h3>
-                                                                </div>
-                                                                <div class="news-description">
-                                                                    Get free 20% discount for all product on your first order.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 d-flex align-items-center news-right">
-                                                        <div class="newsletter_form">
-                                                            <form action="#" method="post" id="form_themability_newsletter" data-oc-toggle="ajax">
-                                                                <div class="subscribe-form">
-                                                                    <input type="email" name="themability_newsletter_usr_email"
-                                                                           id="themability_newsletter_usr_email" placeholder="Enter Your E-mail.."
-                                                                           class="form-control input-lg inputNew txtemail">
-                                                                    <button type="submit" data-bs-toggle="tooltip" title=""
-                                                                            class="subscribe-btn btn-default">
-                                                                        Subscribe
-                                                                    </button>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,5 +122,22 @@
             </div>
         </div>
     </main>
-
 </div>
+
+@* <script>
+    document.getElementById("input-sort").addEventListener("change", function () {
+        e.preventDefault();
+        var selectedValue = this.value;
+        $.ajax({
+            url: '/Home/Shop',
+            type: 'POST',
+            data: { selectedOption: selectedValue },
+            success: function (result) {
+                console.log(result);
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    });
+</script> *@

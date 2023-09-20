@@ -14,7 +14,6 @@ namespace SoccerClub.Controllers
             _context = context;
         }
         public IActionResult Cart()
-
         {
             if (Session.UserId != 0)
             {

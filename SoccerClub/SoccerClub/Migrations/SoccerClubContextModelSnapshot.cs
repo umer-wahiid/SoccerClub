@@ -283,6 +283,29 @@ namespace SoccerClub.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("SoccerClub.Models.Reminder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MatchId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MatchId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reminder");
+                });
+
             modelBuilder.Entity("SoccerClub.Models.Team", b =>
                 {
                     b.Property<int>("TeamId")
@@ -440,6 +463,25 @@ namespace SoccerClub.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("SoccerClub.Models.Reminder", b =>
+                {
+                    b.HasOne("SoccerClub.Models.Match", "Match")
+                        .WithMany()
+                        .HasForeignKey("MatchId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SoccerClub.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Match");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }
