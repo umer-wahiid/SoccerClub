@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SoccerClub.Data;
 using SoccerClub.Models;
+using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
 
 namespace SoccerClub.Controllers
 {
@@ -12,6 +13,23 @@ namespace SoccerClub.Controllers
         public adminController(SoccerClubContext soccerClub)
         {
             context = soccerClub;
+        }
+        public IActionResult OrderDetails()
+        {
+			var Order = context.Orders.Include(p => p.User).ToList();
+			return View(Order);
+        }
+        public IActionResult SearchResult(string keyword)
+        {
+            ViewBag.keyword = keyword;
+            var ViewModel = new IndexVM
+            {
+                matches = context.Matches.Include(x => x.AwayTeam).Include(x => x.HomeTeam).Where(m => m.AwayTeam.Name.Contains(keyword) || m.HomeTeam.Name.Contains(keyword)).ToList(),
+                player = context.Players.Include(x => x.Team).Where(m => m.Name.Contains(keyword)).ToList(),
+                team = context.Teams.Where(m => m.Name.Contains(keyword)).ToList(),
+                product = context.Products.Where(m => m.ProductName.Contains(keyword)).ToList(),
+            };
+            return View(ViewModel);
         }
         public async Task<IActionResult> Index()
         {

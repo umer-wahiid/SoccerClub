@@ -33,13 +33,14 @@
                     <div class="box-content">
                         <div class="row match-details-section1">
                             <div class="col-sm-6 about-left">
-                                <h2 style="color:#F22361;margin-left:15px;">@Html.DisplayFor(model => model.Match.League)</h2>
-                                @*<p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                an unknown printer took a galley of type and scrambled it to make a type specimen
-                                book.
-                                </p>*@
+                                
+                                <h2 style="color:#F22361;margin-left:15px;">
+                                    @Html.DisplayFor(model => model.Match.League) @if (Session.UserId != 0)
+                                    {
+                                        <a style="padding-left:50px;" title="Set Reminder" href="@Url.Action("CreateReminder", "Home", new { matchid = Model.Match.MatchId })"><i style="font-size:30px;color:white;" class="fas fa-bell"></i></a>
+                                    }
+                                </h2>
+
                                 <div class="card-body">
                                     <dl class="row">
                                         <dt class="col-sm-2">
@@ -121,23 +122,24 @@
                         <div class="row match-details-section3">
                             <div class="col-sm-6 inner-details">
                                 <div class="head-1">@Model.Match.HomeTeam.Name</div>
-                                @foreach(var item in Model.player){
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">@m</div>
+                                @foreach (var item in Model.player)
+                                {
+                                    <div class="row matche-1">
+                                        <div class="col-6 matches-team-left ">
+                                            <div class="date-time">
+                                                <i class="fa-regular fa-calendar-days d-none"></i>
+                                                <div class="blog-date">@m</div>
+                                            </div>
+                                            <div class="name">
+                                                @item.Name
+                                                <p>@item.Position</p>
+                                            </div>
                                         </div>
-                                        <div class="name">
-                                            @item.Name
-                                            <p>@item.Position</p>
+                                        <div class="matches-team-right col-6">
+                                            <div class="match-location">
+                                                <img src="assets/images/gaming/ChildrenBall.png" alt="">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
-                                            <img src="assets/images/gaming/ChildrenBall.png" alt="">
-                                        </div>
-                                    </div>
                                     </div>
                                     m++;
                                 }
@@ -145,23 +147,24 @@
                             <!--  -->
                             <div class="col-sm-6 inner-details">
                                 <div class="head-1">@Model.Match.AwayTeam.Name</div>
-                                @foreach(var item in Model.awayplayer){
-                                <div class="row matche-1">
-                                    <div class="col-6 matches-team-left ">
-                                        <div class="date-time">
-                                            <i class="fa-regular fa-calendar-days d-none"></i>
-                                            <div class="blog-date">@n</div>
-                                        </div>
-                                        <div class="name">
-                                            @item.Name
+                                @foreach (var item in Model.awayplayer)
+                                {
+                                    <div class="row matche-1">
+                                        <div class="col-6 matches-team-left ">
+                                            <div class="date-time">
+                                                <i class="fa-regular fa-calendar-days d-none"></i>
+                                                <div class="blog-date">@n</div>
+                                            </div>
+                                            <div class="name">
+                                                @item.Name
                                                 <p>@item.Position</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="matches-team-right col-6">
-                                        <div class="match-location">
+                                        <div class="matches-team-right col-6">
+                                            <div class="match-location">
                                                 <img src="assets/images/gaming/ChildrenBall.png" alt="">
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                     n++;
                                 }

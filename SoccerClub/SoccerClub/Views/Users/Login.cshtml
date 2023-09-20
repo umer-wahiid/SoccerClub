@@ -1,78 +1,72 @@
-﻿
-@{
-	Layout = null;
-	
+﻿@{
+    Layout = null;
+
 }
 @model SoccerClub.Models.User
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Soccer Club</title>
+    <title>Soccer Club</title>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="~/assets_login/css/style.css">
-	<link rel="icon" type="image/png" href="~/assets_web/images/favicon.png">
+    <link rel="stylesheet" href="~/assets_login/css/style.css">
+    <link rel="icon" type="image/png" href="~/assets_web/images/favicon.png">
 
 
 </head>
-<body >
+<body>
+    <div style="background-color:black;">
+        <section class="img js-fullheight" style="background-image: url(../assets_login/images/bg.png);display:flex;justify-content:center;align-items:center;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center mb-5">
+                        <h2 class="heading-section">Soccer Club</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="login-wrap p-0">
+                            <h3 class="mb-4 text-center">Have an account?</h3>
+                            <form asp-action="Login" class="signin-form">
+                                <span class="text-danger text-centre">
+                                    @ViewBag.Showerr
+                                </span>
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group">
+                                    <input asp-for="Username" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="text" class="form-control" placeholder="Username">
+                                    <span id="UsernameErr" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input asp-for="Password" style="background-color: rgba(0, 0, 0, 0.5) !important;" id="password-field" type="password" class="form-control" placeholder="Password" required>
+                                    <span id="passwordErr" class="text-danger"></span>
+                                </div>
+                                <p class="w-100 text-center"> Don't have an account? <a asp-action="Register" asp-controller="Users" class="txtreg">Register</a></p>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+                                </div>
 
-	<section class="img js-fullheight" style="background-image: url(../assets_login/images/bg.jpg);display:flex;justify-content:center;align-items:center;">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Soccer Club</h2>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-lg-4">
-					<div class="login-wrap p-0">
-						<h3 class="mb-4 text-center">Have an account?</h3>
-						<form asp-action="Login" class="signin-form">
-							<span class="text-danger text-centre">
-								@{
-									if (ViewBag.err != null)
-									{
-										@ViewBag.err;
-									}
-								}
-							</span>
-							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-							<div class="form-group">
-								<input asp-for="Username" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="text" class="form-control" placeholder="Username">
-								<span id="UsernameErr" class="text-danger"></span>
-							</div>
-							<div class="form-group">
-								<input asp-for="Password" style="background-color: rgba(0, 0, 0, 0.5) !important;" id="password-field" type="password" class="form-control" placeholder="Password" required>
-								<span id="passwordErr" class="text-danger"></span>
-							</div>
-							<p class="w-100 text-center"> Don't have an account? <a asp-action="Register" asp-controller="Users" class="txtreg" >Register</a></p>
-							<div class="form-group">
-								<button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
-							</div>
-							
-						</form>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                            </form>
 
-	<script src="~/assets_login/js/jquery.min.js"></script>
-	<script src="~/assets_login/js/popper.js"></script>
-	<script src="~/assets_login/js/bootstrap.min.js"></script>
-	<script src="~/assets_login/js/main.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="~/assets_login/js/jquery.min.js"></script>
+    <script src="~/assets_login/js/popper.js"></script>
+    <script src="~/assets_login/js/bootstrap.min.js"></script>
+    <script src="~/assets_login/js/main.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
 
 </body>
 </html>

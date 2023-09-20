@@ -1,93 +1,100 @@
 ﻿@model SoccerClub.Models.User
 
 @{
-	Layout = null;
+    Layout = null;
 }
 
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Soccer Club</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Soccer Club</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="~/assets_login/css/style.css">
-	<link rel="icon" type="image/png" href="~/assets_web/images/favicon.png">
+    <link rel="stylesheet" href="~/assets_login/css/style.css">
+    <link rel="icon" type="image/png" href="~/assets_web/images/favicon.png">
 </head>
 <body>
-	<div style="background-color:black;">
-	<section class="img js-fullheight" style="background-image: url(../assets_login/images/bg.png);display:flex;justify-content:center;align-items:center;">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Soccer Club</h2>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-12 col-lg-8">
-					<div class="login-wrap p-0">
-						<h3 class="mb-4 text-center">Don't have an account?</h3>
-						<form asp-action="Register">
-							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-							<div class="row">
+    <div style="background-color:black;">
+        <section class="img js-fullheight" style="background-image: url(../assets_login/images/bg.png);display:flex;justify-content:center;align-items:center;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center mb-5">
+                        <h2 class="heading-section">Soccer Club</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="login-wrap p-0">
+                            <h3 class="mb-4 text-center">Don't have an account?</h3>
+                            <form asp-action="Register">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input asp-for="FullName" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="text" class="form-control" placeholder="FullName" required>
+                                        @* <span asp-validation-for="FullName" style="color:#F22361;font-size:17px;font-weight:bold;text-shadow: 1px 1px 2px white;"></span> *@
+                                        <span asp-validation-for="FullName" style="color:red;font-size:17px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);"></span>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input asp-for="Email" type="email" style="background-color: rgba(0, 0, 0, 0.5) !important;" class="form-control" placeholder="Email" required>
+                                        <span asp-validation-for="Email" style="color:red;font-size:17px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input asp-for="Username" type="text" style="background-color: rgba(0, 0, 0, 0.5) !important;" class="form-control" placeholder="Username" required>
+                                        <span asp-validation-for="Username" style="color:red;font-size:17px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);"></span>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input asp-for="PhoneNo" class="form-control" style="background-color: rgba(0, 0, 0, 0.5) !important;" placeholder="PhoneNumber" required>
+                                        <span asp-validation-for="PhoneNo" style="color:red;font-size:17px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);"></span>
+                                    </div>
 
-								<div class="form-group col-md-6">
-									<input asp-for="FullName" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="text" class="form-control" placeholder="FullName" required>
-									<span asp-validation-for="FullName" class="text-danger"></span>
-								</div>
-								<div class="form-group col-md-6">
-									<input asp-for="Email" type="email" style="background-color: rgba(0, 0, 0, 0.5) !important;" class="form-control" placeholder="Email" required>
-									<span asp-validation-for="Email" class="text-danger"></span>
-								</div>
-							</div>
-							<div class="row">
-								<div class="form-group col-md-6">
-									<input asp-for="Username" type="text" style="background-color: rgba(0, 0, 0, 0.5) !important;" class="form-control" placeholder="Username" required>
-									<span asp-validation-for="Username" class="text-danger"></span>
-								</div>
-								<div class="form-group col-md-6">
-									<input asp-for="PhoneNo" class="form-control" style="background-color: rgba(0, 0, 0, 0.5) !important;" placeholder="PhoneNumber" required>
-									<span asp-validation-for="PhoneNo" class="fw-bold text-danger"></span>
-								</div>
+                                    <div class="form-group col-md-6">
+                                        <input asp-for="Password" id="password-field" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="password" class="form-control" placeholder="Password" required>
+                                        @* <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> *@
+                                        <span asp-validation-for="Password" style="color:red;font-size:17px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);"></span>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input asp-for="ConfirmPassword" id="cpassword-field" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="password" class="form-control" placeholder="Confirm Password" required>
+                                        @* <span toggle="#cpassword-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> *@
+                                        <span asp-validation-for="ConfirmPassword" style="color:red;font-size:17px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);"></span>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input asp-for="Address" id="addressInput" type="text" style="background-color: rgba(0, 0, 0, 0.5) !important;" class="form-control" readonly="readonly" hidden>
+                                    </div>
+                                </div>
+                                <p class="w-100 text-center"> Already have an account? <a asp-action="Login" asp-controller="Users" class="txtreg">Login</a></p>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control btn btn-primary submit px-3">Sign Up</button>
+                                </div>
 
-								<div class="form-group col-md-6">
-									<input asp-for="Password" id="password-field" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="password" class="form-control" placeholder="Password" required>
-									@* <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> *@
-									<span asp-validation-for="Password" class="text-danger"></span>
-								</div>
-								<div class="form-group col-md-6">
-									<input asp-for="ConfirmPassword" id="cpassword-field" style="background-color: rgba(0, 0, 0, 0.5) !important;" type="password" class="form-control" placeholder="Confirm Password" required>
-									@* <span toggle="#cpassword-field" class="fa fa-fw fa-eye field-icon toggle-password"></span> *@
-									<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-								</div>
-								<div class="form-group col-md-6">
-									<input asp-for="Address" id="addressInput" type="text" style="background-color: rgba(0, 0, 0, 0.5) !important;" class="form-control" readonly="readonly" hidden>
-								</div>
-							</div>
-							<p class="w-100 text-center"> Already have an account? <a asp-action="Login" asp-controller="Users" class="txtreg">Login</a></p>
-							<div class="form-group">
-								<button type="submit" class="form-control btn btn-primary submit px-3">Sign Up</button>
-							</div>
-							
-						</form>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	</div>
-	<script src="~/assets_login/js/jquery.min.js"></script>
-	<script src="~/assets_login/js/popper.js"></script>
-	<script src="~/assets_login/js/bootstrap.min.js"></script>
-	<script src="~/assets_login/js/main.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="~/assets_login/js/jquery.min.js"></script>
+    <script src="~/assets_login/js/popper.js"></script>
+    <script src="~/assets_login/js/bootstrap.min.js"></script>
+    <script src="~/assets_login/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var addressInput = document.getElementById("addressInput");
+            var defaultAddressValue = "Your Address";
+            addressInput.value = defaultAddressValue;
+        });
+    </script>
 </body>
 </html>
 
@@ -108,7 +115,7 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" style="color:red;font-size:17px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);"></div>
             <div class="form-group">
                 <label asp-for="Username" class="control-label"></label>
                 <input asp-for="Username" class="form-control" />

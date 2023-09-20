@@ -9,6 +9,9 @@ using System.Diagnostics;
 using SoccerClub.API;
 using Microsoft.DotNet.MSIdentity.Shared;
 using System.Net.Http.Json;
+using Microsoft.IdentityModel.Tokens;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace SoccerClub.Controllers
 {
@@ -25,7 +28,6 @@ namespace SoccerClub.Controllers
         public IActionResult TopTen()
 
         {
-
             var wcResponse = _apiHelper.TopTenScores("WC");
             wcResponse = wcResponse.Replace("\r\n", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
             Root wcApiResponse = JsonConvert.DeserializeObject<Root>(wcResponse);
@@ -47,6 +49,7 @@ namespace SoccerClub.Controllers
             var allTopScorers = topTenScorersViewModel.GetType().GetProperties()
             .Where(prop => prop.PropertyType == typeof(Root))
             .ToList();
+            ViewBag.pl = "toactive";
             ViewBag.TopTenScores = allTopScorers;
             return View(topTenScorersViewModel);
         }
@@ -59,13 +62,14 @@ namespace SoccerClub.Controllers
             //var articlesArray = jsonObject["articles"].ToString();
 
             //List<Article> responseList = JsonConvert.DeserializeObject<List<Article>>(articlesArray);
-            var UpComming = _context.Matches.Include(x => x.AwayTeam).Include(x => x.HomeTeam).Where(m => m.Date > DateTime.Now).OrderBy(m => m.Date).FirstOrDefault();
+            var UpComming = _context.Reminder.Include(x => x.Match.AwayTeam).Include(x => x.Match.HomeTeam).Where(m => m.Match.Date > DateTime.Now && m.User.UserId == Session.UserId).OrderBy(m => m.Match.Date).FirstOrDefault();
 
-            if(UpComming != null)
+            if (UpComming != null)
             {
-                ViewBag.HomeTeam = UpComming.HomeTeam.Name;
-                ViewBag.AwayTeam = UpComming.AwayTeam.Name;
-                ViewBag.date = UpComming.Date.ToLongTimeString();
+                ViewBag.HomeTeam = UpComming.Match.HomeTeam.Name;
+                ViewBag.AwayTeam = UpComming.Match.AwayTeam.Name;
+                ViewBag.idid = UpComming.Match.MatchId;
+                ViewBag.date = UpComming.Match.Date.ToLongTimeString();
             }
             var ViewModel = new IndexVM
             {
@@ -73,11 +77,27 @@ namespace SoccerClub.Controllers
                 matches = _context.Matches.OrderByDescending(m => m.MatchId).Take(5).ToList(),
                 player = _context.Players.ToList(),
                 team = _context.Teams.ToList(),
+                Feedbacks = _context.Feedbacks.Include(x => x.User).ToList(),
                 product = _context.Products.ToList()
                 //Articles = responseList
             };
             return View(ViewModel);
         }
+
+        //public async Task<IActionResult> CreateReminder([Bind("Id,UserId,MatchId")] Reminder reminder)
+
+        public async Task<IActionResult> CreateReminder(int matchid)
+        {
+            var reminder = new Reminder();
+            reminder.UserId = Session.UserId;
+            reminder.MatchId = matchid;
+            _context.Add(reminder);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
         public ActionResult Search(string keyword)
         {
             ViewBag.keyword = keyword;
@@ -141,11 +161,41 @@ namespace SoccerClub.Controllers
 
             return View(ViewModel);
         }
-        public async Task<IActionResult> Shop()
+        public async Task<IActionResult> Shop(string? id)
         {
             ViewBag.shop = "toactive";
             ViewBag.CategoryId = _context.Category.ToList();
-            return View(await _context.Products.ToListAsync());
+
+            if (id == "LtoH")
+            {
+                ViewBag.de = "lh";
+                var products = await _context.Products.OrderBy(m => m.Price).ToListAsync();
+                return View(products);
+            }
+            else if (id == "HtoL")
+            {
+                ViewBag.de = "hl";
+                var products = await _context.Products.OrderByDescending(m => m.Price).ToListAsync();
+                return View(products);
+            }
+            else if (id == "A-Z")
+            {
+                ViewBag.de = "az";
+                var products = await _context.Products.OrderBy(m => m.ProductName).ToListAsync();
+                return View(products);
+            }
+            else if (id == "Z-A")
+            {
+                ViewBag.de = "za";
+                var products = await _context.Products.OrderByDescending(m => m.ProductName).ToListAsync();
+                return View(products);
+            }
+            else
+            {
+                ViewBag.de = "de";
+                var products = await _context.Products.ToListAsync();
+                return View(products);
+            }
         }
 
         public IActionResult Schedule()
@@ -196,7 +246,7 @@ namespace SoccerClub.Controllers
             {
                 return NotFound();
             }
-            ViewBag.players = "toactive";
+            ViewBag.pl = "toactive";
             var player = await _context.Players.Include(p => p.Team).FirstOrDefaultAsync(m => m.PlayerID == id);
             if (player == null)
             {
@@ -276,5 +326,6 @@ namespace SoccerClub.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

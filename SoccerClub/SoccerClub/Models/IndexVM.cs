@@ -13,6 +13,8 @@ namespace SoccerClub.Models
         public IEnumerable<Player> player { get; set; }
         public IEnumerable<Player> awayplayer { get; set; }
         public IEnumerable<Article> Articles { get; set; }
+        public IEnumerable<Feedback> Feedbacks { get; set; }
+        public Reminder Reminders { get; set; }
         public Match Match { get; set; }
         public Root WorldCup { get; set; }
         public Root UEFA { get; set; }

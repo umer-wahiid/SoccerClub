@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JxyDHa5i+2dZE4zH7Rh8WbuJaYlMu6TjkfPfpUcpZnI=",
+  "Hash": "WD62/NtS8XTDlQ60xONT5+YDOFdYDwEmJfc71xeWIyk=",
   "Source": "SoccerClub",
   "BasePath": "_content/SoccerClub",
   "Mode": "Default",
@@ -7767,6 +7767,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\player6.png"
+    },
+    {
+      "Identity": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\Images\\product1.png",
+      "SourceId": "SoccerClub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\",
+      "BasePath": "_content/SoccerClub",
+      "RelativePath": "Images/product1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\product1.png"
     },
     {
       "Identity": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\wwwroot\\Images\\product11.png",

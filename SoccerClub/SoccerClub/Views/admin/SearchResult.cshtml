@@ -1,0 +1,284 @@
+﻿@model SoccerClub.Models.IndexVM
+@{
+    ViewData["Title"] = "SearchResult";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+    var sno = 1;
+}
+<!-- PAGE CONTENT -->
+<main>
+    @* <div class="common-home mt-5 mb-5 pb-5"> *@
+    <div class="content-body">
+        <div class="container-fluid">
+            <div class="row page-titles mx-0">
+                <div class="col-sm-6 p-md-0">
+                    <div class="welcome-text">
+                        <h4>Search Result</h4>
+                        @*<span>Datatable</span>*@
+                    </div>
+                </div>
+            </div>
+            @if (Model.team.Any() || Model.matches.Any() || Model.player.Any() || Model.product.Any())
+            {
+                @if (Model.matches.Any())
+                {
+                    sno = 1;
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Matches</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example3" class="display" style="min-width: 845px">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Home Team</th>
+                                                    <th>Away Team</th>
+                                                    <th>Venue</th>
+                                                    <th>Season</th>
+                                                    <th>League</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                @foreach (var item in Model.matches)
+                                                {
+                                                    <tr>
+                                                        <td>@sno</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.HomeTeam.Name)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.AwayTeam.Name)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Venue)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Season)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.League)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Date)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Time)</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <a asp-controller="Matches" asp-action="Edit" asp-route-id="@item.MatchId" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                                    <i class="fa fa-pencil"></i>
+                                                                </a>
+                                                                <a asp-controller="Matches" asp-action="Details" asp-route-id="@item.MatchId" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                                    <i class="fa fa-user"></i>
+                                                                </a>
+
+                                                                <a asp-controller="Matches" asp-action="Delete" asp-route-id="@item.MatchId" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    sno++;
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                @if (Model.team.Any())
+                {
+                    sno = 1;
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Teams</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example3" class="display" style="min-width: 845px">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Name</th>
+                                                    <th>Country</th>
+                                                    <th>LogoUrl</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                @foreach (var item in Model.team)
+                                                {
+                                                    <tr>
+                                                        <td>@sno</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Name)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Country)</td>
+                                                        <td><img class="rounded-circle" width="35" height="35" src="@item.LogoUrl" alt=""></td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <a asp-controller="Teams" asp-action="Edit" asp-route-id="@item.TeamId" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                                    <i class="fa fa-pencil"></i>
+                                                                </a>
+                                                                <a asp-controller="Teams" asp-action="Details" asp-route-id="@item.TeamId" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                                    <i class="fa fa-user"></i>
+                                                                </a>
+
+                                                                <a asp-controller="Teams" asp-action="Delete" asp-route-id="@item.TeamId" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+                                                            </div>
+                                                        </td>
+
+
+                                                    </tr>
+
+                                                    sno++;
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                @if (Model.player.Any())
+                {
+                    sno = 1;
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Players</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example3" class="display" style="min-width: 845px">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Name</th>
+                                                    <th>Nationality</th>
+                                                    <th>Position</th>
+                                                    <th>Image</th>
+                                                    <th>Age</th>
+                                                    <th>Team</th>
+                                                    <th>Date Of Birth</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                @foreach (var item in Model.player)
+                                                {
+
+                                                    <tr>
+                                                        <td>@sno</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Name)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Nationality)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Position)</td>
+                                                        <td><img class="rounded-circle" width="35" height="35" src="@item.PlayerImage" alt=""></td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Age)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Team.Name)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.DOB)</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <a asp-controller="Players" asp-action="Edit" asp-route-id="@item.PlayerID" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                                    <i class="fa fa-pencil"></i>
+                                                                </a>
+                                                                <a asp-controller="Players" asp-action="Details" asp-route-id="@item.PlayerID" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                                    <i class="fa fa-user"></i>
+                                                                </a>
+
+                                                                <a asp-controller="Players" asp-action="Delete" asp-route-id="@item.PlayerID" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    sno++;
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                @if (Model.product.Any())
+                {
+                    sno = 1;
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Products</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example3" class="display" style="min-width: 845px">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Image</th>
+                                                    <th>Name</th>
+                                                    <th>Price</th>
+                                                    <th>Category</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                @foreach (var item in Model.product)
+                                                {
+
+                                                    <tr>
+                                                        <td>@sno</td>
+                                                        <td><img class="rounded-circle" width="35" height="35" src="@item.ImageUrl" alt=""></td>
+                                                        <td> @Html.DisplayFor(modelItem => item.ProductName)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Price)</td>
+                                                        <td> @Html.DisplayFor(modelItem => item.Category.CategoryName)</td>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <a asp-controller="Products" asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                                    <i class="fa fa-pencil"></i>
+                                                                </a>
+                                                                <a asp-controller="Products" asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-primary shadow btn-xs sharp me-1">
+                                                                    <i class="fa fa-user"></i>
+                                                                </a>
+
+                                                                <a asp-controller="Products" asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    sno++;
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div id="content" class="col d-flex align-items-center justify-content-center" style="height:500px">
+                    <div class="category-featured mt-50  wow fadeInUp">
+                        <div class="box-content">
+                            <div class="container">
+                                <div class="page-title toggled">
+                                    <span class="page-title-left"></span>
+                                    <h3>
+                                        Result Not Found
+                                    </h3>
+                                    <span class="page-title-right"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    </div>
+</main>
