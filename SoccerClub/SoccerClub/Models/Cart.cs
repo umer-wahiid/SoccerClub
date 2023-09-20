@@ -14,7 +14,8 @@ namespace SoccerClub.Models
         public bool Status { get; set; } = true;
         [Required]
         public int ProductId { get; set; }
-        public Product product { get; set; }
+		public string CartStatus { get; set; }
+		public Product product { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
 

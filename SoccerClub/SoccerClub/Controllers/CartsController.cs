@@ -15,6 +15,7 @@ namespace SoccerClub.Controllers
         }
         public IActionResult Cart()
         {
+            
             if (Session.UserId != 0)
             {
                 var cartItems = _context.Carts
@@ -53,6 +54,7 @@ namespace SoccerClub.Controllers
                     }
                     else
                     {
+                        cart.CartStatus = "InProgress";
                         cart.UserId = Session.UserId;
                         cart.Price = product.Price * cart.Quantity;
                         _context.Carts.Add(cart);
@@ -102,6 +104,7 @@ namespace SoccerClub.Controllers
                     _context.Carts.Update(item);
                     _context.SaveChanges();
                 }
+                
                 order.UserId = Session.UserId;
                 order.OrderDate = DateTime.Now;
                 order.TotalPrice = totalAmount;
