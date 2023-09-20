@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SoccerClub.Data;
 using SoccerClub.Models;
+using System.Runtime.Intrinsics.Arm;
 using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
 
 namespace SoccerClub.Controllers
@@ -14,12 +15,48 @@ namespace SoccerClub.Controllers
         {
             context = soccerClub;
         }
-        public IActionResult OrderDetails()
-        {
-			var Order = context.Orders.Include(p => p.User).ToList();
-			return View(Order);
+		[HttpGet]
+        public IActionResult OrderDetails(string? format)
+		{
+			if (format == "Dp") 
+			{
+				ViewBag.isac = "dp";
+				var cartItems = context.Carts
+								.Include(p => p.product)
+								.ThenInclude(product => product.Category)
+								.Include(u => u.User)
+								.Where(x => x.Status == false && x.CartStatus.Equals("Dispatched"))
+								.ToList();
+				return View(cartItems);
+				
+			}
+			else
+			{
+                ViewBag.isac = "in";
+                var cartItems = context.Carts
+								.Include(p => p.product)
+								.ThenInclude(product => product.Category)
+								.Include(u => u.User)
+								.Where(x => x.Status == false && x.CartStatus.Equals("InProgress"))
+								.ToList();
+				return View(cartItems);
+			}
         }
-        public IActionResult SearchResult(string keyword)
+		
+		public IActionResult EditStatus(int id )
+		{
+            var cart = new Cart();
+
+            cart = context.Carts.Find(id);
+			if(cart == null)
+				return NotFound();
+			cart.CartStatus = "Dispatched";
+			context.Update(cart);
+			context.SaveChanges();
+			return RedirectToAction("OrderDetails", "admin");
+
+		}
+		public IActionResult SearchResult(string keyword)
         {
             ViewBag.keyword = keyword;
             var ViewModel = new IndexVM
