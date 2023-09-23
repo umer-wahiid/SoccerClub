@@ -9,329 +9,329 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SoccerClub
 build_property.RootNamespace = SoccerClub
-build_property.ProjectDir = C:\Users\Hashir\Documents\GitHub\SoccerClub\SoccerClub\SoccerClub\
+build_property.ProjectDir = D:\Umer Wahiid\Git Desktop\SoccerClub\SoccerClub\SoccerClub\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Hashir\Documents\GitHub\SoccerClub\SoccerClub\SoccerClub
+build_property.MSBuildProjectDirectory = D:\Umer Wahiid\Git Desktop\SoccerClub\SoccerClub\SoccerClub
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/Contacts.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/Contacts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cQ29udGFjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/FeedBacks.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/FeedBacks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cRmVlZEJhY2tzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/Matches.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/Matches.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cTWF0Y2hlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/OrderDetails.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/OrderDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cT3JkZXJEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/Players.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/Players.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cUGxheWVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/Product.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/Product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/SearchResult.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/SearchResult.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cU2VhcmNoUmVzdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/Teams.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/Teams.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cVGVhbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/admin/Users.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/admin/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5cVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Carts/Cart.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Carts/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Carts/Checkout.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Carts/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcQ2hlY2tvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Carts/Order.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Carts/Order.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcT3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Create.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Delete.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Details.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Edit.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Create.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Delete.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Details.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Edit.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/ContactUs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Create.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Delete.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Details.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Edit.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Feedbacks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Blog.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/BlogDetails.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/BlogDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Cart.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Contact.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Feedback.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Feedback.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGZWVkYmFjay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/History.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/History.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXN0b3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Login.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Matches.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Matches.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYXRjaGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/MatchesDetail.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/MatchesDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYXRjaGVzRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Players.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Players.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGF5ZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/PlayersDetail.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/PlayersDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGF5ZXJzRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/ProductDetail.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/ProductDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Schedule.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Schedule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTY2hlZHVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Search.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/Shop.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/SiteMap.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/SiteMap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaXRlTWFwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Home/TopTen.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Home/TopTen.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb3BUZW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Create.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Delete.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Details.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Edit.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Matches/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Players/Create.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Players/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Players/Delete.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Players/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Players/Details.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Players/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Players/Edit.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Players/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Players/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Players/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Products/Create.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Products/Delete.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Products/Details.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Products/Edit.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Products/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Shared/Error.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Create.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Delete.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Details.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Edit.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Teams/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Users/Delete.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Users/Details.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Users/Edit.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Users/Index.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Users/Login.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Users/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Users/Register.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Users/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Users/UserDetails.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Users/UserDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlckRldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Users/UserEdit.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Users/UserEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlckVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/_ViewImports.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/_ViewStart.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_adminLayout.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_adminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9hZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-ccweze535c
 
-[C:/Users/Hashir/Documents/GitHub/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_Layout.cshtml]
+[D:/Umer Wahiid/Git Desktop/SoccerClub/SoccerClub/SoccerClub/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2djzolt9ww

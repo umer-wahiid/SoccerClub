@@ -11215,23 +11215,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hashir\\.nuget\\packages\\": {},
+    "C:\\Users\\dell\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+      "projectUniqueName": "D:\\Umer Wahiid\\Git Desktop\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
       "projectName": "SoccerClub",
-      "projectPath": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
-      "packagesPath": "C:\\Users\\Hashir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hashir\\Documents\\GitHub\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\",
+      "projectPath": "D:\\Umer Wahiid\\Git Desktop\\SoccerClub\\SoccerClub\\SoccerClub\\SoccerClub.csproj",
+      "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+      "outputPath": "D:\\Umer Wahiid\\Git Desktop\\SoccerClub\\SoccerClub\\SoccerClub\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hashir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11240,7 +11240,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
